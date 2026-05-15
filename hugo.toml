@@ -1,0 +1,6 @@
+baseURL = 'https://example.org/'
+locale = 'en-us'
+title = 'Robot Design Net'
+theme = 'ananke'
+[params]
+  mainSections = ["posts"]
