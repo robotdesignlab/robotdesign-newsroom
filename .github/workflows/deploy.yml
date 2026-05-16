@@ -33,7 +33,7 @@ jobs:
 
       - name: Deploy to S3
         # 주의: 이제 ./public이 아니라 ./dist 폴더를 배달합니다!
-        run: aws s3 sync ./dist s3://robotdesign-newsroom-2026 --delete
+        run: aws s3 sync ./dist/client s3://robotdesign-newsroom-2026 --delete
 
       - name: Invalidate CloudFront Cache
         run: aws cloudfront create-invalidation --distribution-id ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }} --paths "/*"
