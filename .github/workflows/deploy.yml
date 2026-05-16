@@ -1,38 +1,39 @@
-name: Deploy Hugo site to S3
+name: Deploy Astro to S3
 
 on:
   push:
     branches:
       - main
+  workflow_dispatch:
 
 jobs:
-  deploy:
+  build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code (물류센터에서 박스 꺼내기)
+      - name: Checkout code
         uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
-          submodules: true
-          fetch-depth: 0
+          node-version: '20'
 
-      - name: Setup Hugo (전시 디자이너 고용하기)
-        uses: peaceiris/actions-hugo@v3
-        with:
-          hugo-version: 'latest'
-          extended: true
+      - name: Install dependencies
+        run: npm install
 
-      - name: Build Web (마크다운을 웹페이지로 굽기)
-        run: hugo --minify
+      - name: Build Astro site
+        run: npm run build
 
-      - name: Configure AWS Credentials (금고에서 열쇠 꺼내기)
+      - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v4
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: ap-northeast-2
 
-      - name: Deploy to S3 (진열장에 기사 전시하기)
-        run: aws s3 sync ./public/ s3://robotdesign-newsroom-2026 --delete
+      - name: Deploy to S3
+        # 주의: 이제 ./public이 아니라 ./dist 폴더를 배달합니다!
+        run: aws s3 sync ./dist s3://robotdesign-newsroom-2026 --delete
 
-      - name: Invalidate CloudFront Cache (방탄유리 투명하게 닦기)
+      - name: Invalidate CloudFront Cache
         run: aws cloudfront create-invalidation --distribution-id ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }} --paths "/*"
