@@ -1,4 +1,14 @@
 baseURL = "https://robotdesign.net/"
 locale = "en"
 title = "Robotdesign.net"
-theme = "github.com/nunocoracao/blowfish/v2"
+
+[module]
+  [[module.imports]]
+    path = "github.com/nunocoracao/blowfish/v2"
+
+[params]
+  mainSections = ["posts"]
+
+[params.homepage]
+  layout = "background"
+  showRecent = true
