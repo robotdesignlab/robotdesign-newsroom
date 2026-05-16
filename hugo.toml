@@ -1,4 +1,4 @@
 baseURL = "https://robotdesign.net/"
-languageCode = "en"
+languageCode = "locale"
 title = "Robotdesign.net"
 theme = "github.com/nunocoracao/blowfish/v2"
