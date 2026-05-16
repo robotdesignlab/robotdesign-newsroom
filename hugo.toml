@@ -1,6 +1,4 @@
-baseURL = 'https://example.org/'
-locale = 'en-us'
-title = 'Robot Design Net'
-theme = 'ananke'
-[params]
-  mainSections = ["posts"]
+baseURL = "https://robotdesign.net/"
+languageCode = "en"
+title = "Robotdesign.net"
+theme = "github.com/nunocoracao/blowfish/v2"
