@@ -1,0 +1,7 @@
+baseURL = 'https://robotdesign.net/'
+languageCode = 'en-us'
+title = 'Robot Design Net'
+theme = ['github.com/imfing/hextra']
+
+[markup.goldmark.renderer]
+  unsafe = true

@@ -1,4 +1,4 @@
-name: Deploy Astro to S3
+name: Deploy Hugo to S3
 
 on:
   push:
@@ -12,17 +12,22 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '22'
+          node-version: '20'
 
-      - name: Install dependencies
-        run: npm install --legacy-peer-deps
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: 'latest'
+          extended: true
 
-      - name: Build Astro site
-        run: npm run build
+      - name: Build Hugo site
+        run: hugo --minify
 
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v4
@@ -32,8 +37,7 @@ jobs:
           aws-region: ap-northeast-2
 
       - name: Deploy to S3
-        # 주의: 이제 ./public이 아니라 ./dist 폴더를 배달합니다!
-        run: aws s3 sync ./dist/client s3://robotdesign-newsroom-2026 --delete
+        run: aws s3 sync ./public s3://robotdesign-newsroom-2026 --delete
 
       - name: Invalidate CloudFront Cache
         run: aws cloudfront create-invalidation --distribution-id ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }} --paths "/*"
