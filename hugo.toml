@@ -9,11 +9,6 @@ theme = ['github.com/imfing/hextra']
 [params]
   description = "Global intelligence hub at the intersection of robotics engineering, morphology, and aesthetics — for the people who build robots."
 
-  [params.footer]
-    enable = true
-    displayCopyright = true
-    displayPoweredBy = false
-
 [menu]
   [[menu.main]]
     name = "Articles"

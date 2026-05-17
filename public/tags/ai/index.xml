@@ -1,8 +1,8 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Robot Design Net – AI</title>
+    <title>Robotdesign.net – AI</title>
     <link>http://localhost:1313/tags/ai/</link>
-    <description>Recent content in AI on Robot Design Net</description>
+    <description>Recent content in AI on Robotdesign.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 16 May 2026 15:22:28 +0900</lastBuildDate>
