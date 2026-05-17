@@ -1,11 +1,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Robotdesign.net – Robotics</title>
+    <title>Robot Design Net – Robotics</title>
     <link>http://localhost:1313/categories/robotics/</link>
-    <description>Recent content in Robotics on Robotdesign.net</description>
+    <description>Recent content in Robotics on Robot Design Net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 16 May 2026 15:22:28 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 17 May 2026 22:20:53 +0900</lastBuildDate>
     
 	  <atom:link href="http://localhost:1313/categories/robotics/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,6 +14,20 @@
         
       
     
+    
+    <item>
+      <title>Video Friday: Heavy Robotic Machinery Operates Itself</title>
+      <link>http://localhost:1313/posts/20260517-092053-robotics/</link>
+      <pubDate>Sun, 17 May 2026 22:20:53 +0900</pubDate>
+      
+      <guid>http://localhost:1313/posts/20260517-092053-robotics/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The robotics industry continues to push boundaries with advancements in autonomous heavy machinery. This week’s Video Friday highlights the latest breakthroughs in self-operating construction and industrial equipment. Companies like Caterpillar, Komatsu, and Built Robotics are leading the charge, showcasing machines that can perform complex tasks with minimal human intervention. These innovations are not only improving efficiency but also enhancing safety in hazardous environments. One standout example is Caterpillar’s autonomous bulldozer, which uses advanced sensors and AI algorithms to navigate challenging terrains and perform precise earth-moving operations. Similarly, Komatsu has introduced a fleet of autonomous dump trucks that can transport materials across mining sites with remarkable accuracy. These vehicles are equipped with GPS, LiDAR, and machine learning systems that enable them to operate seamlessly in dynamic environments. Built Robotics, a startup focused on construction automation, has also made strides with its autonomous excavators. These machines are designed to dig trenches and perform grading tasks with high precision, reducing the need for manual labor. The integration of AI and robotics into heavy machinery is transforming industries by increasing productivity and reducing operational costs. As these technologies continue to evolve, they are expected to play a pivotal role in addressing labor shortages and improving project timelines. The future of heavy machinery is undoubtedly autonomous, and Video Friday provides a glimpse into this rapidly advancing field. Stay tuned for more updates as the robotics industry continues to innovate and redefine what’s possible in construction and industrial operations.&lt;/p&gt;
+
+      </description>
+    </item>
     
     <item>
       <title>The Evolution of Collaborative Robots in Smart Manufacturing</title>

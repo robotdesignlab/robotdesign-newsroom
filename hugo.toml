@@ -1,6 +1,6 @@
 baseURL = 'https://robotdesign.net/'
 locale = 'en-us'
-title = 'Robotdesign.net'
+title = 'Robot Design Net'
 theme = ['github.com/imfing/hextra']
 
 [markup.goldmark.renderer]
@@ -8,6 +8,8 @@ theme = ['github.com/imfing/hextra']
 
 [params]
   description = "Global intelligence hub at the intersection of robotics engineering, morphology, and aesthetics — for the people who build robots."
+  mainSections = ["posts"]
+  customCSS = ["css/custom.css"]
 
 [menu]
   [[menu.main]]
