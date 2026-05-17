@@ -1,59 +1,56 @@
-{{- $navWidth := "hx:max-w-[90rem]" -}}
-{{- with .Site.Params.navbar.width -}}
-  {{ if eq . "normal" -}}
-    {{ $navWidth = "hx:max-w-screen-xl" -}}
-  {{ else if eq . "full" -}}
-    {{ $navWidth = "max-w-full" -}}
-  {{ end -}}
-{{- end -}}
-
 {{- $page := . -}}
-{{- $iconHeight := 24 -}}
 
-<div class="hextra-nav-container hx:sticky hx:top-0 hx:z-20 hx:w-full hx:bg-transparent hx:print:hidden">
-  <div
-    class="hextra-nav-container-blur hx:pointer-events-none hx:absolute hx:z-[-1] hx:h-full hx:w-full hx:bg-white hx:dark:bg-dark hx:shadow-[0_2px_4px_rgba(0,0,0,.02),0_1px_0_rgba(0,0,0,.06)] hx:contrast-more:shadow-[0_0_0_1px_#000] hx:dark:shadow-[0_-1px_0_rgba(255,255,255,.1)_inset] hx:contrast-more:dark:shadow-[0_0_0_1px_#fff]"
-  ></div>
+<div class="hextra-nav-container hx:sticky hx:top-0 hx:z-20 hx:w-full hx:bg-transparent hx:print:hidden" style="position:relative;">
+  <div class="hextra-nav-container-blur hx:pointer-events-none hx:absolute hx:z-[-1] hx:h-full hx:w-full hx:bg-white hx:dark:bg-dark hx:shadow-[0_2px_4px_rgba(0,0,0,.02),0_1px_0_rgba(0,0,0,.06)] hx:dark:shadow-[0_-1px_0_rgba(255,255,255,.1)_inset]"></div>
 
   <nav class="hextra-max-navbar-width hx:mx-auto hx:flex hx:items-center hx:justify-between hx:gap-2 hx:h-16 hx:px-6">
     {{ partial "navbar-title.html" . }}
 
-    {{- $currentPage := . -}}
-    {{- range .Site.Menus.main -}}
-      {{- if eq .Params.type "search" -}}
-        {{- partial "search.html" (dict "params" .Params "location" "navbar") -}}
-      {{- else -}}
-        {{- $link := .URL -}}
-        {{- $external := strings.HasPrefix $link "http" -}}
-        {{- with .PageRef -}}
-          {{- if hasPrefix . "/" -}}
-            {{- $link = relLangURL (strings.TrimPrefix "/" .) -}}
-          {{- end -}}
-        {{- end -}}
+    <div id="rdn-desktop-menu" style="display:flex; align-items:center; gap:24px;">
+      <a href="/posts/" style="font-size:0.9rem; color:#9ca3af; text-decoration:none;">Articles</a>
+      <a href="/about/" style="font-size:0.9rem; color:#9ca3af; text-decoration:none;">About</a>
+    </div>
 
-        {{- if eq .Params.type "link" -}}
-          {{- partial "navbar-link.html" (dict "currentPage" $currentPage "link" $link "external" $external "item" . "icon" .Params.icon) -}}
-        {{- else if eq .Params.type "theme-toggle" -}}
-          {{- partial "theme-toggle.html" (dict "iconHeight" $iconHeight "hideLabel" (not .Params.label) "iconHeight" $iconHeight "location" "top" "class" "hx:p-2") -}}
-        {{- else if eq .Params.type "language-switch" -}}
-          {{- partial "language-switch" (dict "context" $page "grow" false "hideLabel" (not .Params.label) "iconName" (.Params.icon | default "translate") "iconHeight" $iconHeight "location" "top" "class" "hx:p-2") -}}
-        {{- else if .Params.icon -}}
-          {{- /* Display icon menu item */ -}}
-          {{- if not $link -}}{{ warnf "Icon menu item '%s' has no URL" .Name }}{{- end -}}
-          {{- $rel := cond (eq .Params.icon "mastodon") "noreferrer me" "noreferrer" }}
-          <a class="hx:p-2 hx:text-current" {{ if $external }}target="_blank" rel="{{ $rel }}"{{ end }} href="{{ $link }}" title="{{ or (T .Identifier) .Name | safeHTML }}">
-            {{- partial "utils/icon.html" (dict "name" .Params.icon "attributes" (printf "height=%d" $iconHeight)) -}}
-            <span class="hx:sr-only">{{ or (T .Identifier) .Name | safeHTML }}</span>
-          </a>
-        {{- else -}}
-          {{- partial "navbar-link.html" (dict "currentPage" $currentPage "link" $link "external" $external "item" .) -}}
-        {{- end -}}
-      {{- end -}}
-    {{- end -}}
-
-
-    <button type="button" aria-label="{{ (T "menu") | default "Menu" }}" aria-expanded="false" class="hextra-hamburger-menu hx:cursor-pointer hx:-mr-2 hx:rounded-sm hx:p-2 hx:active:bg-gray-400/20 hx:md:hidden hx:hextra-focus-visible-inset">
-      {{- partial "utils/icon.html" (dict "name" "hamburger-menu" "attributes" (printf "height=%d" $iconHeight)) -}}
+    <button id="rdn-hamburger" type="button"
+      style="display:none; background:none; border:none; cursor:pointer; padding:4px; color:#f9fafb;"
+      aria-label="Menu">
+      <svg id="rdn-icon-open" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <line x1="3" y1="6" x2="21" y2="6"/>
+        <line x1="3" y1="12" x2="21" y2="12"/>
+        <line x1="3" y1="18" x2="21" y2="18"/>
+      </svg>
+      <svg id="rdn-icon-close" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" style="display:none;">
+        <line x1="18" y1="6" x2="6" y2="18"/>
+        <line x1="6" y1="6" x2="18" y2="18"/>
+      </svg>
     </button>
   </nav>
+
+  <div id="rdn-mobile-menu" style="display:none; position:absolute; right:24px; top:64px; background:#111827; border:1px solid #1f2937; border-radius:8px; box-shadow:0 8px 24px rgba(0,0,0,0.4); min-width:140px; z-index:100;">
+    <a href="/posts/" style="display:block; font-size:0.95rem; color:#d1d5db; text-decoration:none; padding:12px 20px; border-bottom:1px solid #1f2937;">Articles</a>
+    <a href="/about/" style="display:block; font-size:0.95rem; color:#d1d5db; text-decoration:none; padding:12px 20px;">About</a>
+  </div>
 </div>
+
+<style>
+@media (max-width: 768px) {
+  #rdn-desktop-menu { display: none !important; }
+  #rdn-hamburger { display: block !important; }
+}
+</style>
+
+<script>
+(function() {
+  var btn = document.getElementById('rdn-hamburger');
+  var menu = document.getElementById('rdn-mobile-menu');
+  var iconOpen = document.getElementById('rdn-icon-open');
+  var iconClose = document.getElementById('rdn-icon-close');
+  if (!btn) return;
+  btn.addEventListener('click', function() {
+    var isOpen = menu.style.display === 'block';
+    menu.style.display = isOpen ? 'none' : 'block';
+    iconOpen.style.display = isOpen ? 'block' : 'none';
+    iconClose.style.display = isOpen ? 'none' : 'block';
+  });
+})();
+</script>

@@ -5,6 +5,9 @@
     <loc>http://localhost:1313/tags/ai/</loc>
     <lastmod>2026-05-17T23:01:00+09:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2026-05-17T23:01:00+09:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/tags/automation/</loc>
     <lastmod>2026-05-17T23:01:00+09:00</lastmod>
   </url><url>
@@ -24,9 +27,6 @@
     <lastmod>2026-05-17T23:01:00+09:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/20260517-100100-robotics/</loc>
-    <lastmod>2026-05-17T23:01:00+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/</loc>
     <lastmod>2026-05-17T23:01:00+09:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/20260517-092053-robotics/</loc>

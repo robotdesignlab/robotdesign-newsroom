@@ -1,0 +1,47 @@
+{{ define "main" }}
+<div style="max-width:760px; margin:0 auto; padding:48px 32px;">
+
+  {{ with .Params.categories }}
+  <p style="font-size:0.75rem; font-weight:700; text-transform:uppercase; letter-spacing:0.1em; color:#60a5fa; margin-bottom:16px;">
+    {{ index . 0 }}
+  </p>
+  {{ end }}
+
+  <h1 style="font-size:2rem; font-weight:800; line-height:1.2; color:#f9fafb; margin-bottom:20px; letter-spacing:-0.02em; text-align:left;">
+    {{ .Title }}
+  </h1>
+
+  {{ with .Summary }}
+  <p style="font-size:1.05rem; color:#9ca3af; line-height:1.6; margin-bottom:20px;">
+    {{ . | truncate 160 }}
+  </p>
+  {{ end }}
+
+  <div style="display:flex; align-items:center; gap:12px; margin-bottom:24px; flex-wrap:wrap;">
+    <span style="font-size:0.85rem; font-weight:600; color:#e5e7eb;">Robot Design Net</span>
+    <span style="color:#4b5563;">·</span>
+    <time style="font-size:0.85rem; color:#6b7280;">{{ .Date.Format "January 2, 2006" }}</time>
+    <span style="color:#4b5563;">·</span>
+    <span style="font-size:0.85rem; color:#6b7280;">{{ .ReadingTime }} min read</span>
+  </div>
+
+  <hr style="border:none; border-top:1px solid #1f2937; margin-bottom:36px;">
+
+  <div style="font-size:1.05rem; line-height:1.85; color:#d1d5db;">
+    {{ .Content }}
+  </div>
+
+  {{ with .Params.tags }}
+  <div style="margin-top:48px; padding-top:24px; border-top:1px solid #1f2937;">
+    {{ range . }}
+    <span style="display:inline-block; font-size:0.75rem; color:#6b7280; background:#111827; border:1px solid #1f2937; border-radius:4px; padding:4px 10px; margin-right:6px; margin-bottom:6px; text-transform:uppercase; letter-spacing:0.06em;">{{ . }}</span>
+    {{ end }}
+  </div>
+  {{ end }}
+
+  <div style="margin-top:48px;">
+    <a href="/" style="font-size:0.85rem; color:#60a5fa;">← Back to Robot Design Net</a>
+  </div>
+
+</div>
+{{ end }}

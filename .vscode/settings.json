@@ -6,7 +6,11 @@
   "files.eol": "\n",
   "[markdown]": {
     "editor.wordWrap": "on",
-    "editor.quickSuggestions": false
+    "editor.quickSuggestions": {
+      "comments": "off",
+      "strings": "off",
+      "other": "off"
+    }
   },
   "[toml]": {
     "editor.defaultFormatter": "tamasfe.even-better-toml"
