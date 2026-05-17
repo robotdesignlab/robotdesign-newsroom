@@ -1,25 +1,25 @@
 baseURL = 'https://robotdesign.net/'
-languageCode = 'en-us'
-title = 'Robot Design Net'
+locale = 'en-us'
+title = 'Robotdesign.net'
 theme = ['github.com/imfing/hextra']
 
 [markup.goldmark.renderer]
   unsafe = true
 
-# 1. 상단 내비게이션 메뉴 구성
+[params]
+  description = "Global intelligence hub at the intersection of robotics engineering, morphology, and aesthetics — for the people who build robots."
+
+  [params.footer]
+    enable = true
+    displayCopyright = true
+    displayPoweredBy = false
+
 [menu]
   [[menu.main]]
-    name = "최신 기사"
+    name = "Articles"
     pageRef = "/posts/"
     weight = 1
-
-# 2. Hextra 고유 기능 및 간판(Footer) 제어
-[params.hextra]
-  display_mode = "auto"
-  
-[params.hextra.search]
-  enable = true
-
-[params.hextra.footer]
-  enable = true
-  displayCopyright = false # 🚨 핵심: 기본 'Powered by Hextra' 간판을 떼어냅니다.
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 2
