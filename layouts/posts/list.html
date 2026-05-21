@@ -14,7 +14,7 @@
     {{ with .Params.image }}
     <figure style="margin:0 0 14px 0;">
       <img src="{{ . }}" alt="{{ $.Params.imageAlt | default $.Title }}"
-           style="width:100%; border-radius:6px; aspect-ratio:16/9; object-fit:cover;">
+        style="width:100%; border-radius:6px; aspect-ratio:16/9; object-fit:cover;">
     </figure>
     {{ end }}
 
@@ -23,16 +23,14 @@
       {{ .Date.Format "January 2, 2006" }}
     </p>
     <h2 style="font-size:1.3rem; font-weight:700; margin-bottom:12px; line-height:1.3;">
-      <a href="{{ .Permalink }}"
-         style="color:var(--rdn-text-primary); text-decoration:none;"
-         onmouseover="this.style.color='var(--rdn-accent)'"
-         onmouseout="this.style.color='var(--rdn-text-primary)'">{{ .Title }}</a>
+      <a href="{{ .Permalink }}" style="color:var(--rdn-text-primary); text-decoration:none;"
+        onmouseover="this.style.color='var(--rdn-accent)'" onmouseout="this.style.color='var(--rdn-text-primary)'">{{
+        .Title }}</a>
     </h2>
-    <p style="color:var(--rdn-text-secondary); line-height:1.7; margin-bottom:12px; font-size:0.95rem;">
+    <p class="rdn-summary" style="line-height:1.7; margin-bottom:12px; font-size:0.95rem;">
       {{ .Summary | truncate 180 }}
     </p>
-    <a href="{{ .Permalink }}"
-       style="color:var(--rdn-accent); font-size:0.85rem; text-decoration:none;">Read more →</a>
+    <a href="{{ .Permalink }}" style="color:var(--rdn-accent); font-size:0.85rem; text-decoration:none;">Read more →</a>
   </article>
   {{ end }}
 

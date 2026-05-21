@@ -11,27 +11,26 @@
     {{ with .Params.image }}
     <figure class="rdn-figure" style="margin-bottom:16px;">
       <img src="{{ . }}" alt="{{ $.Params.imageAlt | default $.Title }}"
-           style="width:100%; border-radius:6px; aspect-ratio:16/9; object-fit:cover;">
+        style="width:100%; border-radius:6px; aspect-ratio:16/9; object-fit:cover;">
       {{ with $.Params.imageCredit }}
       <figcaption style="font-size:0.75rem; color:var(--rdn-credit); margin-top:6px;">{{ . }}</figcaption>
       {{ end }}
     </figure>
     {{ end }}
 
-    <p style="font-size:0.72rem; text-transform:uppercase; letter-spacing:0.1em; color:var(--rdn-text-tertiary); margin-bottom:8px;">
+    <p
+      style="font-size:0.72rem; text-transform:uppercase; letter-spacing:0.1em; color:var(--rdn-text-tertiary); margin-bottom:8px;">
       {{ .Date.Format "January 2, 2006" }}
     </p>
     <h2 style="font-size:1.2rem; font-weight:700; line-height:1.35; margin-bottom:12px;">
-      <a href="{{ .Permalink }}"
-         style="color:var(--rdn-text-primary); text-decoration:none;"
-         onmouseover="this.style.color='var(--rdn-accent)'"
-         onmouseout="this.style.color='var(--rdn-text-primary)'">{{ .Title }}</a>
+      <a href="{{ .Permalink }}" style="color:var(--rdn-text-primary); text-decoration:none;"
+        onmouseover="this.style.color='var(--rdn-accent)'" onmouseout="this.style.color='var(--rdn-text-primary)'">{{
+        .Title }}</a>
     </h2>
-    <p style="color:var(--rdn-text-secondary); line-height:1.7; margin-bottom:12px; font-size:0.95rem;">
+    <p class="rdn-summary" style="color:#475569 !important; line-height:1.7; margin-bottom:12px; font-size:0.95rem;">
       {{ .Summary | truncate 180 }}
     </p>
-    <a href="{{ .Permalink }}"
-       style="color:var(--rdn-accent); font-size:0.85rem; text-decoration:none;">Read more →</a>
+    <a href="{{ .Permalink }}" style="color:var(--rdn-accent); font-size:0.85rem; text-decoration:none;">Read more →</a>
   </article>
   {{ end }}
 
