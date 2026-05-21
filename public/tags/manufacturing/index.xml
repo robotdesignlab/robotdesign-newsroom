@@ -1,13 +1,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Robot Design Net – Manufacturing</title>
-    <link>http://localhost:51092/tags/manufacturing/</link>
+    <link>http://localhost:1313/tags/manufacturing/</link>
     <description>Recent content in Manufacturing on Robot Design Net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 16 May 2026 15:22:28 +0900</lastBuildDate>
     
-	  <atom:link href="http://localhost:51092/tags/manufacturing/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="http://localhost:1313/tags/manufacturing/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -17,10 +17,10 @@
     
     <item>
       <title>The Evolution of Collaborative Robots in Smart Manufacturing</title>
-      <link>http://localhost:51092/posts/20260516-152228-report/</link>
+      <link>http://localhost:1313/posts/20260516-152228-report/</link>
       <pubDate>Sat, 16 May 2026 15:22:28 +0900</pubDate>
       
-      <guid>http://localhost:51092/posts/20260516-152228-report/</guid>
+      <guid>http://localhost:1313/posts/20260516-152228-report/</guid>
       <description>
         
         
@@ -31,10 +31,10 @@
     
     <item>
       <title>The Evolution of Collaborative Robots in Smart Manufacturing</title>
-      <link>http://localhost:51092/posts/20260516-152156-report/</link>
+      <link>http://localhost:1313/posts/20260516-152156-report/</link>
       <pubDate>Sat, 16 May 2026 15:17:28 +0900</pubDate>
       
-      <guid>http://localhost:51092/posts/20260516-152156-report/</guid>
+      <guid>http://localhost:1313/posts/20260516-152156-report/</guid>
       <description>
         
         
@@ -45,10 +45,10 @@
     
     <item>
       <title>The Evolution of Collaborative Robots in Smart Manufacturing</title>
-      <link>http://localhost:51092/posts/20260515-032757-report/</link>
+      <link>http://localhost:1313/posts/20260515-032757-report/</link>
       <pubDate>Fri, 15 May 2026 16:27:57 +0900</pubDate>
       
-      <guid>http://localhost:51092/posts/20260515-032757-report/</guid>
+      <guid>http://localhost:1313/posts/20260515-032757-report/</guid>
       <description>
         
         

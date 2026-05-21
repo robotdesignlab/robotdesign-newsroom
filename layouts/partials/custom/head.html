@@ -1,0 +1,11 @@
+<script>
+  (function () {
+    var saved = localStorage.getItem('theme');
+    var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    if (saved === 'dark' || (!saved && prefersDark)) {
+      document.documentElement.classList.add('dark');
+      document.documentElement.style.backgroundColor = '#111827';
+    }
+  })();
+</script>
+<link rel="stylesheet" href="/css/custom.css">

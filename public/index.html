@@ -1,5 +1,50 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=51092&amp;path=livereload" data-no-instant defer></script><link rel="stylesheet" href="/css/custom.css">
+<html lang="en" dir="ltr"><head>
+	<meta name="generator" content="Hugo 0.161.1"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="robots" content="noindex, nofollow" />
+  <link rel="icon shortcut" href="/favicon.ico" sizes="32x32" />
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" id="favicon-svg" />
+<link rel="icon" href="/favicon-16x16.png" type="image/png" sizes="16x16" />
+<link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
+<link fetchpriority="low" href="/site.webmanifest" rel="manifest" />
+<title>Robot Design Net</title>
+  <meta name="description" content="Global intelligence hub at the intersection of robotics engineering, morphology, and aesthetics — for the people who build robots." /><link rel="canonical" href="http://localhost:1313/" itemprop="url" />
+
+<meta property="og:title" content="Robotdesign.net">
+<meta
+  property="og:description"
+  content="
+    
+      Global intelligence hub at the intersection of robotics engineering, morphology, and aesthetics — for the people who build robots.
+    
+  ">
+<meta
+  property="og:type"
+  content="
+    website
+  ">
+<meta property="og:url" content="http://localhost:1313/">
+
+
+  <meta itemprop="name" content="Robotdesign.net">
+  <meta itemprop="description" content="Global intelligence hub at the intersection of robotics engineering, morphology, and aesthetics — for the people who build robots.">
+  <meta itemprop="datePublished" content="2026-05-21T12:01:47+09:00">
+  <meta itemprop="dateModified" content="2026-05-21T12:01:47+09:00">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Robotdesign.net">
+  <meta name="twitter:description" content="Global intelligence hub at the intersection of robotics engineering, morphology, and aesthetics — for the people who build robots.">
+<link href="/css/compiled/main.css" rel="stylesheet" />
+    <link href="/css/variables.css" rel="stylesheet" />
+    <link href="/css/custom.css" rel="stylesheet" />
+
+  
+<script src="/js/main-head.js" integrity=""></script>
+
+  
+  
+  </head>
 <body>
     <a href="#content" class="hx:sr-only hx:focus-visible:not-sr-only hx:focus-visible:fixed hx:focus-visible:z-50 hx:focus-visible:top-2 hx:focus-visible:left-2 hx:focus-visible:bg-primary-500 hx:focus-visible:text-white hx:focus-visible:px-4 hx:focus-visible:py-2 hx:focus-visible:rounded-md hx:focus-visible:text-sm hx:focus-visible:font-medium">Skip to content</a><div class="hextra-nav-container hx:sticky hx:top-0 hx:z-20 hx:w-full hx:bg-transparent hx:print:hidden"
   style="position:relative;">
@@ -77,19 +122,34 @@
 </style>
 
 <script>
+  function applyDark() {
+    document.documentElement.classList.add('dark');
+    document.documentElement.style.backgroundColor = '#111827';
+    document.body.style.backgroundColor = '#111827';
+    var sun = document.getElementById('rdn-sun');
+    var moon = document.getElementById('rdn-moon');
+    if (sun) sun.style.display = 'block';
+    if (moon) moon.style.display = 'none';
+  }
+
+  function applyLight() {
+    document.documentElement.classList.remove('dark');
+    document.documentElement.style.backgroundColor = '';
+    document.body.style.backgroundColor = '';
+    var sun = document.getElementById('rdn-sun');
+    var moon = document.getElementById('rdn-moon');
+    if (sun) sun.style.display = 'none';
+    if (moon) moon.style.display = 'block';
+  }
+
   function toggleTheme() {
-    var html = document.documentElement;
-    var isDark = html.classList.contains('dark');
+    var isDark = document.documentElement.classList.contains('dark');
     if (isDark) {
-      html.classList.remove('dark');
+      applyLight();
       localStorage.setItem('theme', 'light');
-      document.getElementById('rdn-sun').style.display = 'none';
-      document.getElementById('rdn-moon').style.display = 'block';
     } else {
-      html.classList.add('dark');
+      applyDark();
       localStorage.setItem('theme', 'dark');
-      document.getElementById('rdn-sun').style.display = 'block';
-      document.getElementById('rdn-moon').style.display = 'none';
     }
   }
 
@@ -97,11 +157,7 @@
     var saved = localStorage.getItem('theme');
     var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
     if (saved === 'dark' || (!saved && prefersDark)) {
-      document.documentElement.classList.add('dark');
-      var sun = document.getElementById('rdn-sun');
-      if (sun) sun.style.display = 'block';
-      var moon = document.getElementById('rdn-moon');
-      if (moon) moon.style.display = 'none';
+      applyDark();
     }
   })();
 
@@ -134,7 +190,7 @@
       May 21, 2026
     </p>
     <h2 style="font-size:1.2rem; font-weight:700; line-height:1.35; margin-bottom:12px;">
-      <a href="http://localhost:51092/posts/20260520-230147-robotics/"
+      <a href="http://localhost:1313/posts/20260520-230147-robotics/"
          style="color:var(--rdn-text-primary); text-decoration:none;"
          onmouseover="this.style.color='var(--rdn-accent)'"
          onmouseout="this.style.color='var(--rdn-text-primary)'">Google Publishes Exploit Code Threatening Millions of Chromium Users: Implications for Robotics Industry</a>
@@ -142,7 +198,7 @@
     <p style="color:var(--rdn-text-secondary); line-height:1.7; margin-bottom:12px; font-size:0.95rem;">
       <p>Google recently disclosed and published exploit code for multiple vulnerabilities in its Chromium browser engine, which powers widely-used applications such as Google Chrome and …</p>
     </p>
-    <a href="http://localhost:51092/posts/20260520-230147-robotics/"
+    <a href="http://localhost:1313/posts/20260520-230147-robotics/"
        style="color:var(--rdn-accent); font-size:0.85rem; text-decoration:none;">Read more →</a>
   </article>
   
@@ -154,7 +210,7 @@
       May 21, 2026
     </p>
     <h2 style="font-size:1.2rem; font-weight:700; line-height:1.35; margin-bottom:12px;">
-      <a href="http://localhost:51092/posts/20260520-220118-robotics/"
+      <a href="http://localhost:1313/posts/20260520-220118-robotics/"
          style="color:var(--rdn-text-primary); text-decoration:none;"
          onmouseover="this.style.color='var(--rdn-accent)'"
          onmouseout="this.style.color='var(--rdn-text-primary)'">Google Publishes Exploit Code Threatening Millions of Chromium Users: Implications for the Robotics Industry</a>
@@ -162,7 +218,7 @@
     <p style="color:var(--rdn-text-secondary); line-height:1.7; margin-bottom:12px; font-size:0.95rem;">
       <p>Google recently disclosed exploit code that poses a significant threat to millions of Chromium-based browser users. This revelation has sent shockwaves through the tech industry, …</p>
     </p>
-    <a href="http://localhost:51092/posts/20260520-220118-robotics/"
+    <a href="http://localhost:1313/posts/20260520-220118-robotics/"
        style="color:var(--rdn-accent); font-size:0.85rem; text-decoration:none;">Read more →</a>
   </article>
   
@@ -174,7 +230,7 @@
       May 21, 2026
     </p>
     <h2 style="font-size:1.2rem; font-weight:700; line-height:1.35; margin-bottom:12px;">
-      <a href="http://localhost:51092/posts/20260520-210102-robotics/"
+      <a href="http://localhost:1313/posts/20260520-210102-robotics/"
          style="color:var(--rdn-text-primary); text-decoration:none;"
          onmouseover="this.style.color='var(--rdn-accent)'"
          onmouseout="this.style.color='var(--rdn-text-primary)'">Google Releases Exploit Code Impacting Millions of Chromium Users: Implications for Robotics and IoT Security</a>
@@ -182,7 +238,7 @@
     <p style="color:var(--rdn-text-secondary); line-height:1.7; margin-bottom:12px; font-size:0.95rem;">
       <p>Google recently published exploit code targeting vulnerabilities in Chromium, the open-source foundation of popular browsers like Google Chrome and Microsoft Edge. This development …</p>
     </p>
-    <a href="http://localhost:51092/posts/20260520-210102-robotics/"
+    <a href="http://localhost:1313/posts/20260520-210102-robotics/"
        style="color:var(--rdn-accent); font-size:0.85rem; text-decoration:none;">Read more →</a>
   </article>
   
@@ -194,7 +250,7 @@
       May 21, 2026
     </p>
     <h2 style="font-size:1.2rem; font-weight:700; line-height:1.35; margin-bottom:12px;">
-      <a href="http://localhost:51092/posts/20260520-200047-robotics/"
+      <a href="http://localhost:1313/posts/20260520-200047-robotics/"
          style="color:var(--rdn-text-primary); text-decoration:none;"
          onmouseover="this.style.color='var(--rdn-accent)'"
          onmouseout="this.style.color='var(--rdn-text-primary)'">Google Publishes Exploit Code Threatening Millions of Chromium Users: A Robotics Industry Perspective</a>
@@ -202,7 +258,7 @@
     <p style="color:var(--rdn-text-secondary); line-height:1.7; margin-bottom:12px; font-size:0.95rem;">
       <p>The recent publication of exploit code by Google poses significant cybersecurity threats to millions of Chromium users, raising alarms across industries, including robotics. …</p>
     </p>
-    <a href="http://localhost:51092/posts/20260520-200047-robotics/"
+    <a href="http://localhost:1313/posts/20260520-200047-robotics/"
        style="color:var(--rdn-accent); font-size:0.85rem; text-decoration:none;">Read more →</a>
   </article>
   
@@ -214,7 +270,7 @@
       May 21, 2026
     </p>
     <h2 style="font-size:1.2rem; font-weight:700; line-height:1.35; margin-bottom:12px;">
-      <a href="http://localhost:51092/posts/20260520-190124-robotics/"
+      <a href="http://localhost:1313/posts/20260520-190124-robotics/"
          style="color:var(--rdn-text-primary); text-decoration:none;"
          onmouseover="this.style.color='var(--rdn-accent)'"
          onmouseout="this.style.color='var(--rdn-text-primary)'">Google&#39;s Publication of Exploit Code Raises Concerns for Chromium-Based Robotics Systems</a>
@@ -222,7 +278,7 @@
     <p style="color:var(--rdn-text-secondary); line-height:1.7; margin-bottom:12px; font-size:0.95rem;">
       <p>Google&rsquo;s recent publication of exploit code targeting Chromium browsers has sent ripples across the robotics industry, particularly for systems relying on Chromium-based …</p>
     </p>
-    <a href="http://localhost:51092/posts/20260520-190124-robotics/"
+    <a href="http://localhost:1313/posts/20260520-190124-robotics/"
        style="color:var(--rdn-accent); font-size:0.85rem; text-decoration:none;">Read more →</a>
   </article>
   
@@ -234,7 +290,7 @@
       May 21, 2026
     </p>
     <h2 style="font-size:1.2rem; font-weight:700; line-height:1.35; margin-bottom:12px;">
-      <a href="http://localhost:51092/posts/20260520-180110-robotics/"
+      <a href="http://localhost:1313/posts/20260520-180110-robotics/"
          style="color:var(--rdn-text-primary); text-decoration:none;"
          onmouseover="this.style.color='var(--rdn-accent)'"
          onmouseout="this.style.color='var(--rdn-text-primary)'">Google Publishes Exploit Code Threatening Millions of Chromium Users: Implications for Robotics Industry</a>
@@ -242,7 +298,7 @@
     <p style="color:var(--rdn-text-secondary); line-height:1.7; margin-bottom:12px; font-size:0.95rem;">
       <p>Google&rsquo;s recent publication of exploit code targeting vulnerabilities in Chromium has sent shockwaves across the tech industry, with potential repercussions extending to the …</p>
     </p>
-    <a href="http://localhost:51092/posts/20260520-180110-robotics/"
+    <a href="http://localhost:1313/posts/20260520-180110-robotics/"
        style="color:var(--rdn-accent); font-size:0.85rem; text-decoration:none;">Read more →</a>
   </article>
   
@@ -254,7 +310,7 @@
       May 21, 2026
     </p>
     <h2 style="font-size:1.2rem; font-weight:700; line-height:1.35; margin-bottom:12px;">
-      <a href="http://localhost:51092/posts/20260520-170122-robotics/"
+      <a href="http://localhost:1313/posts/20260520-170122-robotics/"
          style="color:var(--rdn-text-primary); text-decoration:none;"
          onmouseover="this.style.color='var(--rdn-accent)'"
          onmouseout="this.style.color='var(--rdn-text-primary)'">Google Publishes Exploit Code Threatening Millions of Chromium Users: Implications for Robotics Industry</a>
@@ -262,7 +318,7 @@
     <p style="color:var(--rdn-text-secondary); line-height:1.7; margin-bottom:12px; font-size:0.95rem;">
       <p>Google&rsquo;s recent publication of exploit code targeting Chromium-based browsers has significant implications for the robotics industry, particularly as robotic systems …</p>
     </p>
-    <a href="http://localhost:51092/posts/20260520-170122-robotics/"
+    <a href="http://localhost:1313/posts/20260520-170122-robotics/"
        style="color:var(--rdn-accent); font-size:0.85rem; text-decoration:none;">Read more →</a>
   </article>
   
@@ -274,7 +330,7 @@
       May 21, 2026
     </p>
     <h2 style="font-size:1.2rem; font-weight:700; line-height:1.35; margin-bottom:12px;">
-      <a href="http://localhost:51092/posts/20260520-150131-robotics/"
+      <a href="http://localhost:1313/posts/20260520-150131-robotics/"
          style="color:var(--rdn-text-primary); text-decoration:none;"
          onmouseover="this.style.color='var(--rdn-accent)'"
          onmouseout="this.style.color='var(--rdn-text-primary)'">Boston Metal Accelerates Focus on Critical Metals for Green Steel Production</a>
@@ -282,7 +338,7 @@
     <p style="color:var(--rdn-text-secondary); line-height:1.7; margin-bottom:12px; font-size:0.95rem;">
       <p>Boston Metal, a pioneering green steel startup, is intensifying its efforts to harness critical metals essential for sustainable steel production. The company, known for its …</p>
     </p>
-    <a href="http://localhost:51092/posts/20260520-150131-robotics/"
+    <a href="http://localhost:1313/posts/20260520-150131-robotics/"
        style="color:var(--rdn-accent); font-size:0.85rem; text-decoration:none;">Read more →</a>
   </article>
   
@@ -294,7 +350,7 @@
       May 21, 2026
     </p>
     <h2 style="font-size:1.2rem; font-weight:700; line-height:1.35; margin-bottom:12px;">
-      <a href="http://localhost:51092/posts/20260520-233138-robotics/"
+      <a href="http://localhost:1313/posts/20260520-233138-robotics/"
          style="color:var(--rdn-text-primary); text-decoration:none;"
          onmouseover="this.style.color='var(--rdn-accent)'"
          onmouseout="this.style.color='var(--rdn-text-primary)'">New Collaborative Robot Arm Achieves Unprecedented Speed and Precision</a>
@@ -302,7 +358,7 @@
     <p style="color:var(--rdn-text-secondary); line-height:1.7; margin-bottom:12px; font-size:0.95rem;">
       <p><strong>Lead:</strong> A new collaborative robot arm from Universal Robots promises to transform manufacturing workflows by combining human-safe operation with industrial-grade speed and precision. …</p>
     </p>
-    <a href="http://localhost:51092/posts/20260520-233138-robotics/"
+    <a href="http://localhost:1313/posts/20260520-233138-robotics/"
        style="color:var(--rdn-accent); font-size:0.85rem; text-decoration:none;">Read more →</a>
   </article>
   
@@ -314,7 +370,7 @@
       May 21, 2026
     </p>
     <h2 style="font-size:1.2rem; font-weight:700; line-height:1.35; margin-bottom:12px;">
-      <a href="http://localhost:51092/posts/20260520-232458-robotics/"
+      <a href="http://localhost:1313/posts/20260520-232458-robotics/"
          style="color:var(--rdn-text-primary); text-decoration:none;"
          onmouseover="this.style.color='var(--rdn-accent)'"
          onmouseout="this.style.color='var(--rdn-text-primary)'">Agility Robotics&#39; Digit humanoid begins warehouse trial with GXO</a>
@@ -323,7 +379,7 @@
       <p><strong>Lead</strong>
 Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live warehouse setting for logistics giant GXO. This marks a significant step toward commercializing …</p>
     </p>
-    <a href="http://localhost:51092/posts/20260520-232458-robotics/"
+    <a href="http://localhost:1313/posts/20260520-232458-robotics/"
        style="color:var(--rdn-accent); font-size:0.85rem; text-decoration:none;">Read more →</a>
   </article>
   

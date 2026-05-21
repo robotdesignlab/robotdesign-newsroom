@@ -1,5 +1,49 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=51092&amp;path=livereload" data-no-instant defer></script><link rel="stylesheet" href="/css/custom.css">
+<html lang="en" dir="ltr"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="robots" content="noindex, nofollow" />
+  <link rel="icon shortcut" href="/favicon.ico" sizes="32x32" />
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" id="favicon-svg" />
+<link rel="icon" href="/favicon-16x16.png" type="image/png" sizes="16x16" />
+<link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
+<link fetchpriority="low" href="/site.webmanifest" rel="manifest" />
+<title>Manufacturing – Robot Design Net</title>
+  <meta name="description" content="" /><link rel="canonical" href="http://localhost:1313/tags/manufacturing/" itemprop="url" />
+
+<meta property="og:title" content="Manufacturing">
+<meta
+  property="og:description"
+  content="
+    
+      Global intelligence hub at the intersection of robotics engineering, morphology, and aesthetics — for the people who build robots.
+    
+  ">
+<meta
+  property="og:type"
+  content="
+    website
+  ">
+<meta property="og:url" content="http://localhost:1313/tags/manufacturing/">
+
+
+  <meta itemprop="name" content="Manufacturing">
+  <meta itemprop="description" content="Global intelligence hub at the intersection of robotics engineering, morphology, and aesthetics — for the people who build robots.">
+  <meta itemprop="datePublished" content="2026-05-16T15:22:28+09:00">
+  <meta itemprop="dateModified" content="2026-05-16T15:22:28+09:00">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Manufacturing">
+  <meta name="twitter:description" content="Global intelligence hub at the intersection of robotics engineering, morphology, and aesthetics — for the people who build robots.">
+<link href="/css/compiled/main.css" rel="stylesheet" />
+    <link href="/css/variables.css" rel="stylesheet" />
+    <link href="/css/custom.css" rel="stylesheet" />
+
+  
+<script src="/js/main-head.js" integrity=""></script>
+
+  
+  
+  </head>
 <body>
     <a href="#content" class="hx:sr-only hx:focus-visible:not-sr-only hx:focus-visible:fixed hx:focus-visible:z-50 hx:focus-visible:top-2 hx:focus-visible:left-2 hx:focus-visible:bg-primary-500 hx:focus-visible:text-white hx:focus-visible:px-4 hx:focus-visible:py-2 hx:focus-visible:rounded-md hx:focus-visible:text-sm hx:focus-visible:font-medium">Skip to content</a><div class="hextra-nav-container hx:sticky hx:top-0 hx:z-20 hx:w-full hx:bg-transparent hx:print:hidden"
   style="position:relative;">
@@ -77,19 +121,34 @@
 </style>
 
 <script>
+  function applyDark() {
+    document.documentElement.classList.add('dark');
+    document.documentElement.style.backgroundColor = '#111827';
+    document.body.style.backgroundColor = '#111827';
+    var sun = document.getElementById('rdn-sun');
+    var moon = document.getElementById('rdn-moon');
+    if (sun) sun.style.display = 'block';
+    if (moon) moon.style.display = 'none';
+  }
+
+  function applyLight() {
+    document.documentElement.classList.remove('dark');
+    document.documentElement.style.backgroundColor = '';
+    document.body.style.backgroundColor = '';
+    var sun = document.getElementById('rdn-sun');
+    var moon = document.getElementById('rdn-moon');
+    if (sun) sun.style.display = 'none';
+    if (moon) moon.style.display = 'block';
+  }
+
   function toggleTheme() {
-    var html = document.documentElement;
-    var isDark = html.classList.contains('dark');
+    var isDark = document.documentElement.classList.contains('dark');
     if (isDark) {
-      html.classList.remove('dark');
+      applyLight();
       localStorage.setItem('theme', 'light');
-      document.getElementById('rdn-sun').style.display = 'none';
-      document.getElementById('rdn-moon').style.display = 'block';
     } else {
-      html.classList.add('dark');
+      applyDark();
       localStorage.setItem('theme', 'dark');
-      document.getElementById('rdn-sun').style.display = 'block';
-      document.getElementById('rdn-moon').style.display = 'none';
     }
   }
 
@@ -97,11 +156,7 @@
     var saved = localStorage.getItem('theme');
     var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
     if (saved === 'dark' || (!saved && prefersDark)) {
-      document.documentElement.classList.add('dark');
-      var sun = document.getElementById('rdn-sun');
-      if (sun) sun.style.display = 'block';
-      var moon = document.getElementById('rdn-moon');
-      if (moon) moon.style.display = 'none';
+      applyDark();
     }
   })();
 

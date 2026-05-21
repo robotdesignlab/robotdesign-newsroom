@@ -138,3 +138,28 @@
   color: var(--rdn-credit);
   margin-top: 8px;
 }
+
+/* ── 다크 모드 배경 보정 ── */
+.dark body {
+  background-color: #0f172a !important;
+}
+
+.dark main,
+.dark .hx\:bg-white {
+  background-color: #0f172a !important;
+}
+
+.dark .hextra-nav-container-blur {
+  background-color: #0f172a !important;
+}
+
+.dark .hextra-nav-container-blur {
+  background-color: #0f172a !important;
+}
+
+#rdn-theme-toggle {
+  outline: none !important;
+  box-shadow: none !important;
+  border: none !important;
+  background: transparent !important;
+}

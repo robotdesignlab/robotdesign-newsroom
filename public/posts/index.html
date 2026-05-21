@@ -1,5 +1,49 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=51092&amp;path=livereload" data-no-instant defer></script><link rel="stylesheet" href="/css/custom.css">
+<html lang="en" dir="ltr"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="robots" content="noindex, nofollow" />
+  <link rel="icon shortcut" href="/favicon.ico" sizes="32x32" />
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" id="favicon-svg" />
+<link rel="icon" href="/favicon-16x16.png" type="image/png" sizes="16x16" />
+<link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
+<link fetchpriority="low" href="/site.webmanifest" rel="manifest" />
+<title>Articles – Robot Design Net</title>
+  <meta name="description" content="" /><link rel="canonical" href="http://localhost:1313/posts/" itemprop="url" />
+
+<meta property="og:title" content="Articles">
+<meta
+  property="og:description"
+  content="
+    
+      Global intelligence hub at the intersection of robotics engineering, morphology, and aesthetics — for the people who build robots.
+    
+  ">
+<meta
+  property="og:type"
+  content="
+    website
+  ">
+<meta property="og:url" content="http://localhost:1313/posts/">
+
+
+  <meta itemprop="name" content="Articles">
+  <meta itemprop="description" content="Global intelligence hub at the intersection of robotics engineering, morphology, and aesthetics — for the people who build robots.">
+  <meta itemprop="datePublished" content="2026-05-21T12:01:47+09:00">
+  <meta itemprop="dateModified" content="2026-05-21T12:01:47+09:00">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Articles">
+  <meta name="twitter:description" content="Global intelligence hub at the intersection of robotics engineering, morphology, and aesthetics — for the people who build robots.">
+<link href="/css/compiled/main.css" rel="stylesheet" />
+    <link href="/css/variables.css" rel="stylesheet" />
+    <link href="/css/custom.css" rel="stylesheet" />
+
+  
+<script src="/js/main-head.js" integrity=""></script>
+
+  
+  
+  </head>
 <body>
     <a href="#content" class="hx:sr-only hx:focus-visible:not-sr-only hx:focus-visible:fixed hx:focus-visible:z-50 hx:focus-visible:top-2 hx:focus-visible:left-2 hx:focus-visible:bg-primary-500 hx:focus-visible:text-white hx:focus-visible:px-4 hx:focus-visible:py-2 hx:focus-visible:rounded-md hx:focus-visible:text-sm hx:focus-visible:font-medium">Skip to content</a><div class="hextra-nav-container hx:sticky hx:top-0 hx:z-20 hx:w-full hx:bg-transparent hx:print:hidden"
   style="position:relative;">
@@ -77,19 +121,34 @@
 </style>
 
 <script>
+  function applyDark() {
+    document.documentElement.classList.add('dark');
+    document.documentElement.style.backgroundColor = '#111827';
+    document.body.style.backgroundColor = '#111827';
+    var sun = document.getElementById('rdn-sun');
+    var moon = document.getElementById('rdn-moon');
+    if (sun) sun.style.display = 'block';
+    if (moon) moon.style.display = 'none';
+  }
+
+  function applyLight() {
+    document.documentElement.classList.remove('dark');
+    document.documentElement.style.backgroundColor = '';
+    document.body.style.backgroundColor = '';
+    var sun = document.getElementById('rdn-sun');
+    var moon = document.getElementById('rdn-moon');
+    if (sun) sun.style.display = 'none';
+    if (moon) moon.style.display = 'block';
+  }
+
   function toggleTheme() {
-    var html = document.documentElement;
-    var isDark = html.classList.contains('dark');
+    var isDark = document.documentElement.classList.contains('dark');
     if (isDark) {
-      html.classList.remove('dark');
+      applyLight();
       localStorage.setItem('theme', 'light');
-      document.getElementById('rdn-sun').style.display = 'none';
-      document.getElementById('rdn-moon').style.display = 'block';
     } else {
-      html.classList.add('dark');
+      applyDark();
       localStorage.setItem('theme', 'dark');
-      document.getElementById('rdn-sun').style.display = 'block';
-      document.getElementById('rdn-moon').style.display = 'none';
     }
   }
 
@@ -97,11 +156,7 @@
     var saved = localStorage.getItem('theme');
     var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
     if (saved === 'dark' || (!saved && prefersDark)) {
-      document.documentElement.classList.add('dark');
-      var sun = document.getElementById('rdn-sun');
-      if (sun) sun.style.display = 'block';
-      var moon = document.getElementById('rdn-moon');
-      if (moon) moon.style.display = 'none';
+      applyDark();
     }
   })();
 
@@ -138,7 +193,7 @@
       May 21, 2026
     </p>
     <h2 style="font-size:1.3rem; font-weight:700; margin-bottom:12px; line-height:1.3;">
-      <a href="http://localhost:51092/posts/20260520-230147-robotics/"
+      <a href="http://localhost:1313/posts/20260520-230147-robotics/"
          style="color:var(--rdn-text-primary); text-decoration:none;"
          onmouseover="this.style.color='var(--rdn-accent)'"
          onmouseout="this.style.color='var(--rdn-text-primary)'">Google Publishes Exploit Code Threatening Millions of Chromium Users: Implications for Robotics Industry</a>
@@ -146,7 +201,7 @@
     <p style="color:var(--rdn-text-secondary); line-height:1.7; margin-bottom:12px; font-size:0.95rem;">
       <p>Google recently disclosed and published exploit code for multiple vulnerabilities in its Chromium browser engine, which powers widely-used applications such as Google Chrome and …</p>
     </p>
-    <a href="http://localhost:51092/posts/20260520-230147-robotics/"
+    <a href="http://localhost:1313/posts/20260520-230147-robotics/"
        style="color:var(--rdn-accent); font-size:0.85rem; text-decoration:none;">Read more →</a>
   </article>
   
@@ -159,7 +214,7 @@
       May 21, 2026
     </p>
     <h2 style="font-size:1.3rem; font-weight:700; margin-bottom:12px; line-height:1.3;">
-      <a href="http://localhost:51092/posts/20260520-220118-robotics/"
+      <a href="http://localhost:1313/posts/20260520-220118-robotics/"
          style="color:var(--rdn-text-primary); text-decoration:none;"
          onmouseover="this.style.color='var(--rdn-accent)'"
          onmouseout="this.style.color='var(--rdn-text-primary)'">Google Publishes Exploit Code Threatening Millions of Chromium Users: Implications for the Robotics Industry</a>
@@ -167,7 +222,7 @@
     <p style="color:var(--rdn-text-secondary); line-height:1.7; margin-bottom:12px; font-size:0.95rem;">
       <p>Google recently disclosed exploit code that poses a significant threat to millions of Chromium-based browser users. This revelation has sent shockwaves through the tech industry, …</p>
     </p>
-    <a href="http://localhost:51092/posts/20260520-220118-robotics/"
+    <a href="http://localhost:1313/posts/20260520-220118-robotics/"
        style="color:var(--rdn-accent); font-size:0.85rem; text-decoration:none;">Read more →</a>
   </article>
   
@@ -180,7 +235,7 @@
       May 21, 2026
     </p>
     <h2 style="font-size:1.3rem; font-weight:700; margin-bottom:12px; line-height:1.3;">
-      <a href="http://localhost:51092/posts/20260520-210102-robotics/"
+      <a href="http://localhost:1313/posts/20260520-210102-robotics/"
          style="color:var(--rdn-text-primary); text-decoration:none;"
          onmouseover="this.style.color='var(--rdn-accent)'"
          onmouseout="this.style.color='var(--rdn-text-primary)'">Google Releases Exploit Code Impacting Millions of Chromium Users: Implications for Robotics and IoT Security</a>
@@ -188,7 +243,7 @@
     <p style="color:var(--rdn-text-secondary); line-height:1.7; margin-bottom:12px; font-size:0.95rem;">
       <p>Google recently published exploit code targeting vulnerabilities in Chromium, the open-source foundation of popular browsers like Google Chrome and Microsoft Edge. This development …</p>
     </p>
-    <a href="http://localhost:51092/posts/20260520-210102-robotics/"
+    <a href="http://localhost:1313/posts/20260520-210102-robotics/"
        style="color:var(--rdn-accent); font-size:0.85rem; text-decoration:none;">Read more →</a>
   </article>
   
@@ -201,7 +256,7 @@
       May 21, 2026
     </p>
     <h2 style="font-size:1.3rem; font-weight:700; margin-bottom:12px; line-height:1.3;">
-      <a href="http://localhost:51092/posts/20260520-200047-robotics/"
+      <a href="http://localhost:1313/posts/20260520-200047-robotics/"
          style="color:var(--rdn-text-primary); text-decoration:none;"
          onmouseover="this.style.color='var(--rdn-accent)'"
          onmouseout="this.style.color='var(--rdn-text-primary)'">Google Publishes Exploit Code Threatening Millions of Chromium Users: A Robotics Industry Perspective</a>
@@ -209,7 +264,7 @@
     <p style="color:var(--rdn-text-secondary); line-height:1.7; margin-bottom:12px; font-size:0.95rem;">
       <p>The recent publication of exploit code by Google poses significant cybersecurity threats to millions of Chromium users, raising alarms across industries, including robotics. …</p>
     </p>
-    <a href="http://localhost:51092/posts/20260520-200047-robotics/"
+    <a href="http://localhost:1313/posts/20260520-200047-robotics/"
        style="color:var(--rdn-accent); font-size:0.85rem; text-decoration:none;">Read more →</a>
   </article>
   
@@ -222,7 +277,7 @@
       May 21, 2026
     </p>
     <h2 style="font-size:1.3rem; font-weight:700; margin-bottom:12px; line-height:1.3;">
-      <a href="http://localhost:51092/posts/20260520-190124-robotics/"
+      <a href="http://localhost:1313/posts/20260520-190124-robotics/"
          style="color:var(--rdn-text-primary); text-decoration:none;"
          onmouseover="this.style.color='var(--rdn-accent)'"
          onmouseout="this.style.color='var(--rdn-text-primary)'">Google&#39;s Publication of Exploit Code Raises Concerns for Chromium-Based Robotics Systems</a>
@@ -230,7 +285,7 @@
     <p style="color:var(--rdn-text-secondary); line-height:1.7; margin-bottom:12px; font-size:0.95rem;">
       <p>Google&rsquo;s recent publication of exploit code targeting Chromium browsers has sent ripples across the robotics industry, particularly for systems relying on Chromium-based …</p>
     </p>
-    <a href="http://localhost:51092/posts/20260520-190124-robotics/"
+    <a href="http://localhost:1313/posts/20260520-190124-robotics/"
        style="color:var(--rdn-accent); font-size:0.85rem; text-decoration:none;">Read more →</a>
   </article>
   
@@ -243,7 +298,7 @@
       May 21, 2026
     </p>
     <h2 style="font-size:1.3rem; font-weight:700; margin-bottom:12px; line-height:1.3;">
-      <a href="http://localhost:51092/posts/20260520-180110-robotics/"
+      <a href="http://localhost:1313/posts/20260520-180110-robotics/"
          style="color:var(--rdn-text-primary); text-decoration:none;"
          onmouseover="this.style.color='var(--rdn-accent)'"
          onmouseout="this.style.color='var(--rdn-text-primary)'">Google Publishes Exploit Code Threatening Millions of Chromium Users: Implications for Robotics Industry</a>
@@ -251,7 +306,7 @@
     <p style="color:var(--rdn-text-secondary); line-height:1.7; margin-bottom:12px; font-size:0.95rem;">
       <p>Google&rsquo;s recent publication of exploit code targeting vulnerabilities in Chromium has sent shockwaves across the tech industry, with potential repercussions extending to the …</p>
     </p>
-    <a href="http://localhost:51092/posts/20260520-180110-robotics/"
+    <a href="http://localhost:1313/posts/20260520-180110-robotics/"
        style="color:var(--rdn-accent); font-size:0.85rem; text-decoration:none;">Read more →</a>
   </article>
   
@@ -264,7 +319,7 @@
       May 21, 2026
     </p>
     <h2 style="font-size:1.3rem; font-weight:700; margin-bottom:12px; line-height:1.3;">
-      <a href="http://localhost:51092/posts/20260520-170122-robotics/"
+      <a href="http://localhost:1313/posts/20260520-170122-robotics/"
          style="color:var(--rdn-text-primary); text-decoration:none;"
          onmouseover="this.style.color='var(--rdn-accent)'"
          onmouseout="this.style.color='var(--rdn-text-primary)'">Google Publishes Exploit Code Threatening Millions of Chromium Users: Implications for Robotics Industry</a>
@@ -272,7 +327,7 @@
     <p style="color:var(--rdn-text-secondary); line-height:1.7; margin-bottom:12px; font-size:0.95rem;">
       <p>Google&rsquo;s recent publication of exploit code targeting Chromium-based browsers has significant implications for the robotics industry, particularly as robotic systems …</p>
     </p>
-    <a href="http://localhost:51092/posts/20260520-170122-robotics/"
+    <a href="http://localhost:1313/posts/20260520-170122-robotics/"
        style="color:var(--rdn-accent); font-size:0.85rem; text-decoration:none;">Read more →</a>
   </article>
   
@@ -285,7 +340,7 @@
       May 21, 2026
     </p>
     <h2 style="font-size:1.3rem; font-weight:700; margin-bottom:12px; line-height:1.3;">
-      <a href="http://localhost:51092/posts/20260520-150131-robotics/"
+      <a href="http://localhost:1313/posts/20260520-150131-robotics/"
          style="color:var(--rdn-text-primary); text-decoration:none;"
          onmouseover="this.style.color='var(--rdn-accent)'"
          onmouseout="this.style.color='var(--rdn-text-primary)'">Boston Metal Accelerates Focus on Critical Metals for Green Steel Production</a>
@@ -293,7 +348,7 @@
     <p style="color:var(--rdn-text-secondary); line-height:1.7; margin-bottom:12px; font-size:0.95rem;">
       <p>Boston Metal, a pioneering green steel startup, is intensifying its efforts to harness critical metals essential for sustainable steel production. The company, known for its …</p>
     </p>
-    <a href="http://localhost:51092/posts/20260520-150131-robotics/"
+    <a href="http://localhost:1313/posts/20260520-150131-robotics/"
        style="color:var(--rdn-accent); font-size:0.85rem; text-decoration:none;">Read more →</a>
   </article>
   
@@ -306,7 +361,7 @@
       May 21, 2026
     </p>
     <h2 style="font-size:1.3rem; font-weight:700; margin-bottom:12px; line-height:1.3;">
-      <a href="http://localhost:51092/posts/20260520-233138-robotics/"
+      <a href="http://localhost:1313/posts/20260520-233138-robotics/"
          style="color:var(--rdn-text-primary); text-decoration:none;"
          onmouseover="this.style.color='var(--rdn-accent)'"
          onmouseout="this.style.color='var(--rdn-text-primary)'">New Collaborative Robot Arm Achieves Unprecedented Speed and Precision</a>
@@ -314,7 +369,7 @@
     <p style="color:var(--rdn-text-secondary); line-height:1.7; margin-bottom:12px; font-size:0.95rem;">
       <p><strong>Lead:</strong> A new collaborative robot arm from Universal Robots promises to transform manufacturing workflows by combining human-safe operation with industrial-grade speed and precision. …</p>
     </p>
-    <a href="http://localhost:51092/posts/20260520-233138-robotics/"
+    <a href="http://localhost:1313/posts/20260520-233138-robotics/"
        style="color:var(--rdn-accent); font-size:0.85rem; text-decoration:none;">Read more →</a>
   </article>
   
@@ -327,7 +382,7 @@
       May 21, 2026
     </p>
     <h2 style="font-size:1.3rem; font-weight:700; margin-bottom:12px; line-height:1.3;">
-      <a href="http://localhost:51092/posts/20260520-232458-robotics/"
+      <a href="http://localhost:1313/posts/20260520-232458-robotics/"
          style="color:var(--rdn-text-primary); text-decoration:none;"
          onmouseover="this.style.color='var(--rdn-accent)'"
          onmouseout="this.style.color='var(--rdn-text-primary)'">Agility Robotics&#39; Digit humanoid begins warehouse trial with GXO</a>
@@ -336,7 +391,7 @@
       <p><strong>Lead</strong>
 Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live warehouse setting for logistics giant GXO. This marks a significant step toward commercializing …</p>
     </p>
-    <a href="http://localhost:51092/posts/20260520-232458-robotics/"
+    <a href="http://localhost:1313/posts/20260520-232458-robotics/"
        style="color:var(--rdn-accent); font-size:0.85rem; text-decoration:none;">Read more →</a>
   </article>
   
@@ -349,7 +404,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
       May 21, 2026
     </p>
     <h2 style="font-size:1.3rem; font-weight:700; margin-bottom:12px; line-height:1.3;">
-      <a href="http://localhost:51092/posts/20260520-130116-robotics/"
+      <a href="http://localhost:1313/posts/20260520-130116-robotics/"
          style="color:var(--rdn-text-primary); text-decoration:none;"
          onmouseover="this.style.color='var(--rdn-accent)'"
          onmouseout="this.style.color='var(--rdn-text-primary)'">Boston Metal Shifts Focus to Critical Metals in Green Steel Production</a>
@@ -357,7 +412,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
     <p style="color:var(--rdn-text-secondary); line-height:1.7; margin-bottom:12px; font-size:0.95rem;">
       <p>Boston Metal, a pioneering green steel startup, is making headlines with its strategic pivot toward critical metals essential for sustainable manufacturing. The company, known for …</p>
     </p>
-    <a href="http://localhost:51092/posts/20260520-130116-robotics/"
+    <a href="http://localhost:1313/posts/20260520-130116-robotics/"
        style="color:var(--rdn-accent); font-size:0.85rem; text-decoration:none;">Read more →</a>
   </article>
   
@@ -370,7 +425,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
       May 21, 2026
     </p>
     <h2 style="font-size:1.3rem; font-weight:700; margin-bottom:12px; line-height:1.3;">
-      <a href="http://localhost:51092/posts/20260520-120117-robotics/"
+      <a href="http://localhost:1313/posts/20260520-120117-robotics/"
          style="color:var(--rdn-text-primary); text-decoration:none;"
          onmouseover="this.style.color='var(--rdn-accent)'"
          onmouseout="this.style.color='var(--rdn-text-primary)'">Boston Metal Secures $75 Million Investment to Revolutionize Critical Metals Production</a>
@@ -378,7 +433,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
     <p style="color:var(--rdn-text-secondary); line-height:1.7; margin-bottom:12px; font-size:0.95rem;">
       <p>Boston Metal, a Massachusetts-based startup focused on revolutionizing the production of critical metals, has recently secured a $75 million investment. This significant funding …</p>
     </p>
-    <a href="http://localhost:51092/posts/20260520-120117-robotics/"
+    <a href="http://localhost:1313/posts/20260520-120117-robotics/"
        style="color:var(--rdn-accent); font-size:0.85rem; text-decoration:none;">Read more →</a>
   </article>
   
@@ -391,7 +446,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
       May 21, 2026
     </p>
     <h2 style="font-size:1.3rem; font-weight:700; margin-bottom:12px; line-height:1.3;">
-      <a href="http://localhost:51092/posts/20260520-110059-robotics/"
+      <a href="http://localhost:1313/posts/20260520-110059-robotics/"
          style="color:var(--rdn-text-primary); text-decoration:none;"
          onmouseover="this.style.color='var(--rdn-accent)'"
          onmouseout="this.style.color='var(--rdn-text-primary)'">Boston Metal Secures $75 Million Investment to Revolutionize Critical Metal Production</a>
@@ -399,7 +454,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
     <p style="color:var(--rdn-text-secondary); line-height:1.7; margin-bottom:12px; font-size:0.95rem;">
       <p>Boston Metal, a leading innovator in the field of sustainable metal production, has secured a significant $75 million investment to advance its groundbreaking technology. This …</p>
     </p>
-    <a href="http://localhost:51092/posts/20260520-110059-robotics/"
+    <a href="http://localhost:1313/posts/20260520-110059-robotics/"
        style="color:var(--rdn-accent); font-size:0.85rem; text-decoration:none;">Read more →</a>
   </article>
   
@@ -412,7 +467,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
       May 20, 2026
     </p>
     <h2 style="font-size:1.3rem; font-weight:700; margin-bottom:12px; line-height:1.3;">
-      <a href="http://localhost:51092/posts/20260520-100105-robotics/"
+      <a href="http://localhost:1313/posts/20260520-100105-robotics/"
          style="color:var(--rdn-text-primary); text-decoration:none;"
          onmouseover="this.style.color='var(--rdn-accent)'"
          onmouseout="this.style.color='var(--rdn-text-primary)'">Boston Metal Secures $75 Million Investment for Critical Metals Production</a>
@@ -420,7 +475,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
     <p style="color:var(--rdn-text-secondary); line-height:1.7; margin-bottom:12px; font-size:0.95rem;">
       <p>Boston Metal, a pioneering company in the field of clean metal production, has announced a significant $75 million investment to scale its innovative technology for extracting …</p>
     </p>
-    <a href="http://localhost:51092/posts/20260520-100105-robotics/"
+    <a href="http://localhost:1313/posts/20260520-100105-robotics/"
        style="color:var(--rdn-accent); font-size:0.85rem; text-decoration:none;">Read more →</a>
   </article>
   
@@ -433,7 +488,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
       May 20, 2026
     </p>
     <h2 style="font-size:1.3rem; font-weight:700; margin-bottom:12px; line-height:1.3;">
-      <a href="http://localhost:51092/posts/20260520-090153-robotics/"
+      <a href="http://localhost:1313/posts/20260520-090153-robotics/"
          style="color:var(--rdn-text-primary); text-decoration:none;"
          onmouseover="this.style.color='var(--rdn-accent)'"
          onmouseout="this.style.color='var(--rdn-text-primary)'">The Download: Fully Artificial Chicken Eggs and Why Musk Lost</a>
@@ -441,7 +496,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
     <p style="color:var(--rdn-text-secondary); line-height:1.7; margin-bottom:12px; font-size:0.95rem;">
       <p>The robotics industry continues to push boundaries, with one of the latest innovations being fully artificial chicken eggs. This development marks a significant leap in food …</p>
     </p>
-    <a href="http://localhost:51092/posts/20260520-090153-robotics/"
+    <a href="http://localhost:1313/posts/20260520-090153-robotics/"
        style="color:var(--rdn-accent); font-size:0.85rem; text-decoration:none;">Read more →</a>
   </article>
   
@@ -454,7 +509,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
       May 20, 2026
     </p>
     <h2 style="font-size:1.3rem; font-weight:700; margin-bottom:12px; line-height:1.3;">
-      <a href="http://localhost:51092/posts/20260520-080045-robotics/"
+      <a href="http://localhost:1313/posts/20260520-080045-robotics/"
          style="color:var(--rdn-text-primary); text-decoration:none;"
          onmouseover="this.style.color='var(--rdn-accent)'"
          onmouseout="this.style.color='var(--rdn-text-primary)'">Roundtables: Inside the Musk v. Altman Trial</a>
@@ -462,7 +517,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
     <p style="color:var(--rdn-text-secondary); line-height:1.7; margin-bottom:12px; font-size:0.95rem;">
       <p>The ongoing legal battle between Elon Musk and Sam Altman has become a focal point for the robotics and AI industries, highlighting critical debates around innovation, intellectual …</p>
     </p>
-    <a href="http://localhost:51092/posts/20260520-080045-robotics/"
+    <a href="http://localhost:1313/posts/20260520-080045-robotics/"
        style="color:var(--rdn-accent); font-size:0.85rem; text-decoration:none;">Read more →</a>
   </article>
   
@@ -475,7 +530,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
       May 20, 2026
     </p>
     <h2 style="font-size:1.3rem; font-weight:700; margin-bottom:12px; line-height:1.3;">
-      <a href="http://localhost:51092/posts/20260520-070115-robotics/"
+      <a href="http://localhost:1313/posts/20260520-070115-robotics/"
          style="color:var(--rdn-text-primary); text-decoration:none;"
          onmouseover="this.style.color='var(--rdn-accent)'"
          onmouseout="this.style.color='var(--rdn-text-primary)'">Roundtables: Inside the Musk v. Altman Trial: Implications for the Robotics Industry</a>
@@ -483,7 +538,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
     <p style="color:var(--rdn-text-secondary); line-height:1.7; margin-bottom:12px; font-size:0.95rem;">
       <p>The much-publicized trial between Elon Musk and Sam Altman has captivated the tech and robotics industries, sparking debates about innovation, intellectual property, and the future …</p>
     </p>
-    <a href="http://localhost:51092/posts/20260520-070115-robotics/"
+    <a href="http://localhost:1313/posts/20260520-070115-robotics/"
        style="color:var(--rdn-accent); font-size:0.85rem; text-decoration:none;">Read more →</a>
   </article>
   
@@ -496,7 +551,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
       May 20, 2026
     </p>
     <h2 style="font-size:1.3rem; font-weight:700; margin-bottom:12px; line-height:1.3;">
-      <a href="http://localhost:51092/posts/20260520-050102-robotics/"
+      <a href="http://localhost:1313/posts/20260520-050102-robotics/"
          style="color:var(--rdn-text-primary); text-decoration:none;"
          onmouseover="this.style.color='var(--rdn-accent)'"
          onmouseout="this.style.color='var(--rdn-text-primary)'">Roundtables: Inside the Musk v. Altman Trial</a>
@@ -504,7 +559,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
     <p style="color:var(--rdn-text-secondary); line-height:1.7; margin-bottom:12px; font-size:0.95rem;">
       <p>The recent trial between Elon Musk and Sam Altman has captivated the tech and robotics industries, shedding light on the complexities of leadership and innovation in AI …</p>
     </p>
-    <a href="http://localhost:51092/posts/20260520-050102-robotics/"
+    <a href="http://localhost:1313/posts/20260520-050102-robotics/"
        style="color:var(--rdn-accent); font-size:0.85rem; text-decoration:none;">Read more →</a>
   </article>
   
@@ -517,7 +572,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
       May 20, 2026
     </p>
     <h2 style="font-size:1.3rem; font-weight:700; margin-bottom:12px; line-height:1.3;">
-      <a href="http://localhost:51092/posts/20260520-040042-robotics/"
+      <a href="http://localhost:1313/posts/20260520-040042-robotics/"
          style="color:var(--rdn-text-primary); text-decoration:none;"
          onmouseover="this.style.color='var(--rdn-accent)'"
          onmouseout="this.style.color='var(--rdn-text-primary)'">Roundtables: Inside the Musk v. Altman Trial and Its Implications for the Robotics Industry</a>
@@ -525,7 +580,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
     <p style="color:var(--rdn-text-secondary); line-height:1.7; margin-bottom:12px; font-size:0.95rem;">
       <p>The recent legal showdown between tech titans Elon Musk and Sam Altman has sent ripples through the robotics industry, raising critical questions about intellectual property (IP), …</p>
     </p>
-    <a href="http://localhost:51092/posts/20260520-040042-robotics/"
+    <a href="http://localhost:1313/posts/20260520-040042-robotics/"
        style="color:var(--rdn-accent); font-size:0.85rem; text-decoration:none;">Read more →</a>
   </article>
   
@@ -538,7 +593,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
       May 20, 2026
     </p>
     <h2 style="font-size:1.3rem; font-weight:700; margin-bottom:12px; line-height:1.3;">
-      <a href="http://localhost:51092/posts/20260520-020113-robotics/"
+      <a href="http://localhost:1313/posts/20260520-020113-robotics/"
          style="color:var(--rdn-text-primary); text-decoration:none;"
          onmouseover="this.style.color='var(--rdn-accent)'"
          onmouseout="this.style.color='var(--rdn-text-primary)'">Roundtables: Inside the Musk v. Altman Trial</a>
@@ -546,7 +601,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
     <p style="color:var(--rdn-text-secondary); line-height:1.7; margin-bottom:12px; font-size:0.95rem;">
       <p>The ongoing legal battle between Elon Musk and Sam Altman has captured the attention of the robotics and AI industries, as the trial delves into critical issues of intellectual …</p>
     </p>
-    <a href="http://localhost:51092/posts/20260520-020113-robotics/"
+    <a href="http://localhost:1313/posts/20260520-020113-robotics/"
        style="color:var(--rdn-accent); font-size:0.85rem; text-decoration:none;">Read more →</a>
   </article>
   
@@ -559,7 +614,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
       May 20, 2026
     </p>
     <h2 style="font-size:1.3rem; font-weight:700; margin-bottom:12px; line-height:1.3;">
-      <a href="http://localhost:51092/posts/20260519-230130-robotics/"
+      <a href="http://localhost:1313/posts/20260519-230130-robotics/"
          style="color:var(--rdn-text-primary); text-decoration:none;"
          onmouseover="this.style.color='var(--rdn-accent)'"
          onmouseout="this.style.color='var(--rdn-text-primary)'">Roundtables: Inside the Musk v. Altman Trial</a>
@@ -567,7 +622,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
     <p style="color:var(--rdn-text-secondary); line-height:1.7; margin-bottom:12px; font-size:0.95rem;">
       <p>The robotics industry has been closely following the legal battle between Elon Musk and Sam Altman, two titans of technology whose innovations have shaped the future of AI and …</p>
     </p>
-    <a href="http://localhost:51092/posts/20260519-230130-robotics/"
+    <a href="http://localhost:1313/posts/20260519-230130-robotics/"
        style="color:var(--rdn-accent); font-size:0.85rem; text-decoration:none;">Read more →</a>
   </article>
   
@@ -580,7 +635,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
       May 20, 2026
     </p>
     <h2 style="font-size:1.3rem; font-weight:700; margin-bottom:12px; line-height:1.3;">
-      <a href="http://localhost:51092/posts/20260519-220044-robotics/"
+      <a href="http://localhost:1313/posts/20260519-220044-robotics/"
          style="color:var(--rdn-text-primary); text-decoration:none;"
          onmouseover="this.style.color='var(--rdn-accent)'"
          onmouseout="this.style.color='var(--rdn-text-primary)'">Roundtables: Inside the Musk v. Altman Trial</a>
@@ -588,7 +643,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
     <p style="color:var(--rdn-text-secondary); line-height:1.7; margin-bottom:12px; font-size:0.95rem;">
       <p>The recent trial between Elon Musk and Sam Altman has become a focal point in the robotics and AI industries, highlighting the complexities of innovation, ethics, and competition. …</p>
     </p>
-    <a href="http://localhost:51092/posts/20260519-220044-robotics/"
+    <a href="http://localhost:1313/posts/20260519-220044-robotics/"
        style="color:var(--rdn-accent); font-size:0.85rem; text-decoration:none;">Read more →</a>
   </article>
   
@@ -601,7 +656,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
       May 20, 2026
     </p>
     <h2 style="font-size:1.3rem; font-weight:700; margin-bottom:12px; line-height:1.3;">
-      <a href="http://localhost:51092/posts/20260519-210114-robotics/"
+      <a href="http://localhost:1313/posts/20260519-210114-robotics/"
          style="color:var(--rdn-text-primary); text-decoration:none;"
          onmouseover="this.style.color='var(--rdn-accent)'"
          onmouseout="this.style.color='var(--rdn-text-primary)'">Roundtables: Inside the Musk v. Altman Trial - Implications for the Robotics Industry</a>
@@ -609,7 +664,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
     <p style="color:var(--rdn-text-secondary); line-height:1.7; margin-bottom:12px; font-size:0.95rem;">
       <p>The highly publicized legal battle between Elon Musk and Sam Altman has sent ripples across the tech and robotics industries. The trial, which centers on allegations of …</p>
     </p>
-    <a href="http://localhost:51092/posts/20260519-210114-robotics/"
+    <a href="http://localhost:1313/posts/20260519-210114-robotics/"
        style="color:var(--rdn-accent); font-size:0.85rem; text-decoration:none;">Read more →</a>
   </article>
   
@@ -622,7 +677,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
       May 20, 2026
     </p>
     <h2 style="font-size:1.3rem; font-weight:700; margin-bottom:12px; line-height:1.3;">
-      <a href="http://localhost:51092/posts/20260519-200110-robotics/"
+      <a href="http://localhost:1313/posts/20260519-200110-robotics/"
          style="color:var(--rdn-text-primary); text-decoration:none;"
          onmouseover="this.style.color='var(--rdn-accent)'"
          onmouseout="this.style.color='var(--rdn-text-primary)'">Roundtables: Inside the Musk v. Altman Trial – A Robotics Industry Perspective</a>
@@ -630,7 +685,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
     <p style="color:var(--rdn-text-secondary); line-height:1.7; margin-bottom:12px; font-size:0.95rem;">
       <p>The Musk v. Altman trial has captured the attention of the robotics and AI industries, as it brings to light critical debates surrounding innovation, intellectual property, and …</p>
     </p>
-    <a href="http://localhost:51092/posts/20260519-200110-robotics/"
+    <a href="http://localhost:1313/posts/20260519-200110-robotics/"
        style="color:var(--rdn-accent); font-size:0.85rem; text-decoration:none;">Read more →</a>
   </article>
   
@@ -643,7 +698,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
       May 20, 2026
     </p>
     <h2 style="font-size:1.3rem; font-weight:700; margin-bottom:12px; line-height:1.3;">
-      <a href="http://localhost:51092/posts/20260519-190120-robotics/"
+      <a href="http://localhost:1313/posts/20260519-190120-robotics/"
          style="color:var(--rdn-text-primary); text-decoration:none;"
          onmouseover="this.style.color='var(--rdn-accent)'"
          onmouseout="this.style.color='var(--rdn-text-primary)'">Roundtables: Inside the Musk v. Altman Trial</a>
@@ -651,7 +706,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
     <p style="color:var(--rdn-text-secondary); line-height:1.7; margin-bottom:12px; font-size:0.95rem;">
       <p>The robotics industry eagerly followed the high-profile legal clash between Elon Musk and Sam Altman, two titans of innovation, as their trial unfolded. At the heart of the dispute …</p>
     </p>
-    <a href="http://localhost:51092/posts/20260519-190120-robotics/"
+    <a href="http://localhost:1313/posts/20260519-190120-robotics/"
        style="color:var(--rdn-accent); font-size:0.85rem; text-decoration:none;">Read more →</a>
   </article>
   
@@ -664,7 +719,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
       May 20, 2026
     </p>
     <h2 style="font-size:1.3rem; font-weight:700; margin-bottom:12px; line-height:1.3;">
-      <a href="http://localhost:51092/posts/20260519-160044-robotics/"
+      <a href="http://localhost:1313/posts/20260519-160044-robotics/"
          style="color:var(--rdn-text-primary); text-decoration:none;"
          onmouseover="this.style.color='var(--rdn-accent)'"
          onmouseout="this.style.color='var(--rdn-text-primary)'">In Stunning Display of Negligence, Secret CISA Credentials Found in Public GitHub Repo</a>
@@ -672,7 +727,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
     <p style="color:var(--rdn-text-secondary); line-height:1.7; margin-bottom:12px; font-size:0.95rem;">
       <p>In a glaring example of cybersecurity oversight, secret credentials belonging to the Cybersecurity and Infrastructure Security Agency (CISA) were discovered in a public GitHub …</p>
     </p>
-    <a href="http://localhost:51092/posts/20260519-160044-robotics/"
+    <a href="http://localhost:1313/posts/20260519-160044-robotics/"
        style="color:var(--rdn-accent); font-size:0.85rem; text-decoration:none;">Read more →</a>
   </article>
   
@@ -685,7 +740,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
       May 20, 2026
     </p>
     <h2 style="font-size:1.3rem; font-weight:700; margin-bottom:12px; line-height:1.3;">
-      <a href="http://localhost:51092/posts/20260519-150101-robotics/"
+      <a href="http://localhost:1313/posts/20260519-150101-robotics/"
          style="color:var(--rdn-text-primary); text-decoration:none;"
          onmouseover="this.style.color='var(--rdn-accent)'"
          onmouseout="this.style.color='var(--rdn-text-primary)'">Google’s Genie World Model: Simulating Real Streets with Street View</a>
@@ -693,7 +748,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
     <p style="color:var(--rdn-text-secondary); line-height:1.7; margin-bottom:12px; font-size:0.95rem;">
       <p>Google’s latest innovation in robotics and AI, the Genie world model, has taken a significant leap forward by integrating Street View data to simulate real streets with …</p>
     </p>
-    <a href="http://localhost:51092/posts/20260519-150101-robotics/"
+    <a href="http://localhost:1313/posts/20260519-150101-robotics/"
        style="color:var(--rdn-accent); font-size:0.85rem; text-decoration:none;">Read more →</a>
   </article>
   
@@ -706,7 +761,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
       May 20, 2026
     </p>
     <h2 style="font-size:1.3rem; font-weight:700; margin-bottom:12px; line-height:1.3;">
-      <a href="http://localhost:51092/posts/20260519-140143-robotics/"
+      <a href="http://localhost:1313/posts/20260519-140143-robotics/"
          style="color:var(--rdn-text-primary); text-decoration:none;"
          onmouseover="this.style.color='var(--rdn-accent)'"
          onmouseout="this.style.color='var(--rdn-text-primary)'">Google’s Genie World Model Revolutionizes Urban Simulation with Street View Integration</a>
@@ -714,7 +769,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
     <p style="color:var(--rdn-text-secondary); line-height:1.7; margin-bottom:12px; font-size:0.95rem;">
       <p>Google has unveiled a groundbreaking advancement in robotics and urban simulation with its Genie world model, now capable of recreating real streets using data from Street View. …</p>
     </p>
-    <a href="http://localhost:51092/posts/20260519-140143-robotics/"
+    <a href="http://localhost:1313/posts/20260519-140143-robotics/"
        style="color:var(--rdn-accent); font-size:0.85rem; text-decoration:none;">Read more →</a>
   </article>
   
@@ -727,7 +782,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
       May 20, 2026
     </p>
     <h2 style="font-size:1.3rem; font-weight:700; margin-bottom:12px; line-height:1.3;">
-      <a href="http://localhost:51092/posts/20260519-120044-robotics/"
+      <a href="http://localhost:1313/posts/20260519-120044-robotics/"
          style="color:var(--rdn-text-primary); text-decoration:none;"
          onmouseover="this.style.color='var(--rdn-accent)'"
          onmouseout="this.style.color='var(--rdn-text-primary)'">Understanding the Modern Cybercrime Landscape in the Robotics Industry</a>
@@ -735,7 +790,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
     <p style="color:var(--rdn-text-secondary); line-height:1.7; margin-bottom:12px; font-size:0.95rem;">
       <p>The robotics industry has emerged as a critical sector in the global economy, driving advancements in manufacturing, healthcare, and logistics. However, as robotics systems become …</p>
     </p>
-    <a href="http://localhost:51092/posts/20260519-120044-robotics/"
+    <a href="http://localhost:1313/posts/20260519-120044-robotics/"
        style="color:var(--rdn-accent); font-size:0.85rem; text-decoration:none;">Read more →</a>
   </article>
   
@@ -748,7 +803,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
       May 20, 2026
     </p>
     <h2 style="font-size:1.3rem; font-weight:700; margin-bottom:12px; line-height:1.3;">
-      <a href="http://localhost:51092/posts/20260519-110033-robotics/"
+      <a href="http://localhost:1313/posts/20260519-110033-robotics/"
          style="color:var(--rdn-text-primary); text-decoration:none;"
          onmouseover="this.style.color='var(--rdn-accent)'"
          onmouseout="this.style.color='var(--rdn-text-primary)'">Understanding the Modern Cybercrime Landscape: Implications for the Robotics Industry</a>
@@ -756,7 +811,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
     <p style="color:var(--rdn-text-secondary); line-height:1.7; margin-bottom:12px; font-size:0.95rem;">
       <p>As the robotics industry continues to expand, understanding the modern cybercrime landscape has become crucial for businesses operating in this space. Robotics companies are …</p>
     </p>
-    <a href="http://localhost:51092/posts/20260519-110033-robotics/"
+    <a href="http://localhost:1313/posts/20260519-110033-robotics/"
        style="color:var(--rdn-accent); font-size:0.85rem; text-decoration:none;">Read more →</a>
   </article>
   
@@ -769,7 +824,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
       May 19, 2026
     </p>
     <h2 style="font-size:1.3rem; font-weight:700; margin-bottom:12px; line-height:1.3;">
-      <a href="http://localhost:51092/posts/20260519-100037-robotics/"
+      <a href="http://localhost:1313/posts/20260519-100037-robotics/"
          style="color:var(--rdn-text-primary); text-decoration:none;"
          onmouseover="this.style.color='var(--rdn-accent)'"
          onmouseout="this.style.color='var(--rdn-text-primary)'">B2B Robotics Industry Report: Understanding the Modern Cybercrime Landscape</a>
@@ -777,7 +832,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
     <p style="color:var(--rdn-text-secondary); line-height:1.7; margin-bottom:12px; font-size:0.95rem;">
       <p>The robotics industry is increasingly becoming a target for cybercriminals as businesses integrate more autonomous systems into their operations. Modern cybercrime tactics, such as …</p>
     </p>
-    <a href="http://localhost:51092/posts/20260519-100037-robotics/"
+    <a href="http://localhost:1313/posts/20260519-100037-robotics/"
        style="color:var(--rdn-accent); font-size:0.85rem; text-decoration:none;">Read more →</a>
   </article>
   
@@ -790,7 +845,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
       May 19, 2026
     </p>
     <h2 style="font-size:1.3rem; font-weight:700; margin-bottom:12px; line-height:1.3;">
-      <a href="http://localhost:51092/posts/20260519-090104-robotics/"
+      <a href="http://localhost:1313/posts/20260519-090104-robotics/"
          style="color:var(--rdn-text-primary); text-decoration:none;"
          onmouseover="this.style.color='var(--rdn-accent)'"
          onmouseout="this.style.color='var(--rdn-text-primary)'">The Download: Musk vs. Altman, Smart Glasses for Warfare, and Google I/O</a>
@@ -798,7 +853,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
     <p style="color:var(--rdn-text-secondary); line-height:1.7; margin-bottom:12px; font-size:0.95rem;">
       <p>The robotics and AI industries are witnessing a series of high-stakes developments, highlighted by the growing rivalry between Elon Musk and Sam Altman. Both visionaries are …</p>
     </p>
-    <a href="http://localhost:51092/posts/20260519-090104-robotics/"
+    <a href="http://localhost:1313/posts/20260519-090104-robotics/"
        style="color:var(--rdn-accent); font-size:0.85rem; text-decoration:none;">Read more →</a>
   </article>
   
@@ -811,7 +866,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
       May 19, 2026
     </p>
     <h2 style="font-size:1.3rem; font-weight:700; margin-bottom:12px; line-height:1.3;">
-      <a href="http://localhost:51092/posts/20260519-080054-robotics/"
+      <a href="http://localhost:1313/posts/20260519-080054-robotics/"
          style="color:var(--rdn-text-primary); text-decoration:none;"
          onmouseover="this.style.color='var(--rdn-accent)'"
          onmouseout="this.style.color='var(--rdn-text-primary)'">Implications of Elon Musk&#39;s Legal Loss Against OpenAI for the Robotics Industry</a>
@@ -819,7 +874,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
     <p style="color:var(--rdn-text-secondary); line-height:1.7; margin-bottom:12px; font-size:0.95rem;">
       <p>Elon Musk&rsquo;s recent loss in his lawsuit against OpenAI has sent ripples through the tech world, especially the robotics sector. Musk, a prominent figure in robotics and AI …</p>
     </p>
-    <a href="http://localhost:51092/posts/20260519-080054-robotics/"
+    <a href="http://localhost:1313/posts/20260519-080054-robotics/"
        style="color:var(--rdn-accent); font-size:0.85rem; text-decoration:none;">Read more →</a>
   </article>
   
@@ -832,7 +887,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
       May 19, 2026
     </p>
     <h2 style="font-size:1.3rem; font-weight:700; margin-bottom:12px; line-height:1.3;">
-      <a href="http://localhost:51092/posts/20260519-070056-robotics/"
+      <a href="http://localhost:1313/posts/20260519-070056-robotics/"
          style="color:var(--rdn-text-primary); text-decoration:none;"
          onmouseover="this.style.color='var(--rdn-accent)'"
          onmouseout="this.style.color='var(--rdn-text-primary)'">Why Elon Musk Lost His Suit Against OpenAI: Implications for the Robotics Industry</a>
@@ -840,7 +895,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
     <p style="color:var(--rdn-text-secondary); line-height:1.7; margin-bottom:12px; font-size:0.95rem;">
       <p>Elon Musk&rsquo;s recent legal defeat against OpenAI has sparked significant discussion within the robotics and AI industries. The lawsuit, which centered around allegations of …</p>
     </p>
-    <a href="http://localhost:51092/posts/20260519-070056-robotics/"
+    <a href="http://localhost:1313/posts/20260519-070056-robotics/"
        style="color:var(--rdn-accent); font-size:0.85rem; text-decoration:none;">Read more →</a>
   </article>
   
@@ -853,7 +908,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
       May 19, 2026
     </p>
     <h2 style="font-size:1.3rem; font-weight:700; margin-bottom:12px; line-height:1.3;">
-      <a href="http://localhost:51092/posts/20260519-060129-robotics/"
+      <a href="http://localhost:1313/posts/20260519-060129-robotics/"
          style="color:var(--rdn-text-primary); text-decoration:none;"
          onmouseover="this.style.color='var(--rdn-accent)'"
          onmouseout="this.style.color='var(--rdn-text-primary)'">Elon Musk&#39;s Legal Defeat Against OpenAI: Implications for the Robotics Industry</a>
@@ -861,7 +916,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
     <p style="color:var(--rdn-text-secondary); line-height:1.7; margin-bottom:12px; font-size:0.95rem;">
       <p>Elon Musk&rsquo;s recent lawsuit against OpenAI, which ended in defeat, has sparked significant discussion within the robotics and AI industries. Musk alleged that OpenAI had …</p>
     </p>
-    <a href="http://localhost:51092/posts/20260519-060129-robotics/"
+    <a href="http://localhost:1313/posts/20260519-060129-robotics/"
        style="color:var(--rdn-accent); font-size:0.85rem; text-decoration:none;">Read more →</a>
   </article>
   
@@ -874,7 +929,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
       May 19, 2026
     </p>
     <h2 style="font-size:1.3rem; font-weight:700; margin-bottom:12px; line-height:1.3;">
-      <a href="http://localhost:51092/posts/20260519-050051-robotics/"
+      <a href="http://localhost:1313/posts/20260519-050051-robotics/"
          style="color:var(--rdn-text-primary); text-decoration:none;"
          onmouseover="this.style.color='var(--rdn-accent)'"
          onmouseout="this.style.color='var(--rdn-text-primary)'">Elon Musk’s Legal Battle with OpenAI: A Turning Point in Robotics and AI Governance</a>
@@ -882,7 +937,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
     <p style="color:var(--rdn-text-secondary); line-height:1.7; margin-bottom:12px; font-size:0.95rem;">
       <p>Elon Musk’s recent legal loss against OpenAI marks a significant moment in the evolving relationship between tech innovators and the organizations they help found. Musk, who …</p>
     </p>
-    <a href="http://localhost:51092/posts/20260519-050051-robotics/"
+    <a href="http://localhost:1313/posts/20260519-050051-robotics/"
        style="color:var(--rdn-accent); font-size:0.85rem; text-decoration:none;">Read more →</a>
   </article>
   
@@ -895,7 +950,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
       May 19, 2026
     </p>
     <h2 style="font-size:1.3rem; font-weight:700; margin-bottom:12px; line-height:1.3;">
-      <a href="http://localhost:51092/posts/20260519-040205-robotics/"
+      <a href="http://localhost:1313/posts/20260519-040205-robotics/"
          style="color:var(--rdn-text-primary); text-decoration:none;"
          onmouseover="this.style.color='var(--rdn-accent)'"
          onmouseout="this.style.color='var(--rdn-text-primary)'">Elon Musk’s Legal Loss Against OpenAI: Implications for the Robotics Industry</a>
@@ -903,7 +958,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
     <p style="color:var(--rdn-text-secondary); line-height:1.7; margin-bottom:12px; font-size:0.95rem;">
       <p>Elon Musk’s recent lawsuit against OpenAI has captured the attention of the robotics and AI industries, raising critical questions about corporate governance, intellectual …</p>
     </p>
-    <a href="http://localhost:51092/posts/20260519-040205-robotics/"
+    <a href="http://localhost:1313/posts/20260519-040205-robotics/"
        style="color:var(--rdn-accent); font-size:0.85rem; text-decoration:none;">Read more →</a>
   </article>
   
@@ -916,7 +971,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
       May 19, 2026
     </p>
     <h2 style="font-size:1.3rem; font-weight:700; margin-bottom:12px; line-height:1.3;">
-      <a href="http://localhost:51092/posts/20260519-020059-robotics/"
+      <a href="http://localhost:1313/posts/20260519-020059-robotics/"
          style="color:var(--rdn-text-primary); text-decoration:none;"
          onmouseover="this.style.color='var(--rdn-accent)'"
          onmouseout="this.style.color='var(--rdn-text-primary)'">Why Elon Musk Lost His Lawsuit Against OpenAI: Insights into the Robotics and AI Industry</a>
@@ -924,7 +979,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
     <p style="color:var(--rdn-text-secondary); line-height:1.7; margin-bottom:12px; font-size:0.95rem;">
       <p>Elon Musk&rsquo;s recent lawsuit against OpenAI has garnered significant attention in the robotics and AI industry. The case, which centered around allegations of OpenAI deviating …</p>
     </p>
-    <a href="http://localhost:51092/posts/20260519-020059-robotics/"
+    <a href="http://localhost:1313/posts/20260519-020059-robotics/"
        style="color:var(--rdn-accent); font-size:0.85rem; text-decoration:none;">Read more →</a>
   </article>
   
@@ -937,7 +992,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
       May 19, 2026
     </p>
     <h2 style="font-size:1.3rem; font-weight:700; margin-bottom:12px; line-height:1.3;">
-      <a href="http://localhost:51092/posts/20260519-000031-robotics/"
+      <a href="http://localhost:1313/posts/20260519-000031-robotics/"
          style="color:var(--rdn-text-primary); text-decoration:none;"
          onmouseover="this.style.color='var(--rdn-accent)'"
          onmouseout="this.style.color='var(--rdn-text-primary)'">Elon Musk’s Lawsuit Against OpenAI: A Turning Point in Robotics and AI Ethics</a>
@@ -945,7 +1000,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
     <p style="color:var(--rdn-text-secondary); line-height:1.7; margin-bottom:12px; font-size:0.95rem;">
       <p>Elon Musk’s recent lawsuit against OpenAI, alleging a deviation from its original mission of prioritizing humanity over profits, has been dismissed by the court. This outcome …</p>
     </p>
-    <a href="http://localhost:51092/posts/20260519-000031-robotics/"
+    <a href="http://localhost:1313/posts/20260519-000031-robotics/"
        style="color:var(--rdn-accent); font-size:0.85rem; text-decoration:none;">Read more →</a>
   </article>
   
@@ -958,7 +1013,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
       May 19, 2026
     </p>
     <h2 style="font-size:1.3rem; font-weight:700; margin-bottom:12px; line-height:1.3;">
-      <a href="http://localhost:51092/posts/20260518-230046-robotics/"
+      <a href="http://localhost:1313/posts/20260518-230046-robotics/"
          style="color:var(--rdn-text-primary); text-decoration:none;"
          onmouseover="this.style.color='var(--rdn-accent)'"
          onmouseout="this.style.color='var(--rdn-text-primary)'">Elon Musk&#39;s Legal Battle Against OpenAI: A Turning Point in AI Ethics and Corporate Governance</a>
@@ -966,7 +1021,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
     <p style="color:var(--rdn-text-secondary); line-height:1.7; margin-bottom:12px; font-size:0.95rem;">
       <p>Elon Musk’s recent lawsuit against OpenAI has sparked significant debate within the robotics and AI industries. The lawsuit, which accused OpenAI of deviating from its original …</p>
     </p>
-    <a href="http://localhost:51092/posts/20260518-230046-robotics/"
+    <a href="http://localhost:1313/posts/20260518-230046-robotics/"
        style="color:var(--rdn-accent); font-size:0.85rem; text-decoration:none;">Read more →</a>
   </article>
   
@@ -979,7 +1034,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
       May 19, 2026
     </p>
     <h2 style="font-size:1.3rem; font-weight:700; margin-bottom:12px; line-height:1.3;">
-      <a href="http://localhost:51092/posts/20260518-220059-robotics/"
+      <a href="http://localhost:1313/posts/20260518-220059-robotics/"
          style="color:var(--rdn-text-primary); text-decoration:none;"
          onmouseover="this.style.color='var(--rdn-accent)'"
          onmouseout="this.style.color='var(--rdn-text-primary)'">Elon Musk’s Legal Battle with OpenAI: A Turning Point in AI Governance</a>
@@ -987,7 +1042,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
     <p style="color:var(--rdn-text-secondary); line-height:1.7; margin-bottom:12px; font-size:0.95rem;">
       <p>Elon Musk’s recent lawsuit against OpenAI has sparked significant debate within the robotics and artificial intelligence (AI) industries. The case, which centered on allegations …</p>
     </p>
-    <a href="http://localhost:51092/posts/20260518-220059-robotics/"
+    <a href="http://localhost:1313/posts/20260518-220059-robotics/"
        style="color:var(--rdn-accent); font-size:0.85rem; text-decoration:none;">Read more →</a>
   </article>
   
@@ -1000,7 +1055,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
       May 19, 2026
     </p>
     <h2 style="font-size:1.3rem; font-weight:700; margin-bottom:12px; line-height:1.3;">
-      <a href="http://localhost:51092/posts/20260518-210041-robotics/"
+      <a href="http://localhost:1313/posts/20260518-210041-robotics/"
          style="color:var(--rdn-text-primary); text-decoration:none;"
          onmouseover="this.style.color='var(--rdn-accent)'"
          onmouseout="this.style.color='var(--rdn-text-primary)'">What to Expect from Google This Week in Robotics</a>
@@ -1008,7 +1063,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
     <p style="color:var(--rdn-text-secondary); line-height:1.7; margin-bottom:12px; font-size:0.95rem;">
       <p>As tech giant Google gears up for a significant announcement this week, the robotics industry is abuzz with anticipation. Google’s history of innovation in artificial intelligence …</p>
     </p>
-    <a href="http://localhost:51092/posts/20260518-210041-robotics/"
+    <a href="http://localhost:1313/posts/20260518-210041-robotics/"
        style="color:var(--rdn-accent); font-size:0.85rem; text-decoration:none;">Read more →</a>
   </article>
   
@@ -1021,7 +1076,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
       May 19, 2026
     </p>
     <h2 style="font-size:1.3rem; font-weight:700; margin-bottom:12px; line-height:1.3;">
-      <a href="http://localhost:51092/posts/20260518-200112-robotics/"
+      <a href="http://localhost:1313/posts/20260518-200112-robotics/"
          style="color:var(--rdn-text-primary); text-decoration:none;"
          onmouseover="this.style.color='var(--rdn-accent)'"
          onmouseout="this.style.color='var(--rdn-text-primary)'">Insights into Google&#39;s Robotics Innovations: What to Anticipate This Week</a>
@@ -1029,7 +1084,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
     <p style="color:var(--rdn-text-secondary); line-height:1.7; margin-bottom:12px; font-size:0.95rem;">
       <p>As Google prepares to unveil its latest advancements this week, the tech giant is expected to make significant strides in the robotics industry. Known for its cutting-edge AI and …</p>
     </p>
-    <a href="http://localhost:51092/posts/20260518-200112-robotics/"
+    <a href="http://localhost:1313/posts/20260518-200112-robotics/"
        style="color:var(--rdn-accent); font-size:0.85rem; text-decoration:none;">Read more →</a>
   </article>
   
@@ -1042,7 +1097,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
       May 19, 2026
     </p>
     <h2 style="font-size:1.3rem; font-weight:700; margin-bottom:12px; line-height:1.3;">
-      <a href="http://localhost:51092/posts/20260518-190045-robotics/"
+      <a href="http://localhost:1313/posts/20260518-190045-robotics/"
          style="color:var(--rdn-text-primary); text-decoration:none;"
          onmouseover="this.style.color='var(--rdn-accent)'"
          onmouseout="this.style.color='var(--rdn-text-primary)'">What to Expect from Google in Robotics This Week: Industry Insights</a>
@@ -1050,7 +1105,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
     <p style="color:var(--rdn-text-secondary); line-height:1.7; margin-bottom:12px; font-size:0.95rem;">
       <p>As Google continues to push boundaries in innovation, the robotics sector eagerly anticipates the tech giant&rsquo;s next moves. This week, industry analysts predict significant …</p>
     </p>
-    <a href="http://localhost:51092/posts/20260518-190045-robotics/"
+    <a href="http://localhost:1313/posts/20260518-190045-robotics/"
        style="color:var(--rdn-accent); font-size:0.85rem; text-decoration:none;">Read more →</a>
   </article>
   
@@ -1063,7 +1118,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
       May 19, 2026
     </p>
     <h2 style="font-size:1.3rem; font-weight:700; margin-bottom:12px; line-height:1.3;">
-      <a href="http://localhost:51092/posts/20260518-180058-robotics/"
+      <a href="http://localhost:1313/posts/20260518-180058-robotics/"
          style="color:var(--rdn-text-primary); text-decoration:none;"
          onmouseover="this.style.color='var(--rdn-accent)'"
          onmouseout="this.style.color='var(--rdn-text-primary)'">What to Expect from Google: Innovations Poised to Reshape the Robotics Industry</a>
@@ -1071,7 +1126,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
     <p style="color:var(--rdn-text-secondary); line-height:1.7; margin-bottom:12px; font-size:0.95rem;">
       <p>This week, Google is anticipated to unveil significant advancements in robotics, which could redefine industry standards and accelerate adoption across various sectors. …</p>
     </p>
-    <a href="http://localhost:51092/posts/20260518-180058-robotics/"
+    <a href="http://localhost:1313/posts/20260518-180058-robotics/"
        style="color:var(--rdn-accent); font-size:0.85rem; text-decoration:none;">Read more →</a>
   </article>
   
@@ -1084,7 +1139,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
       May 19, 2026
     </p>
     <h2 style="font-size:1.3rem; font-weight:700; margin-bottom:12px; line-height:1.3;">
-      <a href="http://localhost:51092/posts/20260518-170026-robotics/"
+      <a href="http://localhost:1313/posts/20260518-170026-robotics/"
          style="color:var(--rdn-text-primary); text-decoration:none;"
          onmouseover="this.style.color='var(--rdn-accent)'"
          onmouseout="this.style.color='var(--rdn-text-primary)'">What to Expect from Google in Robotics: A B2B Industry Insight</a>
@@ -1092,7 +1147,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
     <p style="color:var(--rdn-text-secondary); line-height:1.7; margin-bottom:12px; font-size:0.95rem;">
       <p>This week, Google is expected to make significant announcements that could reshape the robotics industry, particularly in the B2B sector. The tech giant has been quietly advancing …</p>
     </p>
-    <a href="http://localhost:51092/posts/20260518-170026-robotics/"
+    <a href="http://localhost:1313/posts/20260518-170026-robotics/"
        style="color:var(--rdn-accent); font-size:0.85rem; text-decoration:none;">Read more →</a>
   </article>
   
@@ -1105,7 +1160,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
       May 19, 2026
     </p>
     <h2 style="font-size:1.3rem; font-weight:700; margin-bottom:12px; line-height:1.3;">
-      <a href="http://localhost:51092/posts/20260518-150100-robotics/"
+      <a href="http://localhost:1313/posts/20260518-150100-robotics/"
          style="color:var(--rdn-text-primary); text-decoration:none;"
          onmouseover="this.style.color='var(--rdn-accent)'"
          onmouseout="this.style.color='var(--rdn-text-primary)'">What to Expect from Google in the Robotics Industry This Week</a>
@@ -1113,7 +1168,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
     <p style="color:var(--rdn-text-secondary); line-height:1.7; margin-bottom:12px; font-size:0.95rem;">
       <p>As Google prepares to unveil its latest advancements this week, the robotics industry is abuzz with speculation. The tech giant has been making significant strides in robotics, …</p>
     </p>
-    <a href="http://localhost:51092/posts/20260518-150100-robotics/"
+    <a href="http://localhost:1313/posts/20260518-150100-robotics/"
        style="color:var(--rdn-accent); font-size:0.85rem; text-decoration:none;">Read more →</a>
   </article>
   
@@ -1126,7 +1181,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
       May 19, 2026
     </p>
     <h2 style="font-size:1.3rem; font-weight:700; margin-bottom:12px; line-height:1.3;">
-      <a href="http://localhost:51092/posts/20260518-140056-robotics/"
+      <a href="http://localhost:1313/posts/20260518-140056-robotics/"
          style="color:var(--rdn-text-primary); text-decoration:none;"
          onmouseover="this.style.color='var(--rdn-accent)'"
          onmouseout="this.style.color='var(--rdn-text-primary)'">What to Expect from Google in the Robotics Industry This Week</a>
@@ -1134,7 +1189,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
     <p style="color:var(--rdn-text-secondary); line-height:1.7; margin-bottom:12px; font-size:0.95rem;">
       <p>Google has long been a frontrunner in technological innovation, and its ventures into robotics are no exception. This week, industry insiders are anticipating significant …</p>
     </p>
-    <a href="http://localhost:51092/posts/20260518-140056-robotics/"
+    <a href="http://localhost:1313/posts/20260518-140056-robotics/"
        style="color:var(--rdn-accent); font-size:0.85rem; text-decoration:none;">Read more →</a>
   </article>
   
@@ -1147,7 +1202,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
       May 19, 2026
     </p>
     <h2 style="font-size:1.3rem; font-weight:700; margin-bottom:12px; line-height:1.3;">
-      <a href="http://localhost:51092/posts/20260518-130040-robotics/"
+      <a href="http://localhost:1313/posts/20260518-130040-robotics/"
          style="color:var(--rdn-text-primary); text-decoration:none;"
          onmouseover="this.style.color='var(--rdn-accent)'"
          onmouseout="this.style.color='var(--rdn-text-primary)'">Inside Anduril and Meta’s Quest to Make Smart Glasses for Warfare</a>
@@ -1155,7 +1210,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
     <p style="color:var(--rdn-text-secondary); line-height:1.7; margin-bottom:12px; font-size:0.95rem;">
       <p>Anduril Industries, known for its cutting-edge defense technology, has partnered with Meta to explore the development of smart glasses tailored for military applications. This …</p>
     </p>
-    <a href="http://localhost:51092/posts/20260518-130040-robotics/"
+    <a href="http://localhost:1313/posts/20260518-130040-robotics/"
        style="color:var(--rdn-accent); font-size:0.85rem; text-decoration:none;">Read more →</a>
   </article>
   
@@ -1168,7 +1223,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
       May 19, 2026
     </p>
     <h2 style="font-size:1.3rem; font-weight:700; margin-bottom:12px; line-height:1.3;">
-      <a href="http://localhost:51092/posts/20260518-120043-robotics/"
+      <a href="http://localhost:1313/posts/20260518-120043-robotics/"
          style="color:var(--rdn-text-primary); text-decoration:none;"
          onmouseover="this.style.color='var(--rdn-accent)'"
          onmouseout="this.style.color='var(--rdn-text-primary)'">The Download: Musk v. Altman Week 3, and Trump’s Tech Trading</a>
@@ -1176,7 +1231,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
     <p style="color:var(--rdn-text-secondary); line-height:1.7; margin-bottom:12px; font-size:0.95rem;">
       <p>The ongoing rivalry between Elon Musk and Sam Altman has entered its third week, and the tech world is watching closely. With both leaders at the forefront of innovation—Musk with …</p>
     </p>
-    <a href="http://localhost:51092/posts/20260518-120043-robotics/"
+    <a href="http://localhost:1313/posts/20260518-120043-robotics/"
        style="color:var(--rdn-accent); font-size:0.85rem; text-decoration:none;">Read more →</a>
   </article>
   
@@ -1189,7 +1244,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
       May 18, 2026
     </p>
     <h2 style="font-size:1.3rem; font-weight:700; margin-bottom:12px; line-height:1.3;">
-      <a href="http://localhost:51092/posts/20260518-100048-robotics/"
+      <a href="http://localhost:1313/posts/20260518-100048-robotics/"
          style="color:var(--rdn-text-primary); text-decoration:none;"
          onmouseover="this.style.color='var(--rdn-accent)'"
          onmouseout="this.style.color='var(--rdn-text-primary)'">The Download: Musk v. Altman Week 3, and Trump’s Tech Trading - A Robotics Industry Perspective</a>
@@ -1197,7 +1252,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
     <p style="color:var(--rdn-text-secondary); line-height:1.7; margin-bottom:12px; font-size:0.95rem;">
       <p>The ongoing rivalry between Elon Musk and Sam Altman has entered its third week, capturing the attention of the tech and robotics industries. Musk’s ventures, including Tesla and …</p>
     </p>
-    <a href="http://localhost:51092/posts/20260518-100048-robotics/"
+    <a href="http://localhost:1313/posts/20260518-100048-robotics/"
        style="color:var(--rdn-accent); font-size:0.85rem; text-decoration:none;">Read more →</a>
   </article>
   
@@ -1210,7 +1265,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
       May 18, 2026
     </p>
     <h2 style="font-size:1.3rem; font-weight:700; margin-bottom:12px; line-height:1.3;">
-      <a href="http://localhost:51092/posts/20260518-090054-robotics/"
+      <a href="http://localhost:1313/posts/20260518-090054-robotics/"
          style="color:var(--rdn-text-primary); text-decoration:none;"
          onmouseover="this.style.color='var(--rdn-accent)'"
          onmouseout="this.style.color='var(--rdn-text-primary)'">The Download: Musk v. Altman Week 3, and Trump’s Tech Trading - A Robotics Industry Perspective</a>
@@ -1218,7 +1273,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
     <p style="color:var(--rdn-text-secondary); line-height:1.7; margin-bottom:12px; font-size:0.95rem;">
       <p>The ongoing dispute between Elon Musk and Sam Altman has entered its third week, drawing significant attention from the robotics and AI industries. Musk, founder of Tesla and …</p>
     </p>
-    <a href="http://localhost:51092/posts/20260518-090054-robotics/"
+    <a href="http://localhost:1313/posts/20260518-090054-robotics/"
        style="color:var(--rdn-accent); font-size:0.85rem; text-decoration:none;">Read more →</a>
   </article>
   
@@ -1231,7 +1286,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
       May 18, 2026
     </p>
     <h2 style="font-size:1.3rem; font-weight:700; margin-bottom:12px; line-height:1.3;">
-      <a href="http://localhost:51092/posts/20260518-172820-robotics/"
+      <a href="http://localhost:1313/posts/20260518-172820-robotics/"
          style="color:var(--rdn-text-primary); text-decoration:none;"
          onmouseover="this.style.color='var(--rdn-accent)'"
          onmouseout="this.style.color='var(--rdn-text-primary)'">What to Expect from Google This Week: Key Announcements in Robotics and AI</a>
@@ -1239,7 +1294,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
     <p style="color:var(--rdn-text-secondary); line-height:1.7; margin-bottom:12px; font-size:0.95rem;">
       <p>This week, Google is expected to unveil significant updates across its robotics and AI ecosystems, continuing its push to integrate advanced machine learning into physical systems. …</p>
     </p>
-    <a href="http://localhost:51092/posts/20260518-172820-robotics/"
+    <a href="http://localhost:1313/posts/20260518-172820-robotics/"
        style="color:var(--rdn-accent); font-size:0.85rem; text-decoration:none;">Read more →</a>
   </article>
   
@@ -1252,7 +1307,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
       May 18, 2026
     </p>
     <h2 style="font-size:1.3rem; font-weight:700; margin-bottom:12px; line-height:1.3;">
-      <a href="http://localhost:51092/posts/20260518-172143-robotics/"
+      <a href="http://localhost:1313/posts/20260518-172143-robotics/"
          style="color:var(--rdn-text-primary); text-decoration:none;"
          onmouseover="this.style.color='var(--rdn-accent)'"
          onmouseout="this.style.color='var(--rdn-text-primary)'">What to expect from Google this week</a>
@@ -1260,7 +1315,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
     <p style="color:var(--rdn-text-secondary); line-height:1.7; margin-bottom:12px; font-size:0.95rem;">
       <p>Google is poised to make significant announcements at its annual hardware and AI event, likely focusing on the latest Pixel devices and substantial advances in its AI ecosystem. …</p>
     </p>
-    <a href="http://localhost:51092/posts/20260518-172143-robotics/"
+    <a href="http://localhost:1313/posts/20260518-172143-robotics/"
        style="color:var(--rdn-accent); font-size:0.85rem; text-decoration:none;">Read more →</a>
   </article>
   
@@ -1273,7 +1328,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
       May 18, 2026
     </p>
     <h2 style="font-size:1.3rem; font-weight:700; margin-bottom:12px; line-height:1.3;">
-      <a href="http://localhost:51092/posts/20260518-080043-robotics/"
+      <a href="http://localhost:1313/posts/20260518-080043-robotics/"
          style="color:var(--rdn-text-primary); text-decoration:none;"
          onmouseover="this.style.color='var(--rdn-accent)'"
          onmouseout="this.style.color='var(--rdn-text-primary)'">Musk vs. Altman Week 3: A Clash of Visions Roils the Robotics Industry</a>
@@ -1281,7 +1336,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
     <p style="color:var(--rdn-text-secondary); line-height:1.7; margin-bottom:12px; font-size:0.95rem;">
       <p>The ongoing feud between Elon Musk and Sam Altman has reached a pivotal moment, with Week 3 of their public dispute centering on mutual critiques of each other’s credibility. Musk, …</p>
     </p>
-    <a href="http://localhost:51092/posts/20260518-080043-robotics/"
+    <a href="http://localhost:1313/posts/20260518-080043-robotics/"
        style="color:var(--rdn-accent); font-size:0.85rem; text-decoration:none;">Read more →</a>
   </article>
   
@@ -1294,7 +1349,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
       May 18, 2026
     </p>
     <h2 style="font-size:1.3rem; font-weight:700; margin-bottom:12px; line-height:1.3;">
-      <a href="http://localhost:51092/posts/20260518-073657-robotics/"
+      <a href="http://localhost:1313/posts/20260518-073657-robotics/"
          style="color:var(--rdn-text-primary); text-decoration:none;"
          onmouseover="this.style.color='var(--rdn-accent)'"
          onmouseout="this.style.color='var(--rdn-text-primary)'">Musk v. Altman Week 3: Analyzing the Clash of Tech Titans in Robotics</a>
@@ -1302,7 +1357,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
     <p style="color:var(--rdn-text-secondary); line-height:1.7; margin-bottom:12px; font-size:0.95rem;">
       <p>The ongoing feud between Elon Musk and Sam Altman has reached a critical juncture, as Week 3 of their public disagreement saw the two tech leaders trading sharp criticisms over …</p>
     </p>
-    <a href="http://localhost:51092/posts/20260518-073657-robotics/"
+    <a href="http://localhost:1313/posts/20260518-073657-robotics/"
        style="color:var(--rdn-accent); font-size:0.85rem; text-decoration:none;">Read more →</a>
   </article>
   
@@ -1315,7 +1370,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
       May 18, 2026
     </p>
     <h2 style="font-size:1.3rem; font-weight:700; margin-bottom:12px; line-height:1.3;">
-      <a href="http://localhost:51092/posts/20260518-060053-robotics/"
+      <a href="http://localhost:1313/posts/20260518-060053-robotics/"
          style="color:var(--rdn-text-primary); text-decoration:none;"
          onmouseover="this.style.color='var(--rdn-accent)'"
          onmouseout="this.style.color='var(--rdn-text-primary)'">Musk vs. Altman Showdown Week 3: Credibility Clash Shakes Robotics Industry</a>
@@ -1323,7 +1378,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
     <p style="color:var(--rdn-text-secondary); line-height:1.7; margin-bottom:12px; font-size:0.95rem;">
       <p>The ongoing public feud between Elon Musk and Sam Altman has entered its third week, with the two tech titans trading blows over each other’s credibility in the robotics sector. …</p>
     </p>
-    <a href="http://localhost:51092/posts/20260518-060053-robotics/"
+    <a href="http://localhost:1313/posts/20260518-060053-robotics/"
        style="color:var(--rdn-accent); font-size:0.85rem; text-decoration:none;">Read more →</a>
   </article>
   
@@ -1336,7 +1391,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
       May 18, 2026
     </p>
     <h2 style="font-size:1.3rem; font-weight:700; margin-bottom:12px; line-height:1.3;">
-      <a href="http://localhost:51092/posts/20260518-050051-robotics/"
+      <a href="http://localhost:1313/posts/20260518-050051-robotics/"
          style="color:var(--rdn-text-primary); text-decoration:none;"
          onmouseover="this.style.color='var(--rdn-accent)'"
          onmouseout="this.style.color='var(--rdn-text-primary)'">Musk v. Altman Week 3: A Clash of Titans in the Robotics Industry</a>
@@ -1344,7 +1399,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
     <p style="color:var(--rdn-text-secondary); line-height:1.7; margin-bottom:12px; font-size:0.95rem;">
       <p>The ongoing feud between Elon Musk and Sam Altman has reached its third week, with both tech moguls trading barbs over each other’s credibility in the robotics and AI sectors. …</p>
     </p>
-    <a href="http://localhost:51092/posts/20260518-050051-robotics/"
+    <a href="http://localhost:1313/posts/20260518-050051-robotics/"
        style="color:var(--rdn-accent); font-size:0.85rem; text-decoration:none;">Read more →</a>
   </article>
   
@@ -1357,7 +1412,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
       May 18, 2026
     </p>
     <h2 style="font-size:1.3rem; font-weight:700; margin-bottom:12px; line-height:1.3;">
-      <a href="http://localhost:51092/posts/20260518-040307-robotics/"
+      <a href="http://localhost:1313/posts/20260518-040307-robotics/"
          style="color:var(--rdn-text-primary); text-decoration:none;"
          onmouseover="this.style.color='var(--rdn-accent)'"
          onmouseout="this.style.color='var(--rdn-text-primary)'">Musk v. Altman Week 3: Credibility Clash in the Robotics Industry</a>
@@ -1365,7 +1420,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
     <p style="color:var(--rdn-text-secondary); line-height:1.7; margin-bottom:12px; font-size:0.95rem;">
       <p>The ongoing feud between Elon Musk and Sam Altman has reached a pivotal moment, with both tech titans trading blows over each other’s credibility in the robotics and AI sectors. …</p>
     </p>
-    <a href="http://localhost:51092/posts/20260518-040307-robotics/"
+    <a href="http://localhost:1313/posts/20260518-040307-robotics/"
        style="color:var(--rdn-accent); font-size:0.85rem; text-decoration:none;">Read more →</a>
   </article>
   
@@ -1378,7 +1433,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
       May 18, 2026
     </p>
     <h2 style="font-size:1.3rem; font-weight:700; margin-bottom:12px; line-height:1.3;">
-      <a href="http://localhost:51092/posts/20260518-000032-robotics/"
+      <a href="http://localhost:1313/posts/20260518-000032-robotics/"
          style="color:var(--rdn-text-primary); text-decoration:none;"
          onmouseover="this.style.color='var(--rdn-accent)'"
          onmouseout="this.style.color='var(--rdn-text-primary)'">Musk vs. Altman: A Clash of Titans in Robotics and AI Credibility</a>
@@ -1386,7 +1441,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
     <p style="color:var(--rdn-text-secondary); line-height:1.7; margin-bottom:12px; font-size:0.95rem;">
       <p>The robotics and artificial intelligence industries are no strangers to high-profile disputes, but the ongoing clash between Elon Musk and Sam Altman has taken center stage. Musk, …</p>
     </p>
-    <a href="http://localhost:51092/posts/20260518-000032-robotics/"
+    <a href="http://localhost:1313/posts/20260518-000032-robotics/"
        style="color:var(--rdn-accent); font-size:0.85rem; text-decoration:none;">Read more →</a>
   </article>
   
@@ -1399,7 +1454,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
       May 18, 2026
     </p>
     <h2 style="font-size:1.3rem; font-weight:700; margin-bottom:12px; line-height:1.3;">
-      <a href="http://localhost:51092/posts/20260517-230040-robotics/"
+      <a href="http://localhost:1313/posts/20260517-230040-robotics/"
          style="color:var(--rdn-text-primary); text-decoration:none;"
          onmouseover="this.style.color='var(--rdn-accent)'"
          onmouseout="this.style.color='var(--rdn-text-primary)'">Musk v. Altman Week 3: Credibility Clash Sparks Industry Debate</a>
@@ -1407,7 +1462,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
     <p style="color:var(--rdn-text-secondary); line-height:1.7; margin-bottom:12px; font-size:0.95rem;">
       <p>The ongoing rivalry between Elon Musk and Sam Altman has escalated into a highly publicized credibility battle, drawing significant attention from the robotics and AI industries. …</p>
     </p>
-    <a href="http://localhost:51092/posts/20260517-230040-robotics/"
+    <a href="http://localhost:1313/posts/20260517-230040-robotics/"
        style="color:var(--rdn-accent); font-size:0.85rem; text-decoration:none;">Read more →</a>
   </article>
   
@@ -1420,7 +1475,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
       May 18, 2026
     </p>
     <h2 style="font-size:1.3rem; font-weight:700; margin-bottom:12px; line-height:1.3;">
-      <a href="http://localhost:51092/posts/20260517-210042-robotics/"
+      <a href="http://localhost:1313/posts/20260517-210042-robotics/"
          style="color:var(--rdn-text-primary); text-decoration:none;"
          onmouseover="this.style.color='var(--rdn-accent)'"
          onmouseout="this.style.color='var(--rdn-text-primary)'">Elon Musk and Sam Altman Clash: Implications for the Robotics Industry</a>
@@ -1428,7 +1483,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
     <p style="color:var(--rdn-text-secondary); line-height:1.7; margin-bottom:12px; font-size:0.95rem;">
       <p>The ongoing feud between Elon Musk and Sam Altman has captured the attention of the tech and robotics industries. As two of the most prominent figures in artificial intelligence …</p>
     </p>
-    <a href="http://localhost:51092/posts/20260517-210042-robotics/"
+    <a href="http://localhost:1313/posts/20260517-210042-robotics/"
        style="color:var(--rdn-accent); font-size:0.85rem; text-decoration:none;">Read more →</a>
   </article>
   
@@ -1441,7 +1496,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
       May 18, 2026
     </p>
     <h2 style="font-size:1.3rem; font-weight:700; margin-bottom:12px; line-height:1.3;">
-      <a href="http://localhost:51092/posts/20260517-200153-robotics/"
+      <a href="http://localhost:1313/posts/20260517-200153-robotics/"
          style="color:var(--rdn-text-primary); text-decoration:none;"
          onmouseover="this.style.color='var(--rdn-accent)'"
          onmouseout="this.style.color='var(--rdn-text-primary)'">Musk v. Altman Week 3: A Clash of Titans in AI Credibility</a>
@@ -1449,7 +1504,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
     <p style="color:var(--rdn-text-secondary); line-height:1.7; margin-bottom:12px; font-size:0.95rem;">
       <p>The ongoing public feud between Elon Musk and Sam Altman has reached a critical juncture, with both tech leaders trading sharp critiques over each other’s credibility in the field …</p>
     </p>
-    <a href="http://localhost:51092/posts/20260517-200153-robotics/"
+    <a href="http://localhost:1313/posts/20260517-200153-robotics/"
        style="color:var(--rdn-accent); font-size:0.85rem; text-decoration:none;">Read more →</a>
   </article>
   
@@ -1462,7 +1517,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
       May 18, 2026
     </p>
     <h2 style="font-size:1.3rem; font-weight:700; margin-bottom:12px; line-height:1.3;">
-      <a href="http://localhost:51092/posts/20260517-190043-robotics/"
+      <a href="http://localhost:1313/posts/20260517-190043-robotics/"
          style="color:var(--rdn-text-primary); text-decoration:none;"
          onmouseover="this.style.color='var(--rdn-accent)'"
          onmouseout="this.style.color='var(--rdn-text-primary)'">Video Friday: Heavy Robotic Machinery Operates Itself</a>
@@ -1470,7 +1525,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
     <p style="color:var(--rdn-text-secondary); line-height:1.7; margin-bottom:12px; font-size:0.95rem;">
       <p>The latest installment of Video Friday showcases the cutting-edge advancements in autonomous heavy machinery, highlighting how robotics is revolutionizing industries like …</p>
     </p>
-    <a href="http://localhost:51092/posts/20260517-190043-robotics/"
+    <a href="http://localhost:1313/posts/20260517-190043-robotics/"
        style="color:var(--rdn-accent); font-size:0.85rem; text-decoration:none;">Read more →</a>
   </article>
   
@@ -1483,7 +1538,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
       May 18, 2026
     </p>
     <h2 style="font-size:1.3rem; font-weight:700; margin-bottom:12px; line-height:1.3;">
-      <a href="http://localhost:51092/posts/20260517-183812-robotics/"
+      <a href="http://localhost:1313/posts/20260517-183812-robotics/"
          style="color:var(--rdn-text-primary); text-decoration:none;"
          onmouseover="this.style.color='var(--rdn-accent)'"
          onmouseout="this.style.color='var(--rdn-text-primary)'">Musk v. Altman Week 3: Credibility Clash Shakes Robotics Industry</a>
@@ -1491,7 +1546,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
     <p style="color:var(--rdn-text-secondary); line-height:1.7; margin-bottom:12px; font-size:0.95rem;">
       <p>The feud between Elon Musk and Sam Altman has entered its third week, with the two tech titans trading pointed criticisms over each other’s credibility in the robotics and AI …</p>
     </p>
-    <a href="http://localhost:51092/posts/20260517-183812-robotics/"
+    <a href="http://localhost:1313/posts/20260517-183812-robotics/"
        style="color:var(--rdn-accent); font-size:0.85rem; text-decoration:none;">Read more →</a>
   </article>
   
@@ -1504,7 +1559,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
       May 18, 2026
     </p>
     <h2 style="font-size:1.3rem; font-weight:700; margin-bottom:12px; line-height:1.3;">
-      <a href="http://localhost:51092/posts/20260517-180039-robotics/"
+      <a href="http://localhost:1313/posts/20260517-180039-robotics/"
          style="color:var(--rdn-text-primary); text-decoration:none;"
          onmouseover="this.style.color='var(--rdn-accent)'"
          onmouseout="this.style.color='var(--rdn-text-primary)'">Video Friday: Heavy Robotic Machinery Operates Itself</a>
@@ -1512,7 +1567,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
     <p style="color:var(--rdn-text-secondary); line-height:1.7; margin-bottom:12px; font-size:0.95rem;">
       <p>The robotics industry has reached a pivotal moment with the advent of heavy robotic machinery capable of operating autonomously. Recent advancements showcased in this week&rsquo;s …</p>
     </p>
-    <a href="http://localhost:51092/posts/20260517-180039-robotics/"
+    <a href="http://localhost:1313/posts/20260517-180039-robotics/"
        style="color:var(--rdn-accent); font-size:0.85rem; text-decoration:none;">Read more →</a>
   </article>
   
@@ -1525,7 +1580,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
       May 18, 2026
     </p>
     <h2 style="font-size:1.3rem; font-weight:700; margin-bottom:12px; line-height:1.3;">
-      <a href="http://localhost:51092/posts/20260517-170110-robotics/"
+      <a href="http://localhost:1313/posts/20260517-170110-robotics/"
          style="color:var(--rdn-text-primary); text-decoration:none;"
          onmouseover="this.style.color='var(--rdn-accent)'"
          onmouseout="this.style.color='var(--rdn-text-primary)'">Heavy Robotic Machinery Embraces Autonomy: A Leap Forward in Industrial Robotics</a>
@@ -1533,7 +1588,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
     <p style="color:var(--rdn-text-secondary); line-height:1.7; margin-bottom:12px; font-size:0.95rem;">
       <p>The latest advancements in heavy robotic machinery are reshaping the industrial landscape, as autonomous systems take center stage in operations traditionally reliant on human …</p>
     </p>
-    <a href="http://localhost:51092/posts/20260517-170110-robotics/"
+    <a href="http://localhost:1313/posts/20260517-170110-robotics/"
        style="color:var(--rdn-accent); font-size:0.85rem; text-decoration:none;">Read more →</a>
   </article>
   
@@ -1546,7 +1601,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
       May 18, 2026
     </p>
     <h2 style="font-size:1.3rem; font-weight:700; margin-bottom:12px; line-height:1.3;">
-      <a href="http://localhost:51092/posts/20260517-160035-robotics/"
+      <a href="http://localhost:1313/posts/20260517-160035-robotics/"
          style="color:var(--rdn-text-primary); text-decoration:none;"
          onmouseover="this.style.color='var(--rdn-accent)'"
          onmouseout="this.style.color='var(--rdn-text-primary)'">Heavy Robotic Machinery Ushers in a New Era of Autonomous Operations</a>
@@ -1554,7 +1609,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
     <p style="color:var(--rdn-text-secondary); line-height:1.7; margin-bottom:12px; font-size:0.95rem;">
       <p>The robotics industry is witnessing a transformative shift as heavy machinery begins to operate autonomously, marking a significant milestone in industrial automation. In the …</p>
     </p>
-    <a href="http://localhost:51092/posts/20260517-160035-robotics/"
+    <a href="http://localhost:1313/posts/20260517-160035-robotics/"
        style="color:var(--rdn-accent); font-size:0.85rem; text-decoration:none;">Read more →</a>
   </article>
   
@@ -1567,7 +1622,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
       May 18, 2026
     </p>
     <h2 style="font-size:1.3rem; font-weight:700; margin-bottom:12px; line-height:1.3;">
-      <a href="http://localhost:51092/posts/20260517-140058-robotics/"
+      <a href="http://localhost:1313/posts/20260517-140058-robotics/"
          style="color:var(--rdn-text-primary); text-decoration:none;"
          onmouseover="this.style.color='var(--rdn-accent)'"
          onmouseout="this.style.color='var(--rdn-text-primary)'">The Rise of Autonomous Heavy Robotic Machinery in Industrial Applications</a>
@@ -1575,7 +1630,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
     <p style="color:var(--rdn-text-secondary); line-height:1.7; margin-bottom:12px; font-size:0.95rem;">
       <p>The robotics industry is witnessing a transformative shift with the advent of autonomous heavy machinery. This week’s &lsquo;Video Friday&rsquo; highlights groundbreaking …</p>
     </p>
-    <a href="http://localhost:51092/posts/20260517-140058-robotics/"
+    <a href="http://localhost:1313/posts/20260517-140058-robotics/"
        style="color:var(--rdn-accent); font-size:0.85rem; text-decoration:none;">Read more →</a>
   </article>
   
@@ -1588,7 +1643,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
       May 18, 2026
     </p>
     <h2 style="font-size:1.3rem; font-weight:700; margin-bottom:12px; line-height:1.3;">
-      <a href="http://localhost:51092/posts/20260517-120046-robotics/"
+      <a href="http://localhost:1313/posts/20260517-120046-robotics/"
          style="color:var(--rdn-text-primary); text-decoration:none;"
          onmouseover="this.style.color='var(--rdn-accent)'"
          onmouseout="this.style.color='var(--rdn-text-primary)'">Video Friday: Heavy Robotic Machinery Operates Itself</a>
@@ -1596,7 +1651,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
     <p style="color:var(--rdn-text-secondary); line-height:1.7; margin-bottom:12px; font-size:0.95rem;">
       <p>The robotics industry continues to witness groundbreaking advancements, particularly in the realm of heavy machinery automation. This week’s Video Friday highlights the latest …</p>
     </p>
-    <a href="http://localhost:51092/posts/20260517-120046-robotics/"
+    <a href="http://localhost:1313/posts/20260517-120046-robotics/"
        style="color:var(--rdn-accent); font-size:0.85rem; text-decoration:none;">Read more →</a>
   </article>
   
@@ -1609,7 +1664,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
       May 18, 2026
     </p>
     <h2 style="font-size:1.3rem; font-weight:700; margin-bottom:12px; line-height:1.3;">
-      <a href="http://localhost:51092/posts/20260517-110037-robotics/"
+      <a href="http://localhost:1313/posts/20260517-110037-robotics/"
          style="color:var(--rdn-text-primary); text-decoration:none;"
          onmouseover="this.style.color='var(--rdn-accent)'"
          onmouseout="this.style.color='var(--rdn-text-primary)'">Heavy Robotic Machinery Operates Itself: A Glimpse into the Future of Industrial Automation</a>
@@ -1617,7 +1672,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
     <p style="color:var(--rdn-text-secondary); line-height:1.7; margin-bottom:12px; font-size:0.95rem;">
       <p>The robotics industry is witnessing a transformative shift as heavy machinery begins to operate autonomously, marking a new era in industrial automation. Recent advancements …</p>
     </p>
-    <a href="http://localhost:51092/posts/20260517-110037-robotics/"
+    <a href="http://localhost:1313/posts/20260517-110037-robotics/"
        style="color:var(--rdn-accent); font-size:0.85rem; text-decoration:none;">Read more →</a>
   </article>
   
@@ -1630,7 +1685,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
       May 17, 2026
     </p>
     <h2 style="font-size:1.3rem; font-weight:700; margin-bottom:12px; line-height:1.3;">
-      <a href="http://localhost:51092/posts/20260517-100100-robotics/"
+      <a href="http://localhost:1313/posts/20260517-100100-robotics/"
          style="color:var(--rdn-text-primary); text-decoration:none;"
          onmouseover="this.style.color='var(--rdn-accent)'"
          onmouseout="this.style.color='var(--rdn-text-primary)'">Video Friday: Heavy Robotic Machinery Operates Itself</a>
@@ -1638,7 +1693,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
     <p style="color:var(--rdn-text-secondary); line-height:1.7; margin-bottom:12px; font-size:0.95rem;">
       <p>The latest episode of Video Friday highlights groundbreaking advancements in the field of autonomous heavy machinery. Industries such as construction, mining, and logistics are …</p>
     </p>
-    <a href="http://localhost:51092/posts/20260517-100100-robotics/"
+    <a href="http://localhost:1313/posts/20260517-100100-robotics/"
        style="color:var(--rdn-accent); font-size:0.85rem; text-decoration:none;">Read more →</a>
   </article>
   
@@ -1651,7 +1706,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
       May 17, 2026
     </p>
     <h2 style="font-size:1.3rem; font-weight:700; margin-bottom:12px; line-height:1.3;">
-      <a href="http://localhost:51092/posts/20260517-092053-robotics/"
+      <a href="http://localhost:1313/posts/20260517-092053-robotics/"
          style="color:var(--rdn-text-primary); text-decoration:none;"
          onmouseover="this.style.color='var(--rdn-accent)'"
          onmouseout="this.style.color='var(--rdn-text-primary)'">Video Friday: Heavy Robotic Machinery Operates Itself</a>
@@ -1659,7 +1714,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
     <p style="color:var(--rdn-text-secondary); line-height:1.7; margin-bottom:12px; font-size:0.95rem;">
       <p>The robotics industry continues to push boundaries with advancements in autonomous heavy machinery. This week’s Video Friday highlights the latest breakthroughs in self-operating …</p>
     </p>
-    <a href="http://localhost:51092/posts/20260517-092053-robotics/"
+    <a href="http://localhost:1313/posts/20260517-092053-robotics/"
        style="color:var(--rdn-accent); font-size:0.85rem; text-decoration:none;">Read more →</a>
   </article>
   
@@ -1672,7 +1727,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
       May 16, 2026
     </p>
     <h2 style="font-size:1.3rem; font-weight:700; margin-bottom:12px; line-height:1.3;">
-      <a href="http://localhost:51092/posts/20260516-152228-report/"
+      <a href="http://localhost:1313/posts/20260516-152228-report/"
          style="color:var(--rdn-text-primary); text-decoration:none;"
          onmouseover="this.style.color='var(--rdn-accent)'"
          onmouseout="this.style.color='var(--rdn-text-primary)'">The Evolution of Collaborative Robots in Smart Manufacturing</a>
@@ -1680,7 +1735,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
     <p style="color:var(--rdn-text-secondary); line-height:1.7; margin-bottom:12px; font-size:0.95rem;">
       <p>Collaborative robots, or cobots, have revolutionized the landscape of smart manufacturing by seamlessly integrating with human workers to enhance productivity, safety, and …</p>
     </p>
-    <a href="http://localhost:51092/posts/20260516-152228-report/"
+    <a href="http://localhost:1313/posts/20260516-152228-report/"
        style="color:var(--rdn-accent); font-size:0.85rem; text-decoration:none;">Read more →</a>
   </article>
   
@@ -1693,7 +1748,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
       May 16, 2026
     </p>
     <h2 style="font-size:1.3rem; font-weight:700; margin-bottom:12px; line-height:1.3;">
-      <a href="http://localhost:51092/posts/20260516-152156-report/"
+      <a href="http://localhost:1313/posts/20260516-152156-report/"
          style="color:var(--rdn-text-primary); text-decoration:none;"
          onmouseover="this.style.color='var(--rdn-accent)'"
          onmouseout="this.style.color='var(--rdn-text-primary)'">The Evolution of Collaborative Robots in Smart Manufacturing</a>
@@ -1701,7 +1756,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
     <p style="color:var(--rdn-text-secondary); line-height:1.7; margin-bottom:12px; font-size:0.95rem;">
       <p>The integration of collaborative robots, or cobots, into smart manufacturing has marked a significant leap forward in industrial automation. Unlike traditional robots, cobots are …</p>
     </p>
-    <a href="http://localhost:51092/posts/20260516-152156-report/"
+    <a href="http://localhost:1313/posts/20260516-152156-report/"
        style="color:var(--rdn-accent); font-size:0.85rem; text-decoration:none;">Read more →</a>
   </article>
   
@@ -1714,7 +1769,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
       May 15, 2026
     </p>
     <h2 style="font-size:1.3rem; font-weight:700; margin-bottom:12px; line-height:1.3;">
-      <a href="http://localhost:51092/posts/20260515-032757-report/"
+      <a href="http://localhost:1313/posts/20260515-032757-report/"
          style="color:var(--rdn-text-primary); text-decoration:none;"
          onmouseover="this.style.color='var(--rdn-accent)'"
          onmouseout="this.style.color='var(--rdn-text-primary)'">The Evolution of Collaborative Robots in Smart Manufacturing</a>
@@ -1722,7 +1777,7 @@ Agility Robotics has deployed its bipedal humanoid robot, Digit, in a live wareh
     <p style="color:var(--rdn-text-secondary); line-height:1.7; margin-bottom:12px; font-size:0.95rem;">
       <p>The evolution of collaborative robots (cobots) in smart manufacturing represents a transformative shift in industrial automation, driven by advancements in AI, machine learning, …</p>
     </p>
-    <a href="http://localhost:51092/posts/20260515-032757-report/"
+    <a href="http://localhost:1313/posts/20260515-032757-report/"
        style="color:var(--rdn-accent); font-size:0.85rem; text-decoration:none;">Read more →</a>
   </article>
   
