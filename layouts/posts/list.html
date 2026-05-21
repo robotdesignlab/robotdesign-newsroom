@@ -27,7 +27,7 @@
         onmouseover="this.style.color='var(--rdn-accent)'" onmouseout="this.style.color='var(--rdn-text-primary)'">{{
         .Title }}</a>
     </h2>
-    <p class="rdn-summary" style="line-height:1.7; margin-bottom:12px; font-size:0.95rem;">
+    <p style="color:var(--rdn-text-secondary); line-height:1.7; margin-bottom:12px; font-size:0.95rem;">
       {{ .Summary | truncate 180 }}
     </p>
     <a href="{{ .Permalink }}" style="color:var(--rdn-accent); font-size:0.85rem; text-decoration:none;">Read more →</a>

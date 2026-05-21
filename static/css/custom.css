@@ -8,12 +8,19 @@
   --rdn-bg: #ffffff;
   --rdn-bg-card: #f8fafc;
   --rdn-bg-tag: #f1f5f9;
+  --rdn-bg-code: #f1f5f9;
+
   --rdn-text-primary: #0f172a;
   --rdn-text-secondary: #475569;
   --rdn-text-tertiary: #94a3b8;
+
   --rdn-border: #e2e8f0;
+  --rdn-border-light: #f1f5f9;
+
   --rdn-accent: #2563eb;
+  --rdn-accent-hover: #1d4ed8;
   --rdn-category: #1d4ed8;
+
   --rdn-tag-text: #64748b;
   --rdn-credit: #94a3b8;
   --rdn-navbar-width: 760px;
@@ -21,17 +28,24 @@
 
 /* ── 다크 모드 (.dark 클래스 기준) ── */
 .dark {
-  --rdn-bg: #111827;
-  --rdn-bg-card: #1f2937;
-  --rdn-bg-tag: #111827;
+  --rdn-bg: #0f172a;
+  --rdn-bg-card: #1e293b;
+  --rdn-bg-tag: #0f172a;
+  --rdn-bg-code: #1e293b;
+
   --rdn-text-primary: #f1f5f9;
   --rdn-text-secondary: #94a3b8;
   --rdn-text-tertiary: #64748b;
-  --rdn-border: #374151;
+
+  --rdn-border: #1e293b;
+  --rdn-border-light: #0f172a;
+
   --rdn-accent: #60a5fa;
+  --rdn-accent-hover: #93c5fd;
   --rdn-category: #60a5fa;
-  --rdn-tag-text: #6b7280;
-  --rdn-credit: #6b7280;
+
+  --rdn-tag-text: #64748b;
+  --rdn-credit: #64748b;
 }
 
 /* ── 다크 모드 배경 ── */
@@ -71,13 +85,4 @@
 
 .rdn-content a {
   color: var(--rdn-accent);
-}
-
-/* ── 요약 텍스트 색상 강제 적용 ── */
-html:not(.dark) .rdn-summary {
-  color: #334155 !important;
-}
-
-.dark .rdn-summary {
-  color: #94a3b8 !important;
 }
