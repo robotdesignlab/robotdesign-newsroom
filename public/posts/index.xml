@@ -1,13 +1,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Robot Design Net – Articles</title>
-    <link>http://localhost:1313/posts/</link>
+    <link>http://localhost:50846/posts/</link>
     <description>Recent content in Articles on Robot Design Net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 17 May 2026 23:01:00 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 19 May 2026 06:00:26 +0900</lastBuildDate>
     
-	  <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="http://localhost:50846/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -16,11 +16,397 @@
     
     
     <item>
+      <title>What to Expect from Google in Robotics: A B2B Industry Insight</title>
+      <link>http://localhost:50846/posts/20260518-170026-robotics/</link>
+      <pubDate>Tue, 19 May 2026 06:00:26 +0900</pubDate>
+      
+      <guid>http://localhost:50846/posts/20260518-170026-robotics/</guid>
+      <description>
+        
+        
+        &lt;p&gt;This week, Google is expected to make significant announcements that could reshape the robotics industry, particularly in the B2B sector. The tech giant has been quietly advancing its robotics initiatives, focusing on integrating artificial intelligence (AI) and machine learning with robotics hardware. Industry insiders anticipate Google may unveil new partnerships with manufacturing and logistics companies, aiming to enhance automation capabilities in supply chain operations. Such collaborations could lead to increased efficiency and cost savings for businesses relying on robotics-driven solutions.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>What to Expect from Google in the Robotics Industry This Week</title>
+      <link>http://localhost:50846/posts/20260518-150100-robotics/</link>
+      <pubDate>Tue, 19 May 2026 04:01:00 +0900</pubDate>
+      
+      <guid>http://localhost:50846/posts/20260518-150100-robotics/</guid>
+      <description>
+        
+        
+        &lt;p&gt;As Google prepares to unveil its latest advancements this week, the robotics industry is abuzz with speculation. The tech giant has been making significant strides in robotics, focusing on integrating artificial intelligence with advanced robotic systems. Experts anticipate that Google will showcase groundbreaking developments in autonomous systems, machine learning algorithms, and human-robot interaction technologies. These innovations are expected to set new benchmarks for the industry, influencing everything from manufacturing to healthcare. With Google&amp;rsquo;s track record of pioneering technologies, the upcoming announcements are likely to have a profound impact on the robotics landscape. One of the most anticipated reveals is Google&amp;rsquo;s progress in autonomous robots for industrial applications. These robots are designed to enhance efficiency and safety in manufacturing processes, reducing human error and operational costs. By leveraging AI and machine learning, Google&amp;rsquo;s robots can adapt to dynamic environments, making them highly versatile and reliable. This development is poised to revolutionize industries that rely on precision and automation, including automotive, electronics, and logistics. The potential for increased productivity and cost savings has already garnered significant interest from industry leaders. Another area of focus is likely to be Google&amp;rsquo;s advancements in human-robot collaboration. The company has been working on robots that can seamlessly integrate into human workflows, providing assistance in complex tasks. These collaborative robots, or cobots, are equipped with advanced sensors and AI algorithms to ensure safe and efficient interaction with human workers. This technology is particularly relevant for sectors such as healthcare, where robots can assist in surgeries or patient care, and in retail, where they can enhance customer service. By bridging the gap between humans and machines, Google is paving the way for a more harmonious and productive working environment. Finally, Google may also highlight its efforts in robotics research and development. The company has been investing heavily in cutting-edge technologies, including soft robotics, swarm robotics, and bio-inspired robotics. These innovations are not only pushing the boundaries of what robots can achieve but also opening up new possibilities for applications in diverse fields. Google&amp;rsquo;s commitment to advancing robotics research underscores its dedication to driving innovation and shaping the future of the industry. As the week unfolds, the global robotics community will be closely watching Google&amp;rsquo;s announcements, eager to see how these developments will influence the trajectory of the industry.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>What to Expect from Google in the Robotics Industry This Week</title>
+      <link>http://localhost:50846/posts/20260518-140056-robotics/</link>
+      <pubDate>Tue, 19 May 2026 03:00:56 +0900</pubDate>
+      
+      <guid>http://localhost:50846/posts/20260518-140056-robotics/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Google has long been a frontrunner in technological innovation, and its ventures into robotics are no exception. This week, industry insiders are anticipating significant announcements from Google that could reshape the robotics landscape. With advancements in AI and machine learning, Google is expected to unveil new integrations that enhance robotic autonomy and efficiency. These developments could have profound implications for sectors ranging from manufacturing to healthcare, where precision and adaptability are critical. As Google continues to push the boundaries of robotics, the focus will likely be on their ability to create scalable, intelligent systems that are accessible to a wide range of industries. Analysts predict that Google will showcase their latest robotic platforms, possibly featuring enhanced sensory capabilities and improved human-robot interaction, which are essential for the next generation of collaborative robots. Additionally, Google&amp;rsquo;s commitment to ethical AI and robotics will likely be a key theme, addressing concerns about automation and job displacement while ensuring transparency and accountability in their technological deployments. The unveiling of Google&amp;rsquo;s new robotics initiatives is set to spark discussions across the tech world, potentially setting new standards for innovation and functionality in the industry.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Inside Anduril and Meta’s Quest to Make Smart Glasses for Warfare</title>
+      <link>http://localhost:50846/posts/20260518-130040-robotics/</link>
+      <pubDate>Tue, 19 May 2026 02:00:40 +0900</pubDate>
+      
+      <guid>http://localhost:50846/posts/20260518-130040-robotics/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Anduril Industries, known for its cutting-edge defense technology, has partnered with Meta to explore the development of smart glasses tailored for military applications. This collaboration aims to integrate Meta&amp;rsquo;s advanced augmented reality (AR) capabilities with Anduril&amp;rsquo;s expertise in battlefield technology. The goal is to create a wearable device that enhances situational awareness, communication, and decision-making for soldiers in combat zones. These smart glasses could potentially revolutionize modern warfare by providing real-time data visualization, threat detection, and augmented navigation systems directly within the soldier’s line of sight. This initiative underscores the growing intersection of consumer technology and military innovation, as companies leverage advancements in AR and AI to address complex challenges on the battlefield. The project highlights the increasing importance of human-machine teaming in modern military operations, where technology is designed to augment human capabilities rather than replace them. By combining Meta’s proficiency in AR hardware and software with Anduril’s focus on defense solutions, the partnership seeks to deliver a product that could redefine the future of soldier technology. However, the development of such devices raises ethical considerations, particularly regarding the potential escalation of warfare and the implications of advanced surveillance capabilities. As the project progresses, it will be crucial to balance technological innovation with responsible deployment. The collaboration between Anduril and Meta exemplifies the evolving role of private-sector companies in shaping defense strategies, as well as the potential for consumer-driven technologies to influence military advancements. This partnership could pave the way for further integration of AR and AI into defense systems, marking a significant shift in how militaries approach modern combat.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>The Download: Musk v. Altman Week 3, and Trump’s Tech Trading</title>
+      <link>http://localhost:50846/posts/20260518-120043-robotics/</link>
+      <pubDate>Tue, 19 May 2026 01:00:43 +0900</pubDate>
+      
+      <guid>http://localhost:50846/posts/20260518-120043-robotics/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The ongoing rivalry between Elon Musk and Sam Altman has entered its third week, and the tech world is watching closely. With both leaders at the forefront of innovation—Musk with Tesla, SpaceX, and Neuralink, and Altman with OpenAI—their public disagreements over AI ethics and technological direction have sparked widespread debate. Musk has consistently warned about the dangers of unchecked AI development, while Altman advocates for responsible yet rapid progress. This clash highlights the broader industry tension between caution and acceleration in AI robotics. As companies increasingly integrate AI into robotics, the debate over regulation and ethical boundaries becomes ever more critical. Meanwhile, in a surprising turn, former President Donald Trump has re-entered the tech scene, engaging in high-profile tech trading deals. Trump’s focus appears to be on acquiring emerging technologies, particularly in AI and robotics, signaling a potential shift in his business strategy. This move has raised eyebrows, as it aligns with the growing global interest in securing dominance in next-gen tech industries. Critics argue that such involvement could politicize advancements, while supporters see it as a strategic play to bolster American tech leadership. The convergence of these events underscores the high stakes in the robotics and AI sectors. As Musk and Altman continue their public sparring, and Trump enters the fray, the industry faces a pivotal moment. Companies must navigate these dynamics carefully, balancing innovation with ethical considerations, while keeping an eye on the evolving competitive landscape. The decisions made today will shape the future of robotics and AI for decades to come.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>The Download: Musk v. Altman Week 3, and Trump’s Tech Trading - A Robotics Industry Perspective</title>
+      <link>http://localhost:50846/posts/20260518-100048-robotics/</link>
+      <pubDate>Mon, 18 May 2026 23:00:48 +0900</pubDate>
+      
+      <guid>http://localhost:50846/posts/20260518-100048-robotics/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The ongoing rivalry between Elon Musk and Sam Altman has entered its third week, capturing the attention of the tech and robotics industries. Musk’s ventures, including Tesla and SpaceX, have consistently pushed the boundaries of robotics and AI, while Altman’s OpenAI has been a leader in generative AI advancements. This week, the focus has shifted to their differing visions for the future of AI-driven robotics, with Musk emphasizing caution and regulation, while Altman advocates for rapid innovation and deployment. Their clash underscores the broader debate within the industry about the balance between progress and ethical considerations in robotics and AI development. Meanwhile, former President Donald Trump’s foray into tech trading has raised eyebrows in the robotics sector. Trump’s recent investments in emerging AI and robotics startups signal a potential shift in his engagement with the tech industry. While some view this as a strategic move to capitalize on the growing importance of robotics, others question the implications of such involvement, given the sector’s reliance on innovation and forward-thinking leadership. As the robotics industry continues to evolve, these developments highlight the intersection of technology, politics, and business, shaping the trajectory of innovation in the years to come.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>The Download: Musk v. Altman Week 3, and Trump’s Tech Trading - A Robotics Industry Perspective</title>
+      <link>http://localhost:50846/posts/20260518-090054-robotics/</link>
+      <pubDate>Mon, 18 May 2026 22:00:54 +0900</pubDate>
+      
+      <guid>http://localhost:50846/posts/20260518-090054-robotics/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The ongoing dispute between Elon Musk and Sam Altman has entered its third week, drawing significant attention from the robotics and AI industries. Musk, founder of Tesla and SpaceX, has been vocal about his concerns regarding OpenAI&amp;rsquo;s direction under Altman&amp;rsquo;s leadership. This clash underscores a broader debate about the ethical and strategic directions of AI development, which is critical for robotics companies relying on advanced AI integrations. As robotics increasingly depend on AI for automation, decision-making, and human-robot interaction, the outcome of this feud could influence the trajectory of AI innovation and its applications in robotics.&lt;/p&gt;
+&lt;p&gt;Meanwhile, the tech trading initiatives linked to former President Donald Trump have sparked discussions about the geopolitical implications of technological advancements. Robotics companies, particularly those involved in manufacturing and defense, are closely monitoring these developments. The potential for increased tech trade restrictions or collaborations could impact supply chains, innovation partnerships, and market expansion strategies. For instance, stricter export controls on robotics technology could limit access to crucial markets, while bilateral agreements might open new opportunities for collaboration.&lt;/p&gt;
+&lt;p&gt;The convergence of these two narratives highlights the complex interplay between leadership disputes in tech giants and geopolitical tech trading policies. Robotics companies must navigate these uncertainties by diversifying their technology partnerships and staying agile in their product development. The Musk-Altman feud emphasizes the need for transparent governance in AI-driven robotics, while Trump’s tech trading moves underscore the importance of strategic planning in a volatile global market.&lt;/p&gt;
+&lt;p&gt;As the robotics industry continues to evolve, leaders must balance ethical considerations with business imperatives. The Musk v. Altman saga and Trump’s tech trading initiatives serve as reminders that external factors can significantly shape the industry’s future. Companies that proactively address these challenges by fostering innovation, ensuring ethical AI use, and adapting to geopolitical shifts will be better positioned to thrive in this dynamic landscape.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>What to Expect from Google This Week: Key Announcements in Robotics and AI</title>
+      <link>http://localhost:50846/posts/20260518-172820-robotics/</link>
+      <pubDate>Mon, 18 May 2026 21:28:20 +0900</pubDate>
+      
+      <guid>http://localhost:50846/posts/20260518-172820-robotics/</guid>
+      <description>
+        
+        
+        &lt;p&gt;This week, Google is expected to unveil significant updates across its robotics and AI ecosystems, continuing its push to integrate advanced machine learning into physical systems. Industry insiders anticipate announcements regarding the next phase of Google&amp;rsquo;s Robotics division, including potential commercial partnerships and new research breakthroughs in manipulation and navigation. With Google&amp;rsquo;s DeepMind and Brain teams collaborating closely, the focus is likely on enhancing real-world applicability of reinforcement learning and computer vision for industrial robots.&lt;/p&gt;
+&lt;p&gt;One major highlight could be the expansion of Google&amp;rsquo;s Cloud Robotics platform, designed to enable remote robot management and data processing at scale. This aligns with the growing demand for flexible automation solutions in manufacturing and logistics, where real-time adaptability is critical. Analysts predict new open-source releases and API updates that lower entry barriers for robotics startups and enterprise developers, fostering a broader ecosystem around Google&amp;rsquo;s tools.&lt;/p&gt;
+&lt;p&gt;Additionally, Google may showcase progress in autonomous mobile robots (AMRs) for warehouse automation, leveraging its expertise in mapping and localization. Collaborations with key players in the supply chain sector could be announced, aiming to address labor shortages and operational inefficiencies. The integration of generative AI for human-robot interaction, such as natural language command systems, is another area likely to receive attention.&lt;/p&gt;
+&lt;p&gt;Overall, this week&amp;rsquo;s announcements are poised to reinforce Google&amp;rsquo;s commitment to scalable, AI-driven robotics solutions that blend cloud intelligence with edge computing. As the industry watches, these developments could set new standards for B2B robotics, emphasizing safety, reliability, and ease of deployment. Stakeholders should monitor Google&amp;rsquo;s cloud and hardware roadmaps closely for actionable insights into the future of automated systems.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>What to expect from Google this week</title>
+      <link>http://localhost:50846/posts/20260518-172143-robotics/</link>
+      <pubDate>Mon, 18 May 2026 21:21:43 +0900</pubDate>
+      
+      <guid>http://localhost:50846/posts/20260518-172143-robotics/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Google is poised to make significant announcements at its annual hardware and AI event, likely focusing on the latest Pixel devices and substantial advances in its AI ecosystem. The event, scheduled for this week, is expected to showcase the Pixel 9 series, the Pixel Watch 3, and the Pixel Buds Pro 2, alongside deep dives into Gemini, Google&amp;rsquo;s flagship large language model. Key themes will include enhanced on-device AI processing, tighter integration across hardware and software, and new features that leverage machine learning for improved user experiences. For enterprise and B2B robotics markets, the event&amp;rsquo;s implications are particularly noteworthy as Google&amp;rsquo;s AI advancements continue to influence industrial automation, data processing, and edge computing capabilities.&lt;/p&gt;
+&lt;p&gt;In the robotics sector, Google&amp;rsquo;s AI developments have direct applications in autonomous navigation, object recognition, and human-robot interaction. The anticipated upgrades to Google&amp;rsquo;s AI suite, such as improved natural language understanding and multimodal capabilities, can be leveraged in robotic systems for better command interpretation and environmental awareness. Companies integrating Google&amp;rsquo;s tools into their robotics stacks may benefit from more efficient cloud-to-edge AI deployment, reduced latency, and enhanced decision-making algorithms. The Pixel hardware, with its advanced sensors and processors, also serves as a testing ground for technologies that can be scaled to industrial robots and autonomous vehicles.&lt;/p&gt;
+&lt;p&gt;Another area of interest is Google&amp;rsquo;s strategy for federated learning and privacy-preserving AI, which aligns with growing demands for secure data handling in robotics applications. The event may introduce new frameworks for model training that reduce dependency on centralized cloud data, allowing robots to learn from local data without compromising sensitive information. This is critical for sectors like healthcare, manufacturing, and logistics, where compliance with data regulations is paramount. Additionally, improvements in Google&amp;rsquo;s Tensor processing units and on-device AI performance can enable more responsive and autonomous robot behavior in real-time environments.&lt;/p&gt;
+&lt;p&gt;Looking ahead, Google&amp;rsquo;s announcements this week will likely reinforce its commitment to AI-first innovation, providing robotics companies with more sophisticated and accessible AI tools. The integration of generative AI into mainstream hardware signals a shift toward more adaptive and intelligent systems. For B2B robotics stakeholders, staying abreast of these developments will be crucial for maintaining a competitive edge, as the convergence of AI and robotics accelerates. The event promises to set the stage for how Google&amp;rsquo;s technology will shape the future of industrial automation and intelligent machines.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Musk vs. Altman Week 3: A Clash of Visions Roils the Robotics Industry</title>
+      <link>http://localhost:50846/posts/20260518-080043-robotics/</link>
+      <pubDate>Mon, 18 May 2026 21:00:43 +0900</pubDate>
+      
+      <guid>http://localhost:50846/posts/20260518-080043-robotics/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The ongoing feud between Elon Musk and Sam Altman has reached a pivotal moment, with Week 3 of their public dispute centering on mutual critiques of each other’s credibility. Musk, the CEO of Tesla and SpaceX, has long been a prominent figure in robotics and AI, with ventures like Optimus robots and Neuralink. Altman, the CEO of OpenAI, has emerged as a leading voice in AI ethics and innovation. Their clash, however, is not just personal—it reflects deeper divisions within the robotics and AI sectors about the direction of technological development and its societal implications. The industry is now watching closely as stakeholders begin to pick sides, a decision that could reshape alliances and competition in the field. Musk has accused Altman of prioritizing profit over ethical considerations, particularly in OpenAI’s rapid commercialization of AI technologies. Altman, in turn, has criticized Musk’s approach as overly ambitious and potentially destabilizing, citing concerns about the safety and practicality of Tesla’s robotics ventures. These exchanges highlight the tension between rapid innovation and cautious, ethical deployment—a debate that resonates across the robotics industry. As the dispute escalates, the jury—comprising industry leaders, investors, and policymakers—will weigh in on who presents the more credible vision. Their verdict could influence funding, regulatory frameworks, and public perception for years to come. This clash underscores the critical role of leadership in shaping the future of robotics and AI, as well as the high stakes involved in balancing innovation with responsibility.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Musk v. Altman Week 3: Analyzing the Clash of Tech Titans in Robotics</title>
+      <link>http://localhost:50846/posts/20260518-073657-robotics/</link>
+      <pubDate>Mon, 18 May 2026 20:36:57 +0900</pubDate>
+      
+      <guid>http://localhost:50846/posts/20260518-073657-robotics/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The ongoing feud between Elon Musk and Sam Altman has reached a critical juncture, as Week 3 of their public disagreement saw the two tech leaders trading sharp criticisms over each other’s credibility. Musk, CEO of Tesla and SpaceX, and Altman, CEO of OpenAI, have long been influential figures in the robotics and AI industries. Their latest clash, however, has brought their differing visions and approaches to the forefront, sparking intense debate among industry stakeholders. With the jury—both literal and metaphorical—now set to weigh in, the ramifications for the robotics sector could be significant. This week’s developments centered on accusations of unethical AI practices and misguided priorities, with Musk questioning OpenAI’s transparency and Altman challenging Tesla’s autonomous vehicle safety standards. Both leaders leveraged their respective platforms to amplify their arguments, drawing attention to the ethical and technological challenges facing the robotics industry. Musk’s criticism of OpenAI’s shift from a nonprofit to a profit-driven model underscores broader concerns about the commercialization of AI and its potential risks. Meanwhile, Altman’s critique of Tesla’s self-driving technology highlights the ongoing struggle to balance innovation with safety. The jury’s decision, whether in a legal or public opinion context, will likely shape the trajectory of robotics and AI development. Industry leaders are closely watching this clash, as it underscores the need for clear ethical guidelines and collaboration in advancing robotics technologies. As Musk and Altman continue to spar, their feud serves as a reminder of the high stakes involved in pioneering cutting-edge technologies. The outcome of this dispute could influence investor confidence, regulatory frameworks, and public perception of robotics and AI.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Musk vs. Altman Showdown Week 3: Credibility Clash Shakes Robotics Industry</title>
+      <link>http://localhost:50846/posts/20260518-060053-robotics/</link>
+      <pubDate>Mon, 18 May 2026 19:00:53 +0900</pubDate>
+      
+      <guid>http://localhost:50846/posts/20260518-060053-robotics/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The ongoing public feud between Elon Musk and Sam Altman has entered its third week, with the two tech titans trading blows over each other’s credibility in the robotics sector. Musk, CEO of Tesla and SpaceX, has long been a vocal advocate for AI regulation, while Altman, co-founder of OpenAI and CEO of Anthropic, has positioned himself as a pioneer in ethical AI development. Their clash has escalated beyond personal jabs, now encompassing their respective contributions to robotics and AI innovation, leaving the industry watching closely for the outcome. This public spat has significant implications for the B2B robotics market, as partnerships, investments, and technological advancements hang in the balance. Stakeholders across industries are weighing the credibility of both leaders, questioning whose vision aligns more closely with the future of robotics and AI integration. Musk’s focus on humanoid robotics through Tesla’s Optimus project contrasts sharply with Altman’s emphasis on AI-driven solutions for enterprise applications. This divergence in approach has sparked debates over which strategy will dominate the next wave of robotics development. The jury—comprising industry leaders, investors, and technologists—remains divided. Some argue Musk’s tangible hardware advancements give him the edge, while others praise Altman’s software-first philosophy for its scalability and adaptability. As the feud continues, the robotics industry braces for its impact on innovation, collaboration, and market dynamics. The outcome could reshape the trajectory of AI and robotics, influencing everything from manufacturing automation to consumer robotics. For B2B players, the stakes are high, as aligning with the right vision could mean securing a competitive advantage in an increasingly crowded market.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Musk v. Altman Week 3: A Clash of Titans in the Robotics Industry</title>
+      <link>http://localhost:50846/posts/20260518-050051-robotics/</link>
+      <pubDate>Mon, 18 May 2026 18:00:51 +0900</pubDate>
+      
+      <guid>http://localhost:50846/posts/20260518-050051-robotics/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The ongoing feud between Elon Musk and Sam Altman has reached its third week, with both tech moguls trading barbs over each other’s credibility in the robotics and AI sectors. Musk, CEO of Tesla and SpaceX, has been a vocal critic of OpenAI, the organization Altman leads, accusing it of straying from its original mission to develop AI for the benefit of humanity. Altman, on the other hand, has defended OpenAI&amp;rsquo;s approach, emphasizing the importance of commercial viability to sustain groundbreaking research. This high-profile dispute has captivated the tech industry, raising questions about the future direction of AI and robotics development. The jury—comprising industry experts, investors, and the broader tech community—will ultimately pick a side, and their decision could have far-reaching implications. As the robotics industry continues to evolve at a rapid pace, the outcome of this clash could influence investment trends, regulatory frameworks, and the ethical considerations surrounding AI. Both Musk and Altman have passionate followings, and their ability to sway public opinion will play a crucial role in shaping the narrative. The stakes are high, and the robotics industry is watching closely to see which vision for the future prevails.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Musk v. Altman Week 3: Credibility Clash in the Robotics Industry</title>
+      <link>http://localhost:50846/posts/20260518-040307-robotics/</link>
+      <pubDate>Mon, 18 May 2026 17:03:07 +0900</pubDate>
+      
+      <guid>http://localhost:50846/posts/20260518-040307-robotics/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The ongoing feud between Elon Musk and Sam Altman has reached a pivotal moment, with both tech titans trading blows over each other’s credibility in the robotics and AI sectors. Musk, CEO of Tesla and SpaceX, has long been a vocal advocate for cautious AI development, emphasizing existential risks. In contrast, Altman, CEO of OpenAI, has positioned himself as a forward-thinking innovator, pushing for rapid advancements in AI and robotics. Their public disagreement has sparked intense debate across the industry, drawing attention to the ethical and strategic directions of robotics innovation. As the jury—comprising industry experts, investors, and policymakers—prepares to weigh in, the stakes for both leaders have never been higher. This clash is not just a personal rivalry but a broader reflection of divergent philosophies shaping the future of robotics and artificial intelligence. Musk’s warnings about the dangers of unchecked AI development resonate with those who prioritize safety and regulation. Meanwhile, Altman’s emphasis on progress and scalability appeals to stakeholders eager to capitalize on the growing commercial potential of robotics. Both leaders bring unique perspectives to the table, making it difficult for the jury to pick a side. Their credibility in the industry hinges on this battle, which could influence investment decisions, regulatory frameworks, and technological priorities. As the robotics sector continues to evolve, the outcome of this clash could shape the trajectory of innovation for years to come. Whether the jury aligns with Musk’s cautionary approach or Altman’s ambitious vision, their decision will undoubtedly leave a lasting impact on the industry.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Musk vs. Altman: A Clash of Titans in Robotics and AI Credibility</title>
+      <link>http://localhost:50846/posts/20260518-000032-robotics/</link>
+      <pubDate>Mon, 18 May 2026 13:00:32 +0900</pubDate>
+      
+      <guid>http://localhost:50846/posts/20260518-000032-robotics/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The robotics and artificial intelligence industries are no strangers to high-profile disputes, but the ongoing clash between Elon Musk and Sam Altman has taken center stage. Musk, the CEO of Tesla and SpaceX, and Altman, the CEO of OpenAI, have traded blows over each other’s credibility in AI development and robotics innovation. This public feud has sparked debates within the B2B sector, as industry leaders weigh in on who holds the upper hand in shaping the future of these transformative technologies. Both figures are influential pioneers, but their conflicting visions and approaches have created a rift that could influence the trajectory of AI and robotics. Musk’s emphasis on AI safety and Altman’s focus on democratizing AI tools highlight the differing priorities driving their companies. The jury—comprising industry experts, investors, and stakeholders—now faces the challenge of picking a side in this battle of credibility. The outcome of this dispute could have far-reaching implications for the robotics and AI industries, particularly in terms of investment priorities and regulatory frameworks. As Musk and Altman continue to spar, businesses in the robotics sector are closely monitoring the developments, aware that the credibility of these leaders will shape the next generation of technological advancements.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Musk v. Altman Week 3: Credibility Clash Sparks Industry Debate</title>
+      <link>http://localhost:50846/posts/20260517-230040-robotics/</link>
+      <pubDate>Mon, 18 May 2026 12:00:40 +0900</pubDate>
+      
+      <guid>http://localhost:50846/posts/20260517-230040-robotics/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The ongoing rivalry between Elon Musk and Sam Altman has escalated into a highly publicized credibility battle, drawing significant attention from the robotics and AI industries. Musk, CEO of Tesla and SpaceX, has long been a vocal critic of OpenAI, co-founded by Altman, accusing it of deviating from its original mission of developing AI for the benefit of humanity. Altman, now CEO of OpenAI, has defended the organization’s direction, emphasizing its commitment to safety and innovation. This clash has sparked a broader debate about the future of AI development and ethical governance in the robotics sector. Both leaders have leveraged their platforms to challenge each other’s credibility, leaving industry stakeholders to weigh in on who holds the moral and technological high ground. The dispute raises critical questions about leadership, transparency, and the responsible advancement of AI technologies, as the robotics community watches closely for potential repercussions on innovation and collaboration. As the jury—comprising industry experts, investors, and policymakers—begins to pick a side, the outcome could redefine alliances and priorities within the rapidly evolving robotics and AI landscape. This high-stakes confrontation underscores the importance of trust and vision in shaping the future of automation and artificial intelligence.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Elon Musk and Sam Altman Clash: Implications for the Robotics Industry</title>
+      <link>http://localhost:50846/posts/20260517-210042-robotics/</link>
+      <pubDate>Mon, 18 May 2026 10:00:42 +0900</pubDate>
+      
+      <guid>http://localhost:50846/posts/20260517-210042-robotics/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The ongoing feud between Elon Musk and Sam Altman has captured the attention of the tech and robotics industries. As two of the most prominent figures in artificial intelligence and robotics, their public disagreements over credibility and leadership have raised questions about the future direction of key projects and companies. Musk, known for his ventures like Tesla and SpaceX, has been vocal about his concerns regarding Altman&amp;rsquo;s leadership at OpenAI, a company they co-founded. Altman, on the other hand, has defended his role and vision, emphasizing the importance of collaboration and innovation in AI and robotics. This clash has not only sparked debates within the industry but also highlighted the competitive nature of technological advancements in robotics. The dispute underscores the high stakes in a sector that is rapidly evolving and increasingly influential in global markets. As the industry watches closely, the outcome of this standoff could have significant implications for the future of robotics and AI development. Companies and investors are likely to reassess their strategies based on the credibility and leadership perceptions of these key figures. Ultimately, the resolution of this conflict will serve as a litmus test for the robustness of partnerships and leadership in the high-stakes world of robotics and AI innovation.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Musk v. Altman Week 3: A Clash of Titans in AI Credibility</title>
+      <link>http://localhost:50846/posts/20260517-200153-robotics/</link>
+      <pubDate>Mon, 18 May 2026 09:01:53 +0900</pubDate>
+      
+      <guid>http://localhost:50846/posts/20260517-200153-robotics/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The ongoing public feud between Elon Musk and Sam Altman has reached a critical juncture, with both tech leaders trading sharp critiques over each other’s credibility in the field of artificial intelligence. Musk, CEO of Tesla and SpaceX, has accused Altman’s OpenAI of straying from its original mission of democratizing AI, while Altman, OpenAI&amp;rsquo;s CEO, has countered by questioning Musk’s commitment to ethical AI development. This debate has captivated the tech and robotics industries, raising questions about the future direction of AI innovation and governance. As the controversy enters its third week, the spotlight has shifted to the broader tech community, which now plays the role of jury in this high-stakes dispute. Both Musk and Altman have leveraged their platforms to rally support, with Musk emphasizing the dangers of unchecked AI and Altman highlighting OpenAI’s advancements in responsible AI deployment. This clash underscores the growing tension between competing visions for AI’s role in society—whether it should be tightly controlled or openly accessible. Industry analysts suggest that the outcome of this debate could shape regulatory frameworks and investment priorities in AI for years to come. As the jury—comprising peers, policymakers, and the public—deliberates, the implications for the robotics and AI sectors are profound. Will the focus shift toward stricter oversight, or will innovation continue to drive progress? The answer lies in whose narrative gains traction in the weeks ahead. Meanwhile, companies in the robotics and AI space are watching closely, aware that the fallout from this feud could redefine their strategic priorities and market positioning.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
       <title>Video Friday: Heavy Robotic Machinery Operates Itself</title>
-      <link>http://localhost:1313/posts/20260517-100100-robotics/</link>
+      <link>http://localhost:50846/posts/20260517-190043-robotics/</link>
+      <pubDate>Mon, 18 May 2026 08:00:43 +0900</pubDate>
+      
+      <guid>http://localhost:50846/posts/20260517-190043-robotics/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The latest installment of Video Friday showcases the cutting-edge advancements in autonomous heavy machinery, highlighting how robotics is revolutionizing industries like construction, mining, and logistics. These self-operating machines, equipped with advanced sensors, AI algorithms, and machine learning capabilities, are not only increasing efficiency but also significantly reducing human error and safety risks. Companies leading this innovation are reporting substantial ROI, as these robots can operate around the clock with minimal downtime, transforming traditional workflows.&lt;/p&gt;
+&lt;p&gt;One standout example featured in the video is an autonomous bulldozer that uses real-time data to optimize earthmoving tasks. By leveraging GPS, LiDAR, and AI, the machine can navigate complex terrains and adjust its operations dynamically. This level of precision and adaptability is unparalleled in manual operations, and it underscores the potential for robotics to redefine heavy machinery applications. Such innovations are particularly valuable in environments where human labor is hazardous or impractical.&lt;/p&gt;
+&lt;p&gt;The integration of robotics into heavy machinery is also driving sustainability efforts. Autonomous systems are designed to optimize fuel consumption and minimize waste, aligning with global commitments to reduce carbon footprints. Additionally, predictive maintenance enabled by IoT connectivity ensures that these machines operate at peak efficiency, further enhancing their environmental and economic benefits. As industries face increasing pressure to adopt greener practices, robotics offers a compelling solution.&lt;/p&gt;
+&lt;p&gt;Despite the clear advantages, challenges remain. High initial investment costs and the need for specialized training to manage these systems are barriers to widespread adoption. However, as technology continues to evolve and economies of scale are achieved, these obstacles are expected to diminish. The Video Friday feature serves as a testament to the transformative power of robotics in heavy machinery, signaling a new era of automation across industries.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Musk v. Altman Week 3: Credibility Clash Shakes Robotics Industry</title>
+      <link>http://localhost:50846/posts/20260517-183812-robotics/</link>
+      <pubDate>Mon, 18 May 2026 07:38:12 +0900</pubDate>
+      
+      <guid>http://localhost:50846/posts/20260517-183812-robotics/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The feud between Elon Musk and Sam Altman has entered its third week, with the two tech titans trading pointed criticisms over each other’s credibility in the robotics and AI industries. Musk, CEO of Tesla and SpaceX, has long been a vocal advocate for cautious AI development, warning of existential risks. Altman, CEO of OpenAI, has positioned himself as a proponent of responsible yet ambitious AI innovation. Their public disagreement has drawn attention to the broader tensions within the robotics and AI sectors, where ethical considerations often clash with rapid technological advancement. The ongoing debate has left industry stakeholders questioning which vision will ultimately prevail. Musk’s recent accusations against Altman’s leadership at OpenAI, alleging a departure from the organization’s original mission, have intensified the conflict. Altman has countered by questioning Musk’s motives, suggesting that his warnings about AI are driven by self-interest rather than genuine concern. These exchanges have sparked a larger conversation about the credibility of these influential figures and the future direction of AI and robotics. As the industry watches closely, the jury—composed of investors, developers, and policymakers—will ultimately decide which leader’s vision aligns best with the needs and ethical imperatives of the sector. The outcome of this clash could have significant implications for the trajectory of AI and robotics development worldwide. With both Musk and Altman commanding substantial influence, their ongoing dispute underscores the high stakes involved in shaping the future of technology.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Video Friday: Heavy Robotic Machinery Operates Itself</title>
+      <link>http://localhost:50846/posts/20260517-180039-robotics/</link>
+      <pubDate>Mon, 18 May 2026 07:00:39 +0900</pubDate>
+      
+      <guid>http://localhost:50846/posts/20260517-180039-robotics/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The robotics industry has reached a pivotal moment with the advent of heavy robotic machinery capable of operating autonomously. Recent advancements showcased in this week&amp;rsquo;s Video Friday highlight the increasing sophistication of self-operating systems in construction, mining, and agriculture. These machines, powered by cutting-edge AI and machine learning algorithms, are now performing complex tasks with minimal human intervention, significantly enhancing efficiency and safety in high-risk environments.&lt;/p&gt;
+&lt;p&gt;One of the standout demonstrations features autonomous bulldozers and excavators seamlessly coordinating on construction sites. These machines utilize real-time data processing and sensor fusion to navigate dynamic terrains, optimize workflows, and reduce operational downtime. This level of autonomy not only accelerates project timelines but also mitigates the risks associated with human error in hazardous conditions.&lt;/p&gt;
+&lt;p&gt;In the mining sector, self-driving haul trucks and drilling rigs are revolutionizing resource extraction. Equipped with advanced perception systems, these robotic units can operate in extreme conditions, such as deep underground or in areas prone to landslides. The integration of IoT connectivity further enables remote monitoring and predictive maintenance, ensuring uninterrupted operations and reducing maintenance costs.&lt;/p&gt;
+&lt;p&gt;The agricultural industry is also witnessing a transformation with autonomous tractors and harvesters. These machines are equipped with precision agriculture technologies, enabling them to perform tasks like planting, fertilizing, and harvesting with unparalleled accuracy. By leveraging AI-driven analytics, farmers can optimize crop yields and reduce resource wastage, contributing to sustainable farming practices.&lt;/p&gt;
+&lt;p&gt;As heavy robotic machinery increasingly operates itself, industries are poised to achieve unprecedented levels of productivity and safety. However, challenges such as regulatory compliance, cybersecurity, and workforce adaptation remain critical areas for further development. The continued evolution of these technologies promises to reshape traditional industries, driving them toward a more automated and efficient future.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Heavy Robotic Machinery Embraces Autonomy: A Leap Forward in Industrial Robotics</title>
+      <link>http://localhost:50846/posts/20260517-170110-robotics/</link>
+      <pubDate>Mon, 18 May 2026 06:01:10 +0900</pubDate>
+      
+      <guid>http://localhost:50846/posts/20260517-170110-robotics/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The latest advancements in heavy robotic machinery are reshaping the industrial landscape, as autonomous systems take center stage in operations traditionally reliant on human labor. This week&amp;rsquo;s &amp;lsquo;Video Friday&amp;rsquo; highlights groundbreaking developments in self-operating heavy equipment, showcasing machines capable of performing complex tasks with minimal human intervention. These innovations are not only improving efficiency but also addressing critical challenges such as labor shortages and workplace safety. Industries ranging from construction to mining are rapidly adopting these technologies, signaling a transformative shift in how heavy machinery is utilized.&lt;/p&gt;
+&lt;p&gt;One of the most notable examples featured in the video is an autonomous excavator equipped with advanced sensors and AI algorithms. This machine can navigate unpredictable terrains, identify optimal digging locations, and execute precise movements with remarkable accuracy. Such capabilities are particularly valuable in hazardous environments, where human operators face significant risks. By leveraging machine learning and real-time data processing, these robotic systems are setting new standards for reliability and precision in heavy-duty applications.&lt;/p&gt;
+&lt;p&gt;Manufacturers are also focusing on interoperability, ensuring that autonomous machinery can seamlessly integrate with existing workflows. This is achieved through modular designs and open-source software platforms that allow for customization based on specific industry needs. As a result, companies can deploy these solutions without overhauling their entire operational infrastructure, reducing both costs and downtime. The growing emphasis on collaboration between robotics firms and traditional heavy equipment manufacturers is further accelerating the adoption of autonomous technologies.&lt;/p&gt;
+&lt;p&gt;The rise of self-operating heavy machinery is not without its challenges, however. Questions about regulatory compliance, data security, and ethical considerations remain at the forefront of industry discussions. Stakeholders must navigate these complexities to unlock the full potential of autonomous systems while maintaining public trust. Despite these hurdles, the momentum behind this technological revolution is undeniable. As demonstrated in &amp;lsquo;Video Friday,&amp;rsquo; the future of heavy robotic machinery is autonomous, and its impact on the industrial sector will be profound.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Heavy Robotic Machinery Ushers in a New Era of Autonomous Operations</title>
+      <link>http://localhost:50846/posts/20260517-160035-robotics/</link>
+      <pubDate>Mon, 18 May 2026 05:00:35 +0900</pubDate>
+      
+      <guid>http://localhost:50846/posts/20260517-160035-robotics/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The robotics industry is witnessing a transformative shift as heavy machinery begins to operate autonomously, marking a significant milestone in industrial automation. In the latest Video Friday showcase, cutting-edge robotic systems demonstrated their ability to handle complex tasks traditionally managed by human operators. From construction sites to manufacturing floors, these machines are redefining efficiency, safety, and precision in operations that demand heavy lifting and intricate coordination. Companies leading this innovation are leveraging advanced AI, computer vision, and IoT connectivity to ensure seamless integration into existing workflows. This evolution is not only reducing operational costs but also minimizing human exposure to hazardous environments. As industries continue to push the boundaries of automation, the adoption of self-operating heavy machinery is poised to become a cornerstone of modern industrial strategy. The implications for productivity and safety are profound, and early adopters are already reaping the benefits of this technological leap. With robotics becoming increasingly accessible and reliable, the future of heavy machinery lies in autonomous systems that work smarter, not harder.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>The Rise of Autonomous Heavy Robotic Machinery in Industrial Applications</title>
+      <link>http://localhost:50846/posts/20260517-140058-robotics/</link>
+      <pubDate>Mon, 18 May 2026 03:00:58 +0900</pubDate>
+      
+      <guid>http://localhost:50846/posts/20260517-140058-robotics/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The robotics industry is witnessing a transformative shift with the advent of autonomous heavy machinery. This week’s &amp;lsquo;Video Friday&amp;rsquo; highlights groundbreaking advancements where robotic systems are now capable of operating themselves in complex industrial environments. These developments are not just incremental improvements but represent a leap forward in automation technology, enabling machinery to perform tasks with minimal human intervention. Companies are increasingly adopting these solutions to enhance efficiency, reduce operational costs, and improve safety standards across various sectors including construction, mining, and manufacturing.&lt;/p&gt;
+&lt;p&gt;The integration of advanced AI and machine learning algorithms is at the core of this innovation. These technologies empower heavy machinery to process vast amounts of data in real-time, allowing them to make informed decisions on the fly. For instance, autonomous excavators and bulldozers can now navigate challenging terrains, adjust their operations based on environmental factors, and even collaborate with other machines to complete tasks more efficiently. This level of autonomy is particularly beneficial in hazardous environments where human presence can be risky.&lt;/p&gt;
+&lt;p&gt;Safety and precision are two critical advantages offered by these self-operating machines. By eliminating human error, these robotic systems significantly reduce the likelihood of accidents on job sites. Moreover, their precision ensures that tasks are completed to exact specifications, which is crucial in industries like construction where even minor deviations can lead to substantial costs. As these technologies continue to evolve, we can expect them to handle increasingly complex tasks, further reducing the need for human oversight.&lt;/p&gt;
+&lt;p&gt;The future of heavy robotic machinery looks promising, with continuous advancements in AI, sensors, and connectivity driving the industry forward. Companies investing in these technologies are positioning themselves as leaders in a competitive market, ready to meet the demands of modern industrial applications. As we move closer to fully autonomous industrial ecosystems, the role of human operators will shift towards monitoring and managing these intelligent systems, heralding a new era in robotics.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Video Friday: Heavy Robotic Machinery Operates Itself</title>
+      <link>http://localhost:50846/posts/20260517-120046-robotics/</link>
+      <pubDate>Mon, 18 May 2026 01:00:46 +0900</pubDate>
+      
+      <guid>http://localhost:50846/posts/20260517-120046-robotics/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The robotics industry continues to witness groundbreaking advancements, particularly in the realm of heavy machinery automation. This week’s Video Friday highlights the latest innovations in self-operating robotic systems designed for industrial applications. These machines, equipped with advanced AI and machine learning algorithms, are transforming sectors such as construction, mining, and manufacturing by performing complex tasks with precision and efficiency, reducing the need for human intervention in hazardous environments. Companies leading this charge are showcasing their technologies through real-world demonstrations, emphasizing the potential for increased productivity and safety. One notable example is a fully autonomous excavator capable of navigating rugged terrains and executing tasks such as digging and material handling without manual input. The integration of sensors, GPS, and real-time data processing ensures these machines adapt to dynamic conditions, offering unparalleled reliability. As the demand for automation grows, the heavy machinery sector is poised to become a cornerstone of the robotics revolution. Industry experts predict that the widespread adoption of self-operating robotic systems will not only streamline operations but also address labor shortages and reduce operational costs in the long term. This shift is expected to catalyze further innovation, with companies investing heavily in R&amp;amp;D to create smarter, more versatile machines. Looking ahead, the focus will likely shift toward enhancing interoperability between robotic systems and existing infrastructure, paving the way for seamless integration across industries. Collaboration between robotics manufacturers and traditional heavy machinery companies will be crucial in driving this evolution, ensuring that automation solutions meet the specific needs of end-users. As the technology matures, regulatory frameworks and workforce training programs will also play a pivotal role in facilitating the transition to a more automated industrial landscape.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Heavy Robotic Machinery Operates Itself: A Glimpse into the Future of Industrial Automation</title>
+      <link>http://localhost:50846/posts/20260517-110037-robotics/</link>
+      <pubDate>Mon, 18 May 2026 00:00:37 +0900</pubDate>
+      
+      <guid>http://localhost:50846/posts/20260517-110037-robotics/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The robotics industry is witnessing a transformative shift as heavy machinery begins to operate autonomously, marking a new era in industrial automation. Recent advancements showcased in &amp;lsquo;Video Friday: Heavy Robotic Machinery Operates Itself&amp;rsquo; highlight how cutting-edge technologies, including AI, machine learning, and advanced sensors, are enabling these machines to perform complex tasks with minimal human intervention. This evolution is not only enhancing efficiency but also reducing operational risks in industries such as construction, mining, and manufacturing. By leveraging real-time data and predictive analytics, these self-operating systems can adapt to dynamic environments, optimizing performance and minimizing downtime. As industries increasingly adopt these solutions, the demand for skilled professionals capable of developing, maintaining, and managing such systems is expected to surge. Collaboration between robotics companies, software developers, and industrial enterprises will be crucial to ensure seamless integration and scalability of these technologies. The future of heavy machinery lies in its ability to autonomously navigate challenges, further propelling industries toward a more efficient and sustainable future.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Video Friday: Heavy Robotic Machinery Operates Itself</title>
+      <link>http://localhost:50846/posts/20260517-100100-robotics/</link>
       <pubDate>Sun, 17 May 2026 23:01:00 +0900</pubDate>
       
-      <guid>http://localhost:1313/posts/20260517-100100-robotics/</guid>
+      <guid>http://localhost:50846/posts/20260517-100100-robotics/</guid>
       <description>
         
         
@@ -31,10 +417,10 @@
     
     <item>
       <title>Video Friday: Heavy Robotic Machinery Operates Itself</title>
-      <link>http://localhost:1313/posts/20260517-092053-robotics/</link>
+      <link>http://localhost:50846/posts/20260517-092053-robotics/</link>
       <pubDate>Sun, 17 May 2026 22:20:53 +0900</pubDate>
       
-      <guid>http://localhost:1313/posts/20260517-092053-robotics/</guid>
+      <guid>http://localhost:50846/posts/20260517-092053-robotics/</guid>
       <description>
         
         
@@ -45,10 +431,10 @@
     
     <item>
       <title>The Evolution of Collaborative Robots in Smart Manufacturing</title>
-      <link>http://localhost:1313/posts/20260516-152228-report/</link>
+      <link>http://localhost:50846/posts/20260516-152228-report/</link>
       <pubDate>Sat, 16 May 2026 15:22:28 +0900</pubDate>
       
-      <guid>http://localhost:1313/posts/20260516-152228-report/</guid>
+      <guid>http://localhost:50846/posts/20260516-152228-report/</guid>
       <description>
         
         
@@ -59,10 +445,10 @@
     
     <item>
       <title>The Evolution of Collaborative Robots in Smart Manufacturing</title>
-      <link>http://localhost:1313/posts/20260516-152156-report/</link>
+      <link>http://localhost:50846/posts/20260516-152156-report/</link>
       <pubDate>Sat, 16 May 2026 15:17:28 +0900</pubDate>
       
-      <guid>http://localhost:1313/posts/20260516-152156-report/</guid>
+      <guid>http://localhost:50846/posts/20260516-152156-report/</guid>
       <description>
         
         
@@ -73,10 +459,10 @@
     
     <item>
       <title>The Evolution of Collaborative Robots in Smart Manufacturing</title>
-      <link>http://localhost:1313/posts/20260515-032757-report/</link>
+      <link>http://localhost:50846/posts/20260515-032757-report/</link>
       <pubDate>Fri, 15 May 2026 16:27:57 +0900</pubDate>
       
-      <guid>http://localhost:1313/posts/20260515-032757-report/</guid>
+      <guid>http://localhost:50846/posts/20260515-032757-report/</guid>
       <description>
         
         

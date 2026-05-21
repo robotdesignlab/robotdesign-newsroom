@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr"><head>
-	<meta name="generator" content="Hugo 0.161.1"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+	<meta name="generator" content="Hugo 0.161.1"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=50846&amp;path=livereload" data-no-instant defer></script>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="robots" content="noindex, nofollow" />
   <link rel="icon shortcut" href="/favicon.ico" sizes="32x32" />
@@ -10,7 +10,7 @@
 <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
 <link fetchpriority="low" href="/site.webmanifest" rel="manifest" />
 <title>Robot Design Net</title>
-  <meta name="description" content="Global intelligence hub at the intersection of robotics engineering, morphology, and aesthetics — for the people who build robots." /><link rel="canonical" href="http://localhost:1313/" itemprop="url" />
+  <meta name="description" content="Global intelligence hub at the intersection of robotics engineering, morphology, and aesthetics — for the people who build robots." /><link rel="canonical" href="http://localhost:50846/" itemprop="url" />
 
 <meta property="og:title" content="Robotdesign.net">
 <meta
@@ -25,11 +25,13 @@
   content="
     website
   ">
-<meta property="og:url" content="http://localhost:1313/">
+<meta property="og:url" content="http://localhost:50846/">
 
 
   <meta itemprop="name" content="Robotdesign.net">
   <meta itemprop="description" content="Global intelligence hub at the intersection of robotics engineering, morphology, and aesthetics — for the people who build robots.">
+  <meta itemprop="datePublished" content="2026-05-19T06:00:26+09:00">
+  <meta itemprop="dateModified" content="2026-05-19T06:00:26+09:00">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Robotdesign.net">
   <meta name="twitter:description" content="Global intelligence hub at the intersection of robotics engineering, morphology, and aesthetics — for the people who build robots.">
@@ -44,135 +46,337 @@
   
   </head>
 <body>
-    <a href="#content" class="hx:sr-only hx:focus-visible:not-sr-only hx:focus-visible:fixed hx:focus-visible:z-50 hx:focus-visible:top-2 hx:focus-visible:left-2 hx:focus-visible:bg-primary-500 hx:focus-visible:text-white hx:focus-visible:px-4 hx:focus-visible:py-2 hx:focus-visible:rounded-md hx:focus-visible:text-sm hx:focus-visible:font-medium">Skip to content</a><div class="hextra-nav-container hx:sticky hx:top-0 hx:z-20 hx:w-full hx:bg-transparent hx:print:hidden" style="position:relative;">
-  <div class="hextra-nav-container-blur hx:pointer-events-none hx:absolute hx:z-[-1] hx:h-full hx:w-full hx:bg-white hx:dark:bg-dark hx:shadow-[0_2px_4px_rgba(0,0,0,.02),0_1px_0_rgba(0,0,0,.06)] hx:dark:shadow-[0_-1px_0_rgba(255,255,255,.1)_inset]"></div>
+    <a href="#content" class="hx:sr-only hx:focus-visible:not-sr-only hx:focus-visible:fixed hx:focus-visible:z-50 hx:focus-visible:top-2 hx:focus-visible:left-2 hx:focus-visible:bg-primary-500 hx:focus-visible:text-white hx:focus-visible:px-4 hx:focus-visible:py-2 hx:focus-visible:rounded-md hx:focus-visible:text-sm hx:focus-visible:font-medium">Skip to content</a><div class="hextra-nav-container hx:sticky hx:top-0 hx:z-20 hx:w-full hx:bg-transparent hx:print:hidden"
+  style="position:relative;">
+  <div
+    class="hextra-nav-container-blur hx:pointer-events-none hx:absolute hx:z-[-1] hx:h-full hx:w-full hx:bg-white hx:dark:bg-dark hx:shadow-[0_2px_4px_rgba(0,0,0,.02),0_1px_0_rgba(0,0,0,.06)] hx:dark:shadow-[0_-1px_0_rgba(255,255,255,.1)_inset]">
+  </div>
 
   <nav class="hextra-max-navbar-width hx:mx-auto hx:flex hx:items-center hx:justify-between hx:gap-2 hx:h-16 hx:px-6">
-    <a href="/" style="font-weight:700; font-size:1.1rem; color:#f9fafb; letter-spacing:0.02em; text-decoration:none; padding:0; margin:0; display:inline-block;">Robot Design Net</a>
+    <a href="/" style="font-weight:700; font-size:1.1rem;
+   color:var(--rdn-text-primary); letter-spacing:0.02em;
+   text-decoration:none; padding:0; margin:0; display:inline-block;">Robot Design Net</a>
 
-    <div id="rdn-desktop-menu" style="display:flex; align-items:center; gap:24px;">
-      <a href="/posts/" style="font-size:0.9rem; color:#9ca3af; text-decoration:none;">Articles</a>
-      <a href="/about/" style="font-size:0.9rem; color:#9ca3af; text-decoration:none;">About</a>
+
+    <div id="rdn-desktop-menu" style="display:flex; align-items:center; gap:20px;">
+      <a href="/posts/" style="font-size:0.9rem; color:var(--rdn-text-tertiary); text-decoration:none;">Articles</a>
+      <a href="/about/" style="font-size:0.9rem; color:var(--rdn-text-tertiary); text-decoration:none;">About</a>
+      <button id="rdn-theme-toggle" onclick="toggleTheme()"
+        style="background:none; border:none; cursor:pointer; padding:4px; color:var(--rdn-text-tertiary); display:flex; align-items:center;"
+        aria-label="Toggle theme">
+        <svg id="rdn-sun" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+          style="display:none;">
+          <circle cx="12" cy="12" r="5" />
+          <line x1="12" y1="1" x2="12" y2="3" />
+          <line x1="12" y1="21" x2="12" y2="23" />
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+          <line x1="1" y1="12" x2="3" y2="12" />
+          <line x1="21" y1="12" x2="23" y2="12" />
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+        </svg>
+        <svg id="rdn-moon" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"
+          viewBox="0 0 24 24">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+        </svg>
+      </button>
     </div>
 
     <button id="rdn-hamburger" type="button"
-      style="display:none; background:none; border:none; cursor:pointer; padding:4px; color:#f9fafb;"
+      style="display:none; background:none; border:none; cursor:pointer; padding:4px; color:var(--rdn-text-primary);"
       aria-label="Menu">
-      <svg id="rdn-icon-open" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-        <line x1="3" y1="6" x2="21" y2="6"/>
-        <line x1="3" y1="12" x2="21" y2="12"/>
-        <line x1="3" y1="18" x2="21" y2="18"/>
+      <svg id="rdn-icon-open" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"
+        viewBox="0 0 24 24">
+        <line x1="3" y1="6" x2="21" y2="6" />
+        <line x1="3" y1="12" x2="21" y2="12" />
+        <line x1="3" y1="18" x2="21" y2="18" />
       </svg>
-      <svg id="rdn-icon-close" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" style="display:none;">
-        <line x1="18" y1="6" x2="6" y2="18"/>
-        <line x1="6" y1="6" x2="18" y2="18"/>
+      <svg id="rdn-icon-close" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"
+        viewBox="0 0 24 24" style="display:none;">
+        <line x1="18" y1="6" x2="6" y2="18" />
+        <line x1="6" y1="6" x2="18" y2="18" />
       </svg>
     </button>
   </nav>
 
-  <div id="rdn-mobile-menu" style="display:none; position:absolute; right:24px; top:64px; background:#111827; border:1px solid #1f2937; border-radius:8px; box-shadow:0 8px 24px rgba(0,0,0,0.4); min-width:140px; z-index:100;">
-    <a href="/posts/" style="display:block; font-size:0.95rem; color:#d1d5db; text-decoration:none; padding:12px 20px; border-bottom:1px solid #1f2937;">Articles</a>
-    <a href="/about/" style="display:block; font-size:0.95rem; color:#d1d5db; text-decoration:none; padding:12px 20px;">About</a>
+  <div id="rdn-mobile-menu"
+    style="display:none; position:absolute; right:24px; top:64px; background:var(--rdn-bg-card); border:1px solid var(--rdn-border); border-radius:8px; box-shadow:0 8px 24px rgba(0,0,0,0.4); min-width:140px; z-index:100;">
+    <a href="/posts/"
+      style="display:block; font-size:0.95rem; color:var(--rdn-text-primary); text-decoration:none; padding:12px 20px; border-bottom:1px solid var(--rdn-border);">Articles</a>
+    <a href="/about/"
+      style="display:block; font-size:0.95rem; color:var(--rdn-text-primary); text-decoration:none; padding:12px 20px;">About</a>
   </div>
 </div>
 
 <style>
-@media (max-width: 768px) {
-  #rdn-desktop-menu { display: none !important; }
-  #rdn-hamburger { display: block !important; }
-}
+  @media (max-width: 768px) {
+    #rdn-desktop-menu {
+      display: none !important;
+    }
+
+    #rdn-hamburger {
+      display: block !important;
+    }
+  }
 </style>
 
 <script>
-(function() {
-  var btn = document.getElementById('rdn-hamburger');
-  var menu = document.getElementById('rdn-mobile-menu');
-  var iconOpen = document.getElementById('rdn-icon-open');
-  var iconClose = document.getElementById('rdn-icon-close');
-  if (!btn) return;
-  btn.addEventListener('click', function() {
-    var isOpen = menu.style.display === 'block';
-    menu.style.display = isOpen ? 'none' : 'block';
-    iconOpen.style.display = isOpen ? 'block' : 'none';
-    iconClose.style.display = isOpen ? 'none' : 'block';
-  });
-})();
+  function toggleTheme() {
+    var html = document.documentElement;
+    var isDark = html.classList.contains('dark');
+    if (isDark) {
+      html.classList.remove('dark');
+      localStorage.setItem('theme', 'light');
+      document.getElementById('rdn-sun').style.display = 'none';
+      document.getElementById('rdn-moon').style.display = 'block';
+    } else {
+      html.classList.add('dark');
+      localStorage.setItem('theme', 'dark');
+      document.getElementById('rdn-sun').style.display = 'block';
+      document.getElementById('rdn-moon').style.display = 'none';
+    }
+  }
+
+  (function () {
+    var saved = localStorage.getItem('theme');
+    var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    if (saved === 'dark' || (!saved && prefersDark)) {
+      document.documentElement.classList.add('dark');
+      var sun = document.getElementById('rdn-sun');
+      if (sun) sun.style.display = 'block';
+      var moon = document.getElementById('rdn-moon');
+      if (moon) moon.style.display = 'none';
+    }
+  })();
+
+  (function () {
+    var btn = document.getElementById('rdn-hamburger');
+    var menu = document.getElementById('rdn-mobile-menu');
+    var iconOpen = document.getElementById('rdn-icon-open');
+    var iconClose = document.getElementById('rdn-icon-close');
+    if (!btn) return;
+    btn.addEventListener('click', function () {
+      var isOpen = menu.style.display === 'block';
+      menu.style.display = isOpen ? 'none' : 'block';
+      iconOpen.style.display = isOpen ? 'block' : 'none';
+      iconClose.style.display = isOpen ? 'none' : 'block';
+    });
+  })();
 </script>
 <div style="max-width:760px; margin:0 auto; padding:48px 32px;">
-  <p style="color:#9ca3af; font-size:1rem; margin-bottom:48px; letter-spacing:0.01em;">
+
+  <p style="color:var(--rdn-text-tertiary); font-size:1rem; margin-bottom:48px; letter-spacing:0.01em;">
     Global intelligence on robotics — for the people who build them.
   </p>
+
   
-  <article style="border-bottom:1px solid #1f2937; padding-bottom:36px; margin-bottom:36px;">
-    <p style="color:#6b7280; font-size:0.75rem; text-transform:uppercase; letter-spacing:0.08em; margin-bottom:8px;">
-      May 17, 2026
+  <article style="border-bottom:1px solid var(--rdn-border); padding-bottom:36px; margin-bottom:36px;">
+
+    
+
+    <p style="font-size:0.72rem; text-transform:uppercase; letter-spacing:0.1em; color:var(--rdn-text-tertiary); margin-bottom:8px;">
+      May 19, 2026
     </p>
-    <h2 style="font-size:1.2rem; font-weight:600; margin-bottom:12px;">
-      <a href="http://localhost:1313/posts/20260517-100100-robotics/" style="color:#f9fafb; text-decoration:none;">Video Friday: Heavy Robotic Machinery Operates Itself</a>
+    <h2 style="font-size:1.2rem; font-weight:700; line-height:1.35; margin-bottom:12px;">
+      <a href="http://localhost:50846/posts/20260518-170026-robotics/"
+         style="color:var(--rdn-text-primary); text-decoration:none;"
+         onmouseover="this.style.color='var(--rdn-accent)'"
+         onmouseout="this.style.color='var(--rdn-text-primary)'">What to Expect from Google in Robotics: A B2B Industry Insight</a>
     </h2>
-    <p style="color:#9ca3af; line-height:1.7; margin-bottom:12px;">
-      <p>The latest episode of Video Friday highlights groundbreaking advancements in the field of autonomous heavy machinery. Industries such as construction, mining, and logistics are …</p>
+    <p style="color:var(--rdn-text-secondary); line-height:1.7; margin-bottom:12px; font-size:0.95rem;">
+      <p>This week, Google is expected to make significant announcements that could reshape the robotics industry, particularly in the B2B sector. The tech giant has been quietly advancing …</p>
     </p>
-    <a href="http://localhost:1313/posts/20260517-100100-robotics/" style="color:#60a5fa; font-size:0.85rem;">Read more →</a>
+    <a href="http://localhost:50846/posts/20260518-170026-robotics/"
+       style="color:var(--rdn-accent); font-size:0.85rem; text-decoration:none;">Read more →</a>
   </article>
   
-  <article style="border-bottom:1px solid #1f2937; padding-bottom:36px; margin-bottom:36px;">
-    <p style="color:#6b7280; font-size:0.75rem; text-transform:uppercase; letter-spacing:0.08em; margin-bottom:8px;">
-      May 17, 2026
+  <article style="border-bottom:1px solid var(--rdn-border); padding-bottom:36px; margin-bottom:36px;">
+
+    
+
+    <p style="font-size:0.72rem; text-transform:uppercase; letter-spacing:0.1em; color:var(--rdn-text-tertiary); margin-bottom:8px;">
+      May 19, 2026
     </p>
-    <h2 style="font-size:1.2rem; font-weight:600; margin-bottom:12px;">
-      <a href="http://localhost:1313/posts/20260517-092053-robotics/" style="color:#f9fafb; text-decoration:none;">Video Friday: Heavy Robotic Machinery Operates Itself</a>
+    <h2 style="font-size:1.2rem; font-weight:700; line-height:1.35; margin-bottom:12px;">
+      <a href="http://localhost:50846/posts/20260518-150100-robotics/"
+         style="color:var(--rdn-text-primary); text-decoration:none;"
+         onmouseover="this.style.color='var(--rdn-accent)'"
+         onmouseout="this.style.color='var(--rdn-text-primary)'">What to Expect from Google in the Robotics Industry This Week</a>
     </h2>
-    <p style="color:#9ca3af; line-height:1.7; margin-bottom:12px;">
-      <p>The robotics industry continues to push boundaries with advancements in autonomous heavy machinery. This week’s Video Friday highlights the latest breakthroughs in self-operating …</p>
+    <p style="color:var(--rdn-text-secondary); line-height:1.7; margin-bottom:12px; font-size:0.95rem;">
+      <p>As Google prepares to unveil its latest advancements this week, the robotics industry is abuzz with speculation. The tech giant has been making significant strides in robotics, …</p>
     </p>
-    <a href="http://localhost:1313/posts/20260517-092053-robotics/" style="color:#60a5fa; font-size:0.85rem;">Read more →</a>
+    <a href="http://localhost:50846/posts/20260518-150100-robotics/"
+       style="color:var(--rdn-accent); font-size:0.85rem; text-decoration:none;">Read more →</a>
   </article>
   
-  <article style="border-bottom:1px solid #1f2937; padding-bottom:36px; margin-bottom:36px;">
-    <p style="color:#6b7280; font-size:0.75rem; text-transform:uppercase; letter-spacing:0.08em; margin-bottom:8px;">
-      May 16, 2026
+  <article style="border-bottom:1px solid var(--rdn-border); padding-bottom:36px; margin-bottom:36px;">
+
+    
+
+    <p style="font-size:0.72rem; text-transform:uppercase; letter-spacing:0.1em; color:var(--rdn-text-tertiary); margin-bottom:8px;">
+      May 19, 2026
     </p>
-    <h2 style="font-size:1.2rem; font-weight:600; margin-bottom:12px;">
-      <a href="http://localhost:1313/posts/20260516-152228-report/" style="color:#f9fafb; text-decoration:none;">The Evolution of Collaborative Robots in Smart Manufacturing</a>
+    <h2 style="font-size:1.2rem; font-weight:700; line-height:1.35; margin-bottom:12px;">
+      <a href="http://localhost:50846/posts/20260518-140056-robotics/"
+         style="color:var(--rdn-text-primary); text-decoration:none;"
+         onmouseover="this.style.color='var(--rdn-accent)'"
+         onmouseout="this.style.color='var(--rdn-text-primary)'">What to Expect from Google in the Robotics Industry This Week</a>
     </h2>
-    <p style="color:#9ca3af; line-height:1.7; margin-bottom:12px;">
-      <p>Collaborative robots, or cobots, have revolutionized the landscape of smart manufacturing by seamlessly integrating with human workers to enhance productivity, safety, and …</p>
+    <p style="color:var(--rdn-text-secondary); line-height:1.7; margin-bottom:12px; font-size:0.95rem;">
+      <p>Google has long been a frontrunner in technological innovation, and its ventures into robotics are no exception. This week, industry insiders are anticipating significant …</p>
     </p>
-    <a href="http://localhost:1313/posts/20260516-152228-report/" style="color:#60a5fa; font-size:0.85rem;">Read more →</a>
+    <a href="http://localhost:50846/posts/20260518-140056-robotics/"
+       style="color:var(--rdn-accent); font-size:0.85rem; text-decoration:none;">Read more →</a>
   </article>
   
-  <article style="border-bottom:1px solid #1f2937; padding-bottom:36px; margin-bottom:36px;">
-    <p style="color:#6b7280; font-size:0.75rem; text-transform:uppercase; letter-spacing:0.08em; margin-bottom:8px;">
-      May 16, 2026
+  <article style="border-bottom:1px solid var(--rdn-border); padding-bottom:36px; margin-bottom:36px;">
+
+    
+
+    <p style="font-size:0.72rem; text-transform:uppercase; letter-spacing:0.1em; color:var(--rdn-text-tertiary); margin-bottom:8px;">
+      May 19, 2026
     </p>
-    <h2 style="font-size:1.2rem; font-weight:600; margin-bottom:12px;">
-      <a href="http://localhost:1313/posts/20260516-152156-report/" style="color:#f9fafb; text-decoration:none;">The Evolution of Collaborative Robots in Smart Manufacturing</a>
+    <h2 style="font-size:1.2rem; font-weight:700; line-height:1.35; margin-bottom:12px;">
+      <a href="http://localhost:50846/posts/20260518-130040-robotics/"
+         style="color:var(--rdn-text-primary); text-decoration:none;"
+         onmouseover="this.style.color='var(--rdn-accent)'"
+         onmouseout="this.style.color='var(--rdn-text-primary)'">Inside Anduril and Meta’s Quest to Make Smart Glasses for Warfare</a>
     </h2>
-    <p style="color:#9ca3af; line-height:1.7; margin-bottom:12px;">
-      <p>The integration of collaborative robots, or cobots, into smart manufacturing has marked a significant leap forward in industrial automation. Unlike traditional robots, cobots are …</p>
+    <p style="color:var(--rdn-text-secondary); line-height:1.7; margin-bottom:12px; font-size:0.95rem;">
+      <p>Anduril Industries, known for its cutting-edge defense technology, has partnered with Meta to explore the development of smart glasses tailored for military applications. This …</p>
     </p>
-    <a href="http://localhost:1313/posts/20260516-152156-report/" style="color:#60a5fa; font-size:0.85rem;">Read more →</a>
+    <a href="http://localhost:50846/posts/20260518-130040-robotics/"
+       style="color:var(--rdn-accent); font-size:0.85rem; text-decoration:none;">Read more →</a>
   </article>
   
-  <article style="border-bottom:1px solid #1f2937; padding-bottom:36px; margin-bottom:36px;">
-    <p style="color:#6b7280; font-size:0.75rem; text-transform:uppercase; letter-spacing:0.08em; margin-bottom:8px;">
-      May 15, 2026
+  <article style="border-bottom:1px solid var(--rdn-border); padding-bottom:36px; margin-bottom:36px;">
+
+    
+
+    <p style="font-size:0.72rem; text-transform:uppercase; letter-spacing:0.1em; color:var(--rdn-text-tertiary); margin-bottom:8px;">
+      May 19, 2026
     </p>
-    <h2 style="font-size:1.2rem; font-weight:600; margin-bottom:12px;">
-      <a href="http://localhost:1313/posts/20260515-032757-report/" style="color:#f9fafb; text-decoration:none;">The Evolution of Collaborative Robots in Smart Manufacturing</a>
+    <h2 style="font-size:1.2rem; font-weight:700; line-height:1.35; margin-bottom:12px;">
+      <a href="http://localhost:50846/posts/20260518-120043-robotics/"
+         style="color:var(--rdn-text-primary); text-decoration:none;"
+         onmouseover="this.style.color='var(--rdn-accent)'"
+         onmouseout="this.style.color='var(--rdn-text-primary)'">The Download: Musk v. Altman Week 3, and Trump’s Tech Trading</a>
     </h2>
-    <p style="color:#9ca3af; line-height:1.7; margin-bottom:12px;">
-      <p>The evolution of collaborative robots (cobots) in smart manufacturing represents a transformative shift in industrial automation, driven by advancements in AI, machine learning, …</p>
+    <p style="color:var(--rdn-text-secondary); line-height:1.7; margin-bottom:12px; font-size:0.95rem;">
+      <p>The ongoing rivalry between Elon Musk and Sam Altman has entered its third week, and the tech world is watching closely. With both leaders at the forefront of innovation—Musk with …</p>
     </p>
-    <a href="http://localhost:1313/posts/20260515-032757-report/" style="color:#60a5fa; font-size:0.85rem;">Read more →</a>
+    <a href="http://localhost:50846/posts/20260518-120043-robotics/"
+       style="color:var(--rdn-accent); font-size:0.85rem; text-decoration:none;">Read more →</a>
   </article>
   
+  <article style="border-bottom:1px solid var(--rdn-border); padding-bottom:36px; margin-bottom:36px;">
+
+    
+
+    <p style="font-size:0.72rem; text-transform:uppercase; letter-spacing:0.1em; color:var(--rdn-text-tertiary); margin-bottom:8px;">
+      May 18, 2026
+    </p>
+    <h2 style="font-size:1.2rem; font-weight:700; line-height:1.35; margin-bottom:12px;">
+      <a href="http://localhost:50846/posts/20260518-100048-robotics/"
+         style="color:var(--rdn-text-primary); text-decoration:none;"
+         onmouseover="this.style.color='var(--rdn-accent)'"
+         onmouseout="this.style.color='var(--rdn-text-primary)'">The Download: Musk v. Altman Week 3, and Trump’s Tech Trading - A Robotics Industry Perspective</a>
+    </h2>
+    <p style="color:var(--rdn-text-secondary); line-height:1.7; margin-bottom:12px; font-size:0.95rem;">
+      <p>The ongoing rivalry between Elon Musk and Sam Altman has entered its third week, capturing the attention of the tech and robotics industries. Musk’s ventures, including Tesla and …</p>
+    </p>
+    <a href="http://localhost:50846/posts/20260518-100048-robotics/"
+       style="color:var(--rdn-accent); font-size:0.85rem; text-decoration:none;">Read more →</a>
+  </article>
+  
+  <article style="border-bottom:1px solid var(--rdn-border); padding-bottom:36px; margin-bottom:36px;">
+
+    
+
+    <p style="font-size:0.72rem; text-transform:uppercase; letter-spacing:0.1em; color:var(--rdn-text-tertiary); margin-bottom:8px;">
+      May 18, 2026
+    </p>
+    <h2 style="font-size:1.2rem; font-weight:700; line-height:1.35; margin-bottom:12px;">
+      <a href="http://localhost:50846/posts/20260518-090054-robotics/"
+         style="color:var(--rdn-text-primary); text-decoration:none;"
+         onmouseover="this.style.color='var(--rdn-accent)'"
+         onmouseout="this.style.color='var(--rdn-text-primary)'">The Download: Musk v. Altman Week 3, and Trump’s Tech Trading - A Robotics Industry Perspective</a>
+    </h2>
+    <p style="color:var(--rdn-text-secondary); line-height:1.7; margin-bottom:12px; font-size:0.95rem;">
+      <p>The ongoing dispute between Elon Musk and Sam Altman has entered its third week, drawing significant attention from the robotics and AI industries. Musk, founder of Tesla and …</p>
+    </p>
+    <a href="http://localhost:50846/posts/20260518-090054-robotics/"
+       style="color:var(--rdn-accent); font-size:0.85rem; text-decoration:none;">Read more →</a>
+  </article>
+  
+  <article style="border-bottom:1px solid var(--rdn-border); padding-bottom:36px; margin-bottom:36px;">
+
+    
+
+    <p style="font-size:0.72rem; text-transform:uppercase; letter-spacing:0.1em; color:var(--rdn-text-tertiary); margin-bottom:8px;">
+      May 18, 2026
+    </p>
+    <h2 style="font-size:1.2rem; font-weight:700; line-height:1.35; margin-bottom:12px;">
+      <a href="http://localhost:50846/posts/20260518-172820-robotics/"
+         style="color:var(--rdn-text-primary); text-decoration:none;"
+         onmouseover="this.style.color='var(--rdn-accent)'"
+         onmouseout="this.style.color='var(--rdn-text-primary)'">What to Expect from Google This Week: Key Announcements in Robotics and AI</a>
+    </h2>
+    <p style="color:var(--rdn-text-secondary); line-height:1.7; margin-bottom:12px; font-size:0.95rem;">
+      <p>This week, Google is expected to unveil significant updates across its robotics and AI ecosystems, continuing its push to integrate advanced machine learning into physical systems. …</p>
+    </p>
+    <a href="http://localhost:50846/posts/20260518-172820-robotics/"
+       style="color:var(--rdn-accent); font-size:0.85rem; text-decoration:none;">Read more →</a>
+  </article>
+  
+  <article style="border-bottom:1px solid var(--rdn-border); padding-bottom:36px; margin-bottom:36px;">
+
+    
+
+    <p style="font-size:0.72rem; text-transform:uppercase; letter-spacing:0.1em; color:var(--rdn-text-tertiary); margin-bottom:8px;">
+      May 18, 2026
+    </p>
+    <h2 style="font-size:1.2rem; font-weight:700; line-height:1.35; margin-bottom:12px;">
+      <a href="http://localhost:50846/posts/20260518-172143-robotics/"
+         style="color:var(--rdn-text-primary); text-decoration:none;"
+         onmouseover="this.style.color='var(--rdn-accent)'"
+         onmouseout="this.style.color='var(--rdn-text-primary)'">What to expect from Google this week</a>
+    </h2>
+    <p style="color:var(--rdn-text-secondary); line-height:1.7; margin-bottom:12px; font-size:0.95rem;">
+      <p>Google is poised to make significant announcements at its annual hardware and AI event, likely focusing on the latest Pixel devices and substantial advances in its AI ecosystem. …</p>
+    </p>
+    <a href="http://localhost:50846/posts/20260518-172143-robotics/"
+       style="color:var(--rdn-accent); font-size:0.85rem; text-decoration:none;">Read more →</a>
+  </article>
+  
+  <article style="border-bottom:1px solid var(--rdn-border); padding-bottom:36px; margin-bottom:36px;">
+
+    
+
+    <p style="font-size:0.72rem; text-transform:uppercase; letter-spacing:0.1em; color:var(--rdn-text-tertiary); margin-bottom:8px;">
+      May 18, 2026
+    </p>
+    <h2 style="font-size:1.2rem; font-weight:700; line-height:1.35; margin-bottom:12px;">
+      <a href="http://localhost:50846/posts/20260518-080043-robotics/"
+         style="color:var(--rdn-text-primary); text-decoration:none;"
+         onmouseover="this.style.color='var(--rdn-accent)'"
+         onmouseout="this.style.color='var(--rdn-text-primary)'">Musk vs. Altman Week 3: A Clash of Visions Roils the Robotics Industry</a>
+    </h2>
+    <p style="color:var(--rdn-text-secondary); line-height:1.7; margin-bottom:12px; font-size:0.95rem;">
+      <p>The ongoing feud between Elon Musk and Sam Altman has reached a pivotal moment, with Week 3 of their public dispute centering on mutual critiques of each other’s credibility. Musk, …</p>
+    </p>
+    <a href="http://localhost:50846/posts/20260518-080043-robotics/"
+       style="color:var(--rdn-accent); font-size:0.85rem; text-decoration:none;">Read more →</a>
+  </article>
+  
+
 </div>
 
-      <footer style="border-top:1px solid #1f2937; margin-top:80px;">
+      <footer style="border-top:1px solid var(--rdn-border); margin-top:80px;">
   <div style="max-width:760px; margin:0 auto; padding:24px 32px;">
-    <p style="font-size:0.8rem; color:#6b7280;">
+    <p style="font-size:0.8rem; color:var(--rdn-text-tertiary); margin:0;">
       © 2026 Robot Design Net
     </p>
   </div>
