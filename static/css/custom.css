@@ -1,0 +1,140 @@
+/* ============================================================
+   Robot Design Net — Design System
+   Dual-mode: Light + Dark
+   ============================================================ */
+
+/* ── 1. 색상 변수 — 라이트 모드 기본값 ── */
+:root {
+  --rdn-bg:           #ffffff;
+  --rdn-bg-card:      #f8fafc;
+  --rdn-bg-tag:       #f1f5f9;
+  --rdn-bg-code:      #f1f5f9;
+
+  --rdn-text-primary:   #0f172a;
+  --rdn-text-secondary: #475569;
+  --rdn-text-tertiary:  #94a3b8;
+
+  --rdn-border:       #e2e8f0;
+  --rdn-border-light: #f1f5f9;
+
+  --rdn-accent:       #2563eb;
+  --rdn-accent-hover: #1d4ed8;
+  --rdn-category:     #1d4ed8;
+
+  --rdn-tag-text:     #64748b;
+  --rdn-credit:       #94a3b8;
+
+  --rdn-navbar-width: 760px;
+}
+
+/* ── 2. 다크 모드 — 시스템 설정 ── */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --rdn-bg:           #0f172a;
+    --rdn-bg-card:      #1e293b;
+    --rdn-bg-tag:       #0f172a;
+    --rdn-bg-code:      #1e293b;
+
+    --rdn-text-primary:   #f1f5f9;
+    --rdn-text-secondary: #94a3b8;
+    --rdn-text-tertiary:  #64748b;
+
+    --rdn-border:       #1e293b;
+    --rdn-border-light: #0f172a;
+
+    --rdn-accent:       #60a5fa;
+    --rdn-accent-hover: #93c5fd;
+    --rdn-category:     #60a5fa;
+
+    --rdn-tag-text:     #64748b;
+    --rdn-credit:       #64748b;
+  }
+}
+
+/* ── 3. 다크 모드 — Hextra 수동 토글 (.dark 클래스) ── */
+.dark {
+  --rdn-bg:           #0f172a;
+  --rdn-bg-card:      #1e293b;
+  --rdn-bg-tag:       #0f172a;
+  --rdn-bg-code:      #1e293b;
+
+  --rdn-text-primary:   #f1f5f9;
+  --rdn-text-secondary: #94a3b8;
+  --rdn-text-tertiary:  #64748b;
+
+  --rdn-border:       #1e293b;
+  --rdn-border-light: #0f172a;
+
+  --rdn-accent:       #60a5fa;
+  --rdn-accent-hover: #93c5fd;
+  --rdn-category:     #60a5fa;
+
+  --rdn-tag-text:     #64748b;
+  --rdn-credit:       #64748b;
+}
+
+/* ── 4. 네브바 정렬 ── */
+.hextra-max-navbar-width {
+  max-width: var(--rdn-navbar-width) !important;
+  padding-left: 32px !important;
+  padding-right: 32px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.hextra-max-navbar-width > a {
+  margin-right: auto;
+}
+
+/* ── 5. 기사 본문 내 Markdown 렌더링 색상 보정 ── */
+.rdn-content p,
+.rdn-content li,
+.rdn-content blockquote {
+  color: var(--rdn-text-secondary);
+}
+
+.rdn-content h2,
+.rdn-content h3,
+.rdn-content h4 {
+  color: var(--rdn-text-primary);
+}
+
+.rdn-content a {
+  color: var(--rdn-accent);
+}
+
+.rdn-content strong {
+  color: var(--rdn-text-primary);
+}
+
+.rdn-content blockquote {
+  border-left: 3px solid var(--rdn-border);
+  padding-left: 16px;
+  color: var(--rdn-text-tertiary);
+}
+
+.rdn-content code {
+  background: var(--rdn-bg-code);
+  color: var(--rdn-accent);
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-size: 0.9em;
+}
+
+/* ── 6. 이미지 figure 공통 ── */
+.rdn-figure {
+  margin: 0 0 32px 0;
+}
+
+.rdn-figure img {
+  width: 100%;
+  border-radius: 6px;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+}
+
+.rdn-figure figcaption {
+  font-size: 0.75rem;
+  color: var(--rdn-credit);
+  margin-top: 8px;
+}
