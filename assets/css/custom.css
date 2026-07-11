@@ -107,9 +107,12 @@ h1, h2, h3, h4, h5, h6,
 
 /* ── 네브바 정렬 ── */
 .hextra-max-navbar-width {
-  max-width: var(--rdn-navbar-width) !important;
-  padding-left: 32px !important;
-  padding-right: 32px !important;
+  max-width: none !important;        /* 760 제약 해제 → nav 풀폭 */
+  padding-left: 48px !important;     /* Gen2 px-48 */
+  padding-right: 48px !important;
+  padding-top: 28px !important;      /* Gen2 py-28 */
+  padding-bottom: 28px !important;
+  height: auto !important;           /* hextra hx:h-16(64px) 해제 */
   margin-left: auto !important;
   margin-right: auto !important;
 }
@@ -211,6 +214,14 @@ h1, h2, h3, h4, h5, h6,
   .rdn-wrap {
     padding-left: 20px;
     padding-right: 20px;
+  }
+
+  /* nav 모바일 패딩 (Gen2 p-20) */
+  .hextra-max-navbar-width {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    padding-top: 16px !important;
+    padding-bottom: 16px !important;
   }
 
   .rdn-list-title {

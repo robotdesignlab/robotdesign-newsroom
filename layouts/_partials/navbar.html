@@ -9,9 +9,12 @@
   <nav class="hextra-max-navbar-width hx:mx-auto hx:flex hx:items-center hx:justify-between hx:gap-2 hx:h-16 hx:px-6">
     {{ partial "navbar-title.html" . }}
 
-    <div id="rdn-desktop-menu" style="display:flex; align-items:center; gap:20px;">
-      <a href="/posts/" style="font-size:0.9rem; color:var(--rdn-text-tertiary); text-decoration:none;">Articles</a>
-      <a href="/about/" style="font-size:0.9rem; color:var(--rdn-text-tertiary); text-decoration:none;">About</a>
+    <div id="rdn-desktop-menu" style="display:flex; align-items:center; gap:28px;">
+      <a href="/categories/humanoid/"   style="font-size:14px; font-weight:500; color:var(--rdn-text-tertiary); text-decoration:none;">Humanoid</a>
+      <a href="/categories/industrial/" style="font-size:14px; font-weight:500; color:var(--rdn-text-tertiary); text-decoration:none;">Industrial</a>
+      <a href="/categories/research/"   style="font-size:14px; font-weight:500; color:var(--rdn-text-tertiary); text-decoration:none;">Research</a>
+      <a href="/categories/mobility/"   style="font-size:14px; font-weight:500; color:var(--rdn-text-tertiary); text-decoration:none;">Mobility</a>
+      <a href="/about/"                 style="font-size:14px; font-weight:500; color:var(--rdn-text-tertiary); text-decoration:none;">About</a>
       <button id="rdn-theme-toggle" onclick="toggleTheme()"
         style="background:none; border:none; cursor:pointer; padding:4px; color:var(--rdn-text-tertiary); display:flex; align-items:center;"
         aria-label="Toggle theme">
@@ -53,8 +56,14 @@
 
   <div id="rdn-mobile-menu"
     style="display:none; position:absolute; right:24px; top:64px; background:var(--rdn-bg-card); border:1px solid var(--rdn-border); border-radius:8px; box-shadow:0 8px 24px rgba(0,0,0,0.4); min-width:140px; z-index:100;">
-    <a href="/posts/"
-      style="display:block; font-size:0.95rem; color:var(--rdn-text-primary); text-decoration:none; padding:12px 20px; border-bottom:1px solid var(--rdn-border);">Articles</a>
+    <a href="/categories/humanoid/"
+      style="display:block; font-size:0.95rem; color:var(--rdn-text-primary); text-decoration:none; padding:12px 20px; border-bottom:1px solid var(--rdn-border);">Humanoid</a>
+    <a href="/categories/industrial/"
+      style="display:block; font-size:0.95rem; color:var(--rdn-text-primary); text-decoration:none; padding:12px 20px; border-bottom:1px solid var(--rdn-border);">Industrial</a>
+    <a href="/categories/research/"
+      style="display:block; font-size:0.95rem; color:var(--rdn-text-primary); text-decoration:none; padding:12px 20px; border-bottom:1px solid var(--rdn-border);">Research</a>
+    <a href="/categories/mobility/"
+      style="display:block; font-size:0.95rem; color:var(--rdn-text-primary); text-decoration:none; padding:12px 20px; border-bottom:1px solid var(--rdn-border);">Mobility</a>
     <a href="/about/"
       style="display:block; font-size:0.95rem; color:var(--rdn-text-primary); text-decoration:none; padding:12px 20px;">About</a>
   </div>
