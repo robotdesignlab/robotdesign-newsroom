@@ -107,7 +107,7 @@ h1, h2, h3, h4, h5, h6,
 
 /* ── 네브바 정렬 ── */
 .hextra-max-navbar-width {
-  max-width: none !important;        /* 760 제약 해제 → nav 풀폭 */
+  max-width: 1080px !important;      /* Gen2 컨테이너: 단계3 풀폭 → 1080 상한 정밀화(본문과 동일 컨테이너로 정렬) */
   padding-left: 48px !important;     /* Gen2 px-48 */
   padding-right: 48px !important;
   padding-top: 28px !important;      /* Gen2 py-28 */
@@ -160,9 +160,9 @@ h1, h2, h3, h4, h5, h6,
 
 /* ── 레이아웃 래퍼 (인라인 padding을 클래스로 이관 → 모바일 미디어쿼리 적용 가능) ── */
 .rdn-wrap {
-  max-width: 760px;
+  max-width: 1080px;   /* Gen2 컨테이너 (OPT-1: 1080 중앙). box-sizing:border-box → 내부 984 */
   margin: 0 auto;
-  padding: 48px 32px;
+  padding: 48px 48px;  /* Gen2 px-48 (좌우 32→48 정합; 상하 48 유지) */
 }
 
 /* ── 제목 타이포 (Figma 승인 시안) ── */
@@ -209,11 +209,37 @@ h1, h2, h3, h4, h5, h6,
   font-weight: 700;
 }
 
+/* ── Gen2 상세 3단 폭 ──
+   .rdn-content 자체는 984(풀). 폭 캡은 "문단 단위" — 요소별 max-width.
+   풀쿼트(760)는 본문 p(640)의 형제로 각자 max-width 캡 → 760>640 이라 자연 breakout.
+   본문 이미지(figure/img)는 640 캡 예외로 984 풀. 전부 flush-left(기본 좌측). */
+.rdn-content p,
+.rdn-content li {
+  max-width: 640px;
+}
+
+.rdn-content blockquote {
+  max-width: 760px;
+}
+
+.rdn-content p:has(img),
+.rdn-content figure,
+.rdn-content img {
+  max-width: 100%;
+}
+
 /* ── 모바일 (≤768px) ── */
 @media (max-width: 768px) {
   .rdn-wrap {
     padding-left: 20px;
     padding-right: 20px;
+  }
+
+  /* 모바일: 상세 3단 폭 전부 해제 → 100% */
+  .rdn-content p,
+  .rdn-content li,
+  .rdn-content blockquote {
+    max-width: 100% !important;
   }
 
   /* nav 모바일 패딩 (Gen2 p-20) */
