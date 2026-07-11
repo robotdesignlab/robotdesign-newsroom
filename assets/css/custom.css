@@ -49,6 +49,10 @@ h1, h2, h3, h4, h5, h6,
   font-family: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
 }
 
+/* Plex weight 정합: synthetic(700/400) → 로드된 실 웨이트(600/500) */
+.rdn-eyebrow { font-weight: 600 !important; }  /* 인라인 700 → 실 600 */
+.rdn-meta    { font-weight: 500 !important; }  /* 날짜/읽기시간 400 → 실 500 (크레딧名 인라인 600은 실웨이트라 유지) */
+
 /* ── 라이트 모드 기본값 ── */
 :root {
   --rdn-bg: #ffffff;
@@ -118,6 +122,12 @@ h1, h2, h3, h4, h5, h6,
   background: transparent !important;
 }
 
+/* ── 본문 스케일: 인라인 1.05rem/LH1.9 → Gen2 19px/1.72 (인라인 승리 위해 !important) ── */
+.rdn-content {
+  font-size: 19px !important;
+  line-height: 1.72 !important;
+}
+
 /* ── 기사 본문 Markdown 색상 ── */
 .rdn-content p,
 .rdn-content li {
@@ -154,17 +164,22 @@ h1, h2, h3, h4, h5, h6,
 
 /* ── 제목 타이포 (Figma 승인 시안) ── */
 .rdn-list-title {
-  /* 목록 제목: 기존 20.8px → 32px */
-  font-size: 2rem;
+  /* 카드 제목(텍스트 전용 기본): Gen2 32px (모바일 24px) */
+  font-size: 32px;
   font-weight: 700;
   line-height: 1.25;
   margin-bottom: 12px;
   letter-spacing: -0.01em;
 }
 
+/* [D1] 이미지 있는 카드 제목 → 40px (템플릿 수정 없이 :has() 분기) */
+.rdn-wrap article:has(figure) .rdn-list-title {
+  font-size: 40px;
+}
+
 .rdn-article-title {
-  /* 상세 H1: 기존 32px → 36px */
-  font-size: 2.25rem;
+  /* 상세 H1: Gen2 66px (모바일 26px) */
+  font-size: 66px;
   font-weight: 800;
   line-height: 1.2;
   letter-spacing: -0.02em;
@@ -175,7 +190,7 @@ h1, h2, h3, h4, h5, h6,
   border-left: 3px solid var(--rdn-accent);
   margin: 40px 0;
   padding: 4px 0 4px 24px;
-  font-size: 1.75rem;
+  font-size: 36px;               /* Gen2 36px (모바일 26px). 좌측바 형태는 단계5 */
   font-weight: 600;
   line-height: 1.35;
   color: var(--rdn-text-primary);
@@ -191,18 +206,27 @@ h1, h2, h3, h4, h5, h6,
   font-weight: 700;
 }
 
-/* ── 모바일 (≤375px) ── */
-@media (max-width: 375px) {
+/* ── 모바일 (≤768px) ── */
+@media (max-width: 768px) {
   .rdn-wrap {
     padding-left: 20px;
     padding-right: 20px;
   }
 
   .rdn-list-title {
-    font-size: 1.5rem;
+    font-size: 24px;             /* 카드 제목 모바일(텍스트 카드) */
+  }
+
+  /* 이미지 카드도 모바일 24px — 데스크톱 :has 40px 규칙을 동일 specificity로 덮음 */
+  .rdn-wrap article:has(figure) .rdn-list-title {
+    font-size: 24px;
   }
 
   .rdn-article-title {
-    font-size: 1.625rem;
+    font-size: 26px;             /* Detail H1 모바일 */
+  }
+
+  .rdn-content blockquote {
+    font-size: 26px;            /* 풀쿼트 모바일 */
   }
 }
