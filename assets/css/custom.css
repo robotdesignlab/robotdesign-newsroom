@@ -17,9 +17,9 @@
   --rdn-border: #e2e8f0;
   --rdn-border-light: #f1f5f9;
 
-  --rdn-accent: #2563eb;
-  --rdn-accent-hover: #1d4ed8;
-  --rdn-category: #1d4ed8;
+  --rdn-accent: #3f7d1e;
+  --rdn-accent-hover: #2f6417;
+  --rdn-category: #3f7d1e;
 
   --rdn-tag-text: #64748b;
   --rdn-credit: #94a3b8;
@@ -40,9 +40,9 @@
   --rdn-border: #1e293b;
   --rdn-border-light: #0f172a;
 
-  --rdn-accent: #60a5fa;
-  --rdn-accent-hover: #93c5fd;
-  --rdn-category: #60a5fa;
+  --rdn-accent: #c6f24e;
+  --rdn-accent-hover: #d4f56e;
+  --rdn-category: #c6f24e;
 
   --rdn-tag-text: #64748b;
   --rdn-credit: #64748b;
@@ -85,4 +85,78 @@
 
 .rdn-content a {
   color: var(--rdn-accent);
+}
+
+/* ── 요약 텍스트 모드별 명시 ── */
+.rdn-summary {
+  color: #334155 !important;
+  line-height: 1.7;
+  margin-bottom: 12px;
+  font-size: 0.95rem;
+}
+
+.dark .rdn-summary {
+  color: #94a3b8 !important;
+}
+
+/* ── 레이아웃 래퍼 (인라인 padding을 클래스로 이관 → 모바일 미디어쿼리 적용 가능) ── */
+.rdn-wrap {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 48px 32px;
+}
+
+/* ── 제목 타이포 (Figma 승인 시안) ── */
+.rdn-list-title {
+  /* 목록 제목: 기존 20.8px → 32px */
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.25;
+  margin-bottom: 12px;
+  letter-spacing: -0.01em;
+}
+
+.rdn-article-title {
+  /* 상세 H1: 기존 32px → 36px */
+  font-size: 2.25rem;
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+/* ── 풀쿼트 (.rdn-content blockquote): 그린 좌측 보더 + 대형 텍스트 ── */
+.rdn-content blockquote {
+  border-left: 3px solid var(--rdn-accent);
+  margin: 40px 0;
+  padding: 4px 0 4px 24px;
+  font-size: 1.75rem;
+  font-weight: 600;
+  line-height: 1.35;
+  color: var(--rdn-text-primary);
+}
+
+.rdn-content blockquote p {
+  margin: 0;
+  color: var(--rdn-text-primary);
+}
+
+.rdn-content blockquote strong {
+  color: var(--rdn-accent);
+  font-weight: 700;
+}
+
+/* ── 모바일 (≤375px) ── */
+@media (max-width: 375px) {
+  .rdn-wrap {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .rdn-list-title {
+    font-size: 1.5rem;
+  }
+
+  .rdn-article-title {
+    font-size: 1.625rem;
+  }
 }

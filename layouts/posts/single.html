@@ -1,5 +1,5 @@
 {{ define "main" }}
-<div style="max-width:760px; margin:0 auto; padding:48px 32px;">
+<div class="rdn-wrap">
 
   {{/* 카테고리 배지 */}}
   {{ with .Params.categories }}
@@ -10,9 +10,7 @@
   {{ end }}
 
   {{/* 제목 */}}
-  <h1 style="font-size:2rem; font-weight:800; line-height:1.2;
-             color:var(--rdn-text-primary); margin-bottom:20px;
-             letter-spacing:-0.02em;">
+  <h1 class="rdn-article-title" style="color:var(--rdn-text-primary); margin-bottom:20px;">
     {{ .Title }}
   </h1>
 
