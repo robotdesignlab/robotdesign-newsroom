@@ -131,9 +131,17 @@ h1, h2, h3, h4, h5, h6,
   line-height: 1.72 !important;
 }
 
-/* ── 기사 본문 Markdown 색상 ── */
+/* ── 기사 본문 Markdown 색상 ──
+   Gen2 EC개정3호: 본문 색을 primary로 승격. 위계 분리는 풀쿼트가 담당하므로
+   본문을 색으로 낮출 이유 소멸(다크 #94a3b8 가독성 저해 해소). dek(.rdn-summary)는 secondary 유지. */
 .rdn-content p,
 .rdn-content li {
+  color: var(--rdn-text-primary);
+}
+
+/* 출처 표기는 본문보다 낮은 위계 → Source 줄(rdn-content 마지막 직계 p, 데스크 관행상 *Source: …* em)만 secondary 유지.
+   자식 결합자로 블록쿼트 내부 p(primary)는 제외. */
+.rdn-content > p:last-child {
   color: var(--rdn-text-secondary);
 }
 
@@ -213,6 +221,12 @@ h1, h2, h3, h4, h5, h6,
   max-width: 640px;
 }
 
+/* 본문 흐름 소제목은 640 정본(제목·이미지 984와 구분). setext 오변환 방어 겸 정상 소제목 폭 정합. */
+.rdn-content h2,
+.rdn-content h3 {
+  max-width: 640px;
+}
+
 .rdn-content blockquote {
   max-width: 760px;
 }
@@ -233,6 +247,8 @@ h1, h2, h3, h4, h5, h6,
   /* 모바일: 상세 3단 폭 전부 해제 → 100% */
   .rdn-content p,
   .rdn-content li,
+  .rdn-content h2,
+  .rdn-content h3,
   .rdn-content blockquote {
     max-width: 100% !important;
   }
