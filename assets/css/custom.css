@@ -3,6 +3,52 @@
    .dark 클래스로만 모드 제어 (media query 제거)
    ============================================================ */
 
+/* ── Gen2 self-host 웹폰트 (Archivo + IBM Plex Mono, SIL OFL 1.1) ──
+   경로 /fonts/*.woff2 는 head-end.html 이 assets/fonts/ 에서 발행한 것.
+   번들(main.min.css)로 concat 되므로 절대경로 url() 사용. */
+@font-face {
+  font-family: "Archivo";
+  src: url("/fonts/archivo-var.woff2") format("woff2");
+  font-weight: 400 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "IBM Plex Mono";
+  src: url("/fonts/plexmono-500.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "IBM Plex Mono";
+  src: url("/fonts/plexmono-600.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* 제목·본문·nav → Archivo */
+html,
+body,
+h1, h2, h3, h4, h5, h6,
+.rdn-list-title,
+.rdn-article-title,
+.rdn-summary,
+.rdn-content {
+  font-family: "Archivo", ui-sans-serif, system-ui, -apple-system, sans-serif;
+}
+
+/* 에이브로우·메타·태그·이미지 크레딧 → IBM Plex Mono.
+   NOTE: .rdn-eyebrow/.rdn-meta/.rdn-tag 는 다음 단계에서 템플릿에 부여할 훅(현재 코드에 없음).
+   현 시점 실렌더로 확인 가능한 유일한 Mono 훅은 .rdn-figure figcaption(이미지 크레딧). */
+.rdn-eyebrow,
+.rdn-meta,
+.rdn-tag,
+.rdn-figure figcaption {
+  font-family: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
 /* ── 라이트 모드 기본값 ── */
 :root {
   --rdn-bg: #ffffff;
