@@ -25,7 +25,7 @@
     </h2>
 
     <p class="rdn-summary">
-      {{ .Summary | truncate 180 }}
+      {{ .Summary | plainify | truncate 180 }}
     </p>
 
     {{ $post := . }}
