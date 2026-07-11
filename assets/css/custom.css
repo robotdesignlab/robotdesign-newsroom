@@ -163,17 +163,17 @@ h1, h2, h3, h4, h5, h6,
 
 /* ── 제목 타이포 (Figma 승인 시안) ── */
 .rdn-list-title {
-  /* 카드 제목(텍스트 전용 기본): Gen2 32px (모바일 24px) */
-  font-size: 32px;
+  /* 카드 제목(텍스트 전용): 48px (홈 다듬기, EC 선택 / 모바일 24px) */
+  font-size: 48px;
   font-weight: 700;
   line-height: 1.25;
   margin-bottom: 12px;
   letter-spacing: -0.01em;
 }
 
-/* [D1] 이미지 있는 카드 제목 → 40px (템플릿 수정 없이 :has() 분기) */
+/* [D1] 이미지 있는 카드 제목 → 텍스트값 +8px (템플릿 수정 없이 :has() 분기) */
 .rdn-wrap article:has(figure) .rdn-list-title {
-  font-size: 40px;
+  font-size: 56px;
 }
 
 .rdn-article-title {
