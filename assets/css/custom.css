@@ -184,13 +184,12 @@ h1, h2, h3, h4, h5, h6,
   letter-spacing: -0.02em;
 }
 
-/* ── 풀쿼트 (.rdn-content blockquote): 그린 좌측 보더 + 대형 텍스트 ── */
+/* ── 풀쿼트 (.rdn-content blockquote): Gen2 인라인 그린 하이라이트 (좌측바 없음) ── */
 .rdn-content blockquote {
-  border-left: 3px solid var(--rdn-accent);
   margin: 40px 0;
-  padding: 4px 0 4px 24px;
-  font-size: 36px;               /* Gen2 36px (모바일 26px). 좌측바 형태는 단계5 */
-  font-weight: 600;
+  padding: 4px 0;
+  font-size: 36px;               /* Gen2 36px (모바일 26px) */
+  font-weight: 700;              /* Gen2 Archivo Bold (600→700 정합) */
   line-height: 1.35;
   color: var(--rdn-text-primary);
 }
