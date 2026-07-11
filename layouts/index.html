@@ -26,9 +26,12 @@
     </p>
 
     {{ with .Params.image }}
-    <figure style="margin:20px 0 0 0;">
+    <figure class="rdn-figure" style="margin:20px 0 0 0;">
       <img src="{{ . }}" alt="{{ $.Params.imageAlt | default $.Title }}"
         style="width:100%; border-radius:6px; aspect-ratio:16/9; object-fit:cover;">
+      {{ with $.Params.imageCredit }}
+      <figcaption style="font-size:0.75rem; color:var(--rdn-credit); margin-top:6px;">{{ . }}</figcaption>
+      {{ end }}
     </figure>
     {{ end }}
 
