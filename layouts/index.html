@@ -25,11 +25,12 @@
       {{ .Summary | truncate 180 }}
     </p>
 
+    {{ $post := . }}
     {{ with .Params.image }}
     <figure class="rdn-figure" style="margin:20px 0 0 0;">
-      <img src="{{ . }}" alt="{{ $.Params.imageAlt | default $.Title }}"
+      <img src="{{ . }}" alt="{{ $post.Params.imageAlt | default $post.Title }}"
         style="width:100%; border-radius:6px; aspect-ratio:16/9; object-fit:cover;">
-      {{ with $.Params.imageCredit }}
+      {{ with $post.Params.imageCredit }}
       <figcaption style="font-size:0.75rem; color:var(--rdn-credit); margin-top:6px;">{{ . }}</figcaption>
       {{ end }}
     </figure>
