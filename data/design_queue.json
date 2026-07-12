@@ -2,34 +2,6 @@
   "schema_version": "1.2",
   "entries": [
     {
-      "id": "dq_mrhmyanz3c53dc",
-      "publish_on": "2026-07-12",
-      "review": "manual",
-      "gate": null,
-      "images": [
-        {
-          "path": "design/img/dq_mrhmyanz3c53dc_0.jpg",
-          "credit": "Photo: Eunchang Lee / Robotdesign.net",
-          "license": "own_work",
-          "alt": "ASIMO, Honda, Front view, Walking down on the stair"
-        }
-      ],
-      "subject": {
-        "company": "Honda",
-        "product": "ASIMO",
-        "desk": "humanoid"
-      },
-      "context": "Asimo demonstration on the stage in 2012",
-      "ec_notes": [
-        "Symbolism of the walking down to the floor as human, look of asimo like human works"
-      ],
-      "lens": [
-        "morphology, cmf, impression"
-      ],
-      "facts": {},
-      "status": "pending"
-    },
-    {
       "id": "dq_mrhnoav70f423d",
       "publish_on": "2026-07-12",
       "review": "manual",
