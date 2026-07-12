@@ -1,5 +1,5 @@
-# Hugo build output
-public/
+# Hugo build output (root only — nested apps/*/public/ must stay tracked)
+/public/
 resources/_gen/
 .hugo_build.lock
 
