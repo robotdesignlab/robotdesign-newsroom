@@ -37,7 +37,7 @@ jobs:
           aws-region: ap-northeast-2
 
       - name: Deploy to S3
-        run: aws s3 sync ./public s3://robotdesign-newsroom-2026 --delete
+        run: aws s3 sync ./public s3://robotdesign-newsroom-2026 --delete --exclude "design/img/*"
 
       - name: Invalidate CloudFront Cache
         run: aws cloudfront create-invalidation --distribution-id ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }} --paths "/*"
