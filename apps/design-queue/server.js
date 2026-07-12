@@ -23,6 +23,11 @@ const PORT = Number(process.env.PORT) || 8080;
 const S3_BUCKET = process.env.S3_BUCKET || 'robotdesign-newsroom-2026';
 const S3_PREFIX = process.env.S3_PREFIX || 'design/img/';
 const AWS_REGION = process.env.AWS_REGION || 'ap-northeast-2';
+// Public origin the images are served from (CloudFront). Entry images[].path
+// stores the absolute URL (schema v1.2 §3) so n8n Fetch_Images can GET it.
+const PUBLIC_BASE_URL = (
+  process.env.PUBLIC_BASE_URL || 'https://robotdesign.net'
+).replace(/\/+$/, '');
 const GITHUB_REPO = process.env.GITHUB_REPO || 'robotdesignlab/robotdesign-newsroom';
 const GITHUB_BRANCH = process.env.GITHUB_BRANCH || 'main';
 const GITHUB_QUEUE_PATH = process.env.GITHUB_QUEUE_PATH || 'data/design_queue.json';
@@ -203,7 +208,7 @@ async function handleSubmit(req, res) {
       const key = `${S3_PREFIX}${id}_${i}.jpg`;
       await putImage(key, buffer);
       images.push({
-        path: key,
+        path: `${PUBLIC_BASE_URL}/${key}`,
         credit: (img.credit || '').trim(),
         license: (img.license || 'editorial_press').trim(),
         alt: (img.alt || '').trim(),
@@ -311,5 +316,6 @@ const server = http.createServer(async (req, res) => {
 server.listen(PORT, () => {
   console.log(`design-queue listening on :${PORT}`);
   console.log(`  S3: s3://${S3_BUCKET}/${S3_PREFIX} (region ${AWS_REGION})`);
+  console.log(`  image URL base: ${PUBLIC_BASE_URL}/${S3_PREFIX}`);
   console.log(`  queue: ${GITHUB_REPO}@${GITHUB_BRANCH}:${GITHUB_QUEUE_PATH}`);
 });
