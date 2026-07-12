@@ -36,6 +36,8 @@ AI-native robotics intelligence media. Hugo (hextra v0.12.3) → GitHub Actions
 - deploy.yml uses `s3 sync --delete` — the design/img/ exclude must never be removed.
 - hugo.toml: timeZone = 'Asia/Seoul' must persist.
 - Korean filenames on macOS are NFD — normalize to NFC before comparisons.
+- Root .gitignore uses anchored /public/ (Hugo build output only). Never revert
+  to unanchored public/ — it would untrack apps/*/public/.
 
 ## Current implementation track: S0–S4 (지시서 0712-C)
 S0 sync exclude → S1 timeZone/cron/design section → S2 upload app (OCI)
