@@ -28,6 +28,36 @@
       ],
       "facts": {},
       "status": "pending"
+    },
+    {
+      "id": "dq_mrhnoav70f423d",
+      "publish_on": "2026-07-12",
+      "review": "manual",
+      "gate": null,
+      "images": [
+        {
+          "path": "https://robotdesign.net/design/img/dq_mrhnoav70f423d_0.jpg",
+          "credit": "Photo: Eunchang lee / Robotdesign.net",
+          "license": "own_work",
+          "alt": "Honda ASIMO"
+        }
+      ],
+      "subject": {
+        "company": "Honda",
+        "product": "Asimo",
+        "desk": "humanoid"
+      },
+      "context": "Demonstration of Asimo walking down on the stairs",
+      "ec_notes": [
+        "Morphology of Asimo, Human look of walking down on the stairs"
+      ],
+      "lens": [
+        "morphology",
+        "cmf",
+        "impression"
+      ],
+      "facts": {},
+      "status": "pending"
     }
   ]
 }
