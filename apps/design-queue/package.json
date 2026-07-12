@@ -1,0 +1,16 @@
+{
+  "name": "design-queue",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "RDN S2 — mobile upload app: photos → S3, entries → data/design_queue.json (schema v1.2)",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.658.0"
+  }
+}

@@ -1,0 +1,700 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#3f7d1e" />
+    <title>RDN · Design Queue Upload</title>
+    <style>
+      :root {
+        --accent: #3f7d1e;
+        --bg: #fafaf8;
+        --card: #ffffff;
+        --line: #e4e4df;
+        --text: #1a1a17;
+        --muted: #6b6b64;
+        --danger: #b3261e;
+        --radius: 12px;
+      }
+      * { box-sizing: border-box; }
+      html { -webkit-text-size-adjust: 100%; }
+      body {
+        margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+          'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif;
+        background: var(--bg);
+        color: var(--text);
+        font-size: 16px;
+        line-height: 1.5;
+        padding: 0 0 96px;
+      }
+      header {
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        background: var(--accent);
+        color: #fff;
+        padding: 14px 16px calc(14px + env(safe-area-inset-top));
+        padding-top: max(14px, env(safe-area-inset-top));
+      }
+      header h1 { margin: 0; font-size: 17px; letter-spacing: 0.02em; }
+      header p { margin: 2px 0 0; font-size: 12px; opacity: 0.85; }
+      main { max-width: 640px; margin: 0 auto; padding: 16px; }
+      .card {
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        padding: 16px;
+        margin-bottom: 16px;
+      }
+      .card > h2 {
+        margin: 0 0 12px;
+        font-size: 13px;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        color: var(--muted);
+      }
+      .item-head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 12px;
+      }
+      .item-head h2 { margin: 0; font-size: 15px; color: var(--text); text-transform: none; letter-spacing: 0; }
+      label { display: block; font-size: 13px; color: var(--muted); margin: 12px 0 4px; }
+      label:first-of-type { margin-top: 0; }
+      input[type='text'],
+      input[type='date'],
+      input[type='number'],
+      select,
+      textarea {
+        width: 100%;
+        font: inherit;
+        font-size: 16px; /* prevents iOS zoom */
+        color: var(--text);
+        background: #fff;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        padding: 10px;
+      }
+      textarea { min-height: 72px; resize: vertical; }
+      .row { display: flex; gap: 8px; }
+      .row > * { flex: 1; min-width: 0; }
+      .btn {
+        appearance: none;
+        font: inherit;
+        font-weight: 600;
+        border: 1px solid var(--accent);
+        background: #fff;
+        color: var(--accent);
+        border-radius: 8px;
+        padding: 10px 14px;
+        cursor: pointer;
+      }
+      .btn.primary { background: var(--accent); color: #fff; }
+      .btn.ghost { border-color: var(--line); color: var(--muted); }
+      .btn.small { padding: 6px 10px; font-size: 13px; }
+      .btn.link { border: none; background: none; color: var(--danger); padding: 4px; }
+      .btn:disabled { opacity: 0.45; cursor: default; }
+      .seg { display: inline-flex; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
+      .seg button {
+        appearance: none; font: inherit; font-size: 14px;
+        border: none; background: #fff; color: var(--muted);
+        padding: 8px 14px; cursor: pointer;
+      }
+      .seg button[aria-pressed='true'] { background: var(--accent); color: #fff; }
+      .chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px; }
+      .chip {
+        display: inline-flex; align-items: center; gap: 6px;
+        background: #eef4e8; color: var(--accent);
+        border-radius: 999px; padding: 4px 6px 4px 12px; font-size: 14px;
+      }
+      .chip button { appearance: none; border: none; background: none; color: var(--accent); font-size: 16px; cursor: pointer; line-height: 1; padding: 0 4px; }
+      .thumbs { display: flex; flex-direction: column; gap: 12px; margin-top: 10px; }
+      .thumb { display: flex; gap: 10px; align-items: flex-start; }
+      .thumb img { width: 72px; height: 72px; object-fit: cover; border-radius: 8px; border: 1px solid var(--line); flex: none; }
+      .thumb .fields { flex: 1; min-width: 0; }
+      .thumb .fields label { margin-top: 6px; }
+      .thumb .fields label:first-child { margin-top: 0; }
+      .kv-row { display: flex; gap: 8px; margin-top: 8px; align-items: center; }
+      .kv-row input { flex: 1; }
+      .note-row { display: flex; gap: 8px; margin-top: 8px; align-items: center; }
+      .note-row input { flex: 1; }
+      .hint { font-size: 12px; color: var(--muted); margin-top: 4px; }
+      .publish-preview { font-size: 12px; color: var(--accent); margin-top: 4px; font-weight: 600; }
+      .footer-bar {
+        position: fixed; bottom: 0; left: 0; right: 0;
+        background: var(--card); border-top: 1px solid var(--line);
+        padding: 12px 16px calc(12px + env(safe-area-inset-bottom));
+        display: flex; gap: 10px; align-items: center;
+      }
+      .footer-bar .btn.primary { flex: 1; }
+      .status { font-size: 13px; }
+      .status.ok { color: var(--accent); }
+      .status.err { color: var(--danger); }
+      .result {
+        background: #eef4e8; border: 1px solid #cfe0c0;
+        border-radius: 8px; padding: 12px; margin-bottom: 16px; font-size: 13px;
+      }
+      .result code { font-family: ui-monospace, 'SF Mono', Menlo, monospace; }
+      .drafts { border-color: #e0c9a6; background: #fbf3e6; }
+      .add-item { width: 100%; margin-bottom: 24px; }
+      .divider { height: 1px; background: var(--line); margin: 14px 0; border: 0; }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>RDN · Design Queue Upload</h1>
+      <p>Photos → S3 · Entries → design_queue.json (v1.2)</p>
+    </header>
+
+    <main>
+      <!-- Session settings -->
+      <section class="card" id="session">
+        <h2>Session settings</h2>
+
+        <label>Base publish date</label>
+        <div class="row" style="flex-wrap: wrap; gap: 6px">
+          <button type="button" class="btn small ghost" data-quick="0" style="flex: 0 0 auto">Today</button>
+          <button type="button" class="btn small ghost" data-quick="1" style="flex: 0 0 auto">Tomorrow</button>
+          <button type="button" class="btn small ghost" data-quick="3" style="flex: 0 0 auto">+3 days</button>
+          <input type="date" id="base-date" style="flex: 1 1 140px" />
+        </div>
+
+        <hr class="divider" />
+
+        <label style="display: flex; align-items: center; gap: 8px; margin: 0">
+          <input type="checkbox" id="spread-on" style="width: auto; flex: none" />
+          Spread evenly across days
+        </label>
+        <div class="row" style="margin-top: 8px; align-items: center">
+          <div style="flex: 0 0 auto; color: var(--muted); font-size: 13px">Spread days (D)</div>
+          <input type="number" id="spread-days" value="3" min="1" max="30" style="flex: 0 0 88px" />
+        </div>
+        <div class="hint">Distributes N items evenly over D days from the base date. When off, set each item's publish date manually.</div>
+
+        <hr class="divider" />
+
+        <label>Apply review to all</label>
+        <div class="row" style="align-items: center; gap: 10px">
+          <div class="seg" id="bulk-review">
+            <button type="button" data-v="manual" aria-pressed="true">manual</button>
+            <button type="button" data-v="auto" aria-pressed="false">auto</button>
+          </div>
+          <button type="button" class="btn small" id="bulk-apply">Apply to all items</button>
+        </div>
+      </section>
+
+      <div id="results"></div>
+      <div id="drafts"></div>
+
+      <!-- Items -->
+      <div id="items"></div>
+
+      <button type="button" class="btn add-item" id="add-item">+ Add item</button>
+    </main>
+
+    <div class="footer-bar">
+      <span class="status" id="status"></span>
+      <button type="button" class="btn primary" id="submit">Submit</button>
+    </div>
+
+    <!-- Item template -->
+    <template id="item-tpl">
+      <section class="card item">
+        <div class="item-head">
+          <h2 class="item-title">Item</h2>
+          <button type="button" class="btn link remove-item">Remove</button>
+        </div>
+
+        <label>Photos (multiple · camera OK)</label>
+        <input type="file" class="photo-input" accept="image/*" multiple />
+        <div class="hint">Resized to 1600px wide · JPEG q0.85 on submit.</div>
+        <div class="thumbs"></div>
+
+        <hr class="divider" />
+
+        <div class="row">
+          <div>
+            <label>Company</label>
+            <input type="text" class="f-company" placeholder="Boston Dynamics" />
+          </div>
+          <div>
+            <label>Product</label>
+            <input type="text" class="f-product" placeholder="Atlas" />
+          </div>
+        </div>
+
+        <label>Desk</label>
+        <select class="f-desk">
+          <option value="humanoid">humanoid</option>
+          <option value="industrial">industrial</option>
+          <option value="mobility">mobility</option>
+          <option value="research">research</option>
+        </select>
+
+        <label>Lens (multiple)</label>
+        <div class="row">
+          <input type="text" class="lens-input" placeholder="Type a lens, then Add" />
+          <button type="button" class="btn small lens-add" style="flex: 0 0 auto">Add</button>
+        </div>
+        <div class="chips lens-chips"></div>
+
+        <label>Context</label>
+        <textarea class="f-context" placeholder="Background · context"></textarea>
+
+        <label>EC notes</label>
+        <div class="notes"></div>
+        <button type="button" class="btn small ghost note-add">+ Add line</button>
+
+        <label>Facts (key · value)</label>
+        <div class="facts"></div>
+        <button type="button" class="btn small ghost fact-add">+ Add row</button>
+
+        <hr class="divider" />
+
+        <div class="row" style="align-items: flex-end">
+          <div style="flex: 0 0 auto">
+            <label>review</label>
+            <div class="seg item-review">
+              <button type="button" data-v="manual" aria-pressed="true">manual</button>
+              <button type="button" data-v="auto" aria-pressed="false">auto</button>
+            </div>
+          </div>
+          <div>
+            <label>Publish date</label>
+            <input type="date" class="f-publish" />
+            <div class="publish-preview" hidden></div>
+          </div>
+        </div>
+      </section>
+    </template>
+
+    <script>
+      'use strict';
+      const $ = (sel, el = document) => el.querySelector(sel);
+      const $$ = (sel, el = document) => Array.from(el.querySelectorAll(sel));
+      const DRAFT_KEY = 'rdn_design_queue_drafts_v1';
+
+      // ---- date helpers ------------------------------------------------------
+      function ymd(d) {
+        const y = d.getFullYear();
+        const m = String(d.getMonth() + 1).padStart(2, '0');
+        const day = String(d.getDate()).padStart(2, '0');
+        return `${y}-${m}-${day}`;
+      }
+      function addDays(base, n) {
+        const d = new Date(base + 'T00:00:00');
+        d.setDate(d.getDate() + n);
+        return ymd(d);
+      }
+      const baseDateEl = $('#base-date');
+      baseDateEl.value = ymd(new Date());
+
+      $$('#session [data-quick]').forEach(btn => {
+        btn.addEventListener('click', () => {
+          baseDateEl.value = addDays(ymd(new Date()), Number(btn.dataset.quick));
+          refreshPublish();
+        });
+      });
+
+      // ---- session review toggle --------------------------------------------
+      function wireSeg(seg, onChange) {
+        seg.addEventListener('click', e => {
+          const btn = e.target.closest('button[data-v]');
+          if (!btn) return;
+          $$('button', seg).forEach(b =>
+            b.setAttribute('aria-pressed', String(b === btn))
+          );
+          if (onChange) onChange(btn.dataset.v);
+        });
+      }
+      function segValue(seg) {
+        const on = $("button[aria-pressed='true']", seg);
+        return on ? on.dataset.v : null;
+      }
+      wireSeg($('#bulk-review'));
+      $('#bulk-apply').addEventListener('click', () => {
+        const v = segValue($('#bulk-review'));
+        $$('#items .item-review').forEach(seg => {
+          $$('button', seg).forEach(b =>
+            b.setAttribute('aria-pressed', String(b.dataset.v === v))
+          );
+        });
+      });
+
+      // ---- spread / publish preview -----------------------------------------
+      const spreadOn = $('#spread-on');
+      const spreadDays = $('#spread-days');
+      [spreadOn, spreadDays, baseDateEl].forEach(el =>
+        el.addEventListener('change', refreshPublish)
+      );
+
+      function computePublish() {
+        // Returns YYYY-MM-DD per item in DOM order.
+        const items = $$('#items .item');
+        const base = baseDateEl.value || ymd(new Date());
+        if (!spreadOn.checked) {
+          return items.map(it => $('.f-publish', it).value || base);
+        }
+        const D = Math.max(1, Number(spreadDays.value) || 1);
+        const N = items.length;
+        return items.map((_, i) => addDays(base, Math.floor((i * D) / N)));
+      }
+
+      function refreshPublish() {
+        const dates = computePublish();
+        $$('#items .item').forEach((it, i) => {
+          const input = $('.f-publish', it);
+          const preview = $('.publish-preview', it);
+          if (spreadOn.checked) {
+            input.disabled = true;
+            input.value = dates[i];
+            preview.hidden = false;
+            preview.textContent = `Scheduled → ${dates[i]}`;
+          } else {
+            input.disabled = false;
+            preview.hidden = true;
+            if (!input.value) input.value = baseDateEl.value;
+          }
+        });
+      }
+
+      // ---- items -------------------------------------------------------------
+      const itemsEl = $('#items');
+      let seq = 0;
+
+      function renumber() {
+        $$('#items .item').forEach((it, i) => {
+          $('.item-title', it).textContent = `Item ${i + 1}`;
+          $('.remove-item', it).style.visibility =
+            $$('#items .item').length > 1 ? 'visible' : 'hidden';
+        });
+      }
+
+      function addNoteRow(container, value = '') {
+        const row = document.createElement('div');
+        row.className = 'note-row';
+        row.innerHTML =
+          '<input type="text" class="note-input" placeholder="One note line" />' +
+          '<button type="button" class="btn link note-del">✕</button>';
+        $('.note-input', row).value = value;
+        $('.note-del', row).addEventListener('click', () => row.remove());
+        container.appendChild(row);
+      }
+
+      function addFactRow(container, key = '', val = '') {
+        const row = document.createElement('div');
+        row.className = 'kv-row';
+        row.innerHTML =
+          '<input type="text" class="fact-key" placeholder="key" />' +
+          '<input type="text" class="fact-val" placeholder="value" />' +
+          '<button type="button" class="btn link fact-del">✕</button>';
+        $('.fact-key', row).value = key;
+        $('.fact-val', row).value = val;
+        $('.fact-del', row).addEventListener('click', () => row.remove());
+        container.appendChild(row);
+      }
+
+      function addLensChip(container, value) {
+        const v = value.trim();
+        if (!v) return;
+        const existing = $$('.chip', container).some(
+          c => c.dataset.v.toLowerCase() === v.toLowerCase()
+        );
+        if (existing) return;
+        const chip = document.createElement('span');
+        chip.className = 'chip';
+        chip.dataset.v = v;
+        chip.innerHTML = `<span></span><button type="button" aria-label="Remove">✕</button>`;
+        $('span', chip).textContent = v;
+        $('button', chip).addEventListener('click', () => chip.remove());
+        container.appendChild(chip);
+      }
+
+      function addImageThumb(item, file) {
+        const thumbs = $('.thumbs', item);
+        const el = document.createElement('div');
+        el.className = 'thumb';
+        el.innerHTML =
+          '<img alt="preview" />' +
+          '<div class="fields">' +
+          '<label>alt</label><input type="text" class="img-alt" placeholder="Alt text" />' +
+          '<label>license</label><input type="text" class="img-license" value="editorial_press" />' +
+          '<label>credit (optional)</label><input type="text" class="img-credit" placeholder="Photo courtesy of…" />' +
+          '<button type="button" class="btn link img-del">Remove photo</button>' +
+          '</div>';
+        el._file = file; // keep the File reference on the node
+        $('img', el).src = URL.createObjectURL(file);
+        $('.img-del', el).addEventListener('click', () => {
+          URL.revokeObjectURL($('img', el).src);
+          el.remove();
+        });
+        thumbs.appendChild(el);
+      }
+
+      function createItem() {
+        const node = $('#item-tpl').content.firstElementChild.cloneNode(true);
+        seq++;
+
+        $('.remove-item', node).addEventListener('click', () => {
+          node.remove();
+          renumber();
+          refreshPublish();
+        });
+        $('.photo-input', node).addEventListener('change', e => {
+          Array.from(e.target.files).forEach(f => addImageThumb(node, f));
+          e.target.value = '';
+        });
+        wireSeg($('.item-review', node));
+
+        const lensChips = $('.lens-chips', node);
+        const lensInput = $('.lens-input', node);
+        const addLens = () => {
+          addLensChip(lensChips, lensInput.value);
+          lensInput.value = '';
+          lensInput.focus();
+        };
+        $('.lens-add', node).addEventListener('click', addLens);
+        lensInput.addEventListener('keydown', e => {
+          if (e.key === 'Enter') {
+            e.preventDefault();
+            addLens();
+          }
+        });
+
+        $('.note-add', node).addEventListener('click', () =>
+          addNoteRow($('.notes', node))
+        );
+        $('.fact-add', node).addEventListener('click', () =>
+          addFactRow($('.facts', node))
+        );
+        addNoteRow($('.notes', node));
+        addFactRow($('.facts', node));
+
+        $('.f-publish', node).value = baseDateEl.value;
+        itemsEl.appendChild(node);
+        renumber();
+        refreshPublish();
+        return node;
+      }
+
+      $('#add-item').addEventListener('click', () => createItem());
+      createItem(); // start with one
+
+      // ---- read one item's data ---------------------------------------------
+      function readItem(item) {
+        const facts = {};
+        $$('.kv-row', item).forEach(row => {
+          const k = $('.fact-key', row).value.trim();
+          const v = $('.fact-val', row).value.trim();
+          if (k) facts[k] = v;
+        });
+        return {
+          subject: {
+            company: $('.f-company', item).value.trim(),
+            product: $('.f-product', item).value.trim(),
+            desk: $('.f-desk', item).value,
+          },
+          context: $('.f-context', item).value.trim(),
+          ec_notes: $$('.note-input', item)
+            .map(i => i.value.trim())
+            .filter(Boolean),
+          lens: $$('.lens-chips .chip', item).map(c => c.dataset.v),
+          facts,
+          review: segValue($('.item-review', item)),
+          publish_on: $('.f-publish', item).value,
+          _imageEls: $$('.thumb', item),
+        };
+      }
+
+      // ---- image resize ------------------------------------------------------
+      async function resizeToJpegBase64(file, maxW = 1600, quality = 0.85) {
+        const bitmap = await createImageBitmap(file, {
+          imageOrientation: 'from-image',
+        });
+        const scale = Math.min(1, maxW / bitmap.width);
+        const w = Math.round(bitmap.width * scale);
+        const h = Math.round(bitmap.height * scale);
+        const canvas = document.createElement('canvas');
+        canvas.width = w;
+        canvas.height = h;
+        canvas.getContext('2d').drawImage(bitmap, 0, 0, w, h);
+        bitmap.close && bitmap.close();
+        const blob = await new Promise(r =>
+          canvas.toBlob(r, 'image/jpeg', quality)
+        );
+        const buf = await blob.arrayBuffer();
+        // base64 without data: prefix
+        let binary = '';
+        const bytes = new Uint8Array(buf);
+        const chunk = 0x8000;
+        for (let i = 0; i < bytes.length; i += chunk) {
+          binary += String.fromCharCode.apply(
+            null,
+            bytes.subarray(i, i + chunk)
+          );
+        }
+        return btoa(binary);
+      }
+
+      // ---- build payload -----------------------------------------------------
+      async function buildPayload() {
+        const items = $$('#items .item');
+        const dates = computePublish();
+        const out = [];
+        for (let idx = 0; idx < items.length; idx++) {
+          const data = readItem(items[idx]);
+          const images = [];
+          for (const el of data._imageEls) {
+            const b64 = await resizeToJpegBase64(el._file);
+            images.push({
+              data: b64,
+              alt: $('.img-alt', el).value.trim(),
+              license: $('.img-license', el).value.trim() || 'editorial_press',
+              credit: $('.img-credit', el).value.trim(),
+            });
+          }
+          delete data._imageEls;
+          data.publish_on = dates[idx];
+          data.images = images;
+          out.push(data);
+        }
+        return { session: { submitted_at: new Date().toISOString() }, items: out };
+      }
+
+      // ---- drafts (local fallback) ------------------------------------------
+      function loadDrafts() {
+        try {
+          return JSON.parse(localStorage.getItem(DRAFT_KEY)) || [];
+        } catch {
+          return [];
+        }
+      }
+      function saveDrafts(list) {
+        localStorage.setItem(DRAFT_KEY, JSON.stringify(list));
+      }
+      function stashDraft(payload) {
+        const list = loadDrafts();
+        list.push({ ts: Date.now(), payload });
+        saveDrafts(list);
+        renderDrafts();
+      }
+      function renderDrafts() {
+        const wrap = $('#drafts');
+        const list = loadDrafts();
+        if (list.length === 0) {
+          wrap.innerHTML = '';
+          return;
+        }
+        wrap.innerHTML =
+          `<div class="card drafts"><h2>Unsent drafts: ${list.length} (saved locally)</h2></div>`;
+        const card = $('.card', wrap);
+        list.forEach((d, i) => {
+          const n = d.payload.items.length;
+          const when = new Date(d.ts).toLocaleString('en-US');
+          const row = document.createElement('div');
+          row.className = 'row';
+          row.style.cssText = 'align-items:center;margin-top:8px';
+          row.innerHTML =
+            `<span style="flex:1;font-size:13px">${when} · ${n} items</span>` +
+            `<button type="button" class="btn small resend">Resend</button>` +
+            `<button type="button" class="btn small ghost discard">Discard</button>`;
+          $('.resend', row).addEventListener('click', () => resendDraft(i));
+          $('.discard', row).addEventListener('click', () => {
+            const l = loadDrafts();
+            l.splice(i, 1);
+            saveDrafts(l);
+            renderDrafts();
+          });
+          card.appendChild(row);
+        });
+      }
+
+      async function postSubmit(payload) {
+        const res = await fetch('/api/submit', {
+          method: 'POST',
+          headers: { 'content-type': 'application/json' },
+          body: JSON.stringify(payload),
+        });
+        const json = await res.json().catch(() => ({}));
+        if (!res.ok || !json.ok) {
+          throw new Error(json.error || `HTTP ${res.status}`);
+        }
+        return json;
+      }
+
+      function showResult(json) {
+        const wrap = $('#results');
+        const rows = json.entries
+          .map(
+            e =>
+              `<div><code>${e.id}</code> · ${e.publish_on} · ${e.review} · ${e.images} images</div>`
+          )
+          .join('');
+        const commit = json.commit
+          ? `<div style="margin-top:6px">Commit <a href="${json.commit_url}" target="_blank" rel="noopener"><code>${json.commit.slice(0, 7)}</code></a></div>`
+          : '';
+        wrap.innerHTML = `<div class="result"><strong>Submitted · ${json.entries.length}</strong>${rows}${commit}</div>`;
+        wrap.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }
+
+      function setStatus(msg, cls) {
+        const el = $('#status');
+        el.textContent = msg;
+        el.className = 'status' + (cls ? ' ' + cls : '');
+      }
+
+      async function resendDraft(index) {
+        const list = loadDrafts();
+        const draft = list[index];
+        if (!draft) return;
+        setStatus('Resending…');
+        try {
+          const json = await postSubmit(draft.payload);
+          list.splice(index, 1);
+          saveDrafts(list);
+          renderDrafts();
+          showResult(json);
+          setStatus('Resent', 'ok');
+        } catch (err) {
+          setStatus('Resend failed: ' + err.message, 'err');
+        }
+      }
+
+      // ---- submit ------------------------------------------------------------
+      const submitBtn = $('#submit');
+      submitBtn.addEventListener('click', async () => {
+        submitBtn.disabled = true;
+        setStatus('Processing images…');
+        let payload;
+        try {
+          payload = await buildPayload();
+        } catch (err) {
+          setStatus('Image processing failed: ' + err.message, 'err');
+          submitBtn.disabled = false;
+          return;
+        }
+        if (payload.items.every(it => it.images.length === 0) &&
+            payload.items.every(it => !it.subject.company && !it.subject.product)) {
+          setStatus('Nothing to submit.', 'err');
+          submitBtn.disabled = false;
+          return;
+        }
+        setStatus('Submitting…');
+        try {
+          const json = await postSubmit(payload);
+          showResult(json);
+          setStatus('Submitted', 'ok');
+        } catch (err) {
+          stashDraft(payload);
+          setStatus('Submit failed — saved locally: ' + err.message, 'err');
+        } finally {
+          submitBtn.disabled = false;
+        }
+      });
+
+      renderDrafts();
+    </script>
+  </body>
+</html>

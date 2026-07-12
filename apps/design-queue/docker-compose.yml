@@ -1,0 +1,19 @@
+# RDN S2 — design-queue
+# Ports are intentionally NOT exposed: Caddy on the external `web` network
+# reverse-proxies queue.robotdesign.net -> design-queue:8080.
+services:
+  design-queue:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    platform: linux/arm64
+    container_name: design-queue
+    restart: unless-stopped
+    env_file:
+      - .env
+    networks:
+      - web
+
+networks:
+  web:
+    external: true
