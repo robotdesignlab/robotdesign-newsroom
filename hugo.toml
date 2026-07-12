@@ -1,5 +1,6 @@
 baseURL = 'https://robotdesign.net/'
 locale = 'en-us'
+timeZone = 'Asia/Seoul'
 title = 'Robot Design Net'
 theme = ['github.com/imfing/hextra']
 
