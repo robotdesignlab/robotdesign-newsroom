@@ -451,7 +451,9 @@
         const lensChips = $('.lens-chips', node);
         const lensInput = $('.lens-input', node);
         const addLens = () => {
-          addLensChip(lensChips, lensInput.value);
+          // Split on commas so "morphology, cmf, impression" becomes 3 chips.
+          // addLensChip trims and drops empties/dupes.
+          lensInput.value.split(',').forEach(v => addLensChip(lensChips, v));
           lensInput.value = '';
           lensInput.focus();
         };
