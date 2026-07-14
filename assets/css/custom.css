@@ -105,6 +105,16 @@ h1, h2, h3, h4, h5, h6,
   background-color: #111827 !important;
 }
 
+/* ── 라이트모드 UA 기본색 공백 봉합 (2계층 방어) ──
+   ① color-scheme을 사이트 토글(html.class)에 종속 → UA 기본색·폼컨트롤·스크롤바 정합.
+      hextra head/theme.js가 이미 인라인 style.colorScheme로 설정하므로 이 CSS는 no-JS 방어층.
+   ② 라이트모드에서 hextra는 body 텍스트색을 UA(CanvasText)에 위임(다크만 body:where(.dark)로 명시).
+      기본 텍스트색을 토큰으로 명시해 위임을 제거. var 는 :root(#0f172a)/.dark(#f1f5f9) 양쪽 정의됨. */
+html:not(.dark) { color-scheme: light; }
+html.dark       { color-scheme: dark; }
+
+body { color: var(--rdn-text-primary); }
+
 /* ── 네브바 정렬 ── */
 .hextra-max-navbar-width {
   max-width: 1080px !important;      /* Gen2 컨테이너: 단계3 풀폭 → 1080 상한 정밀화(본문과 동일 컨테이너로 정렬) */
