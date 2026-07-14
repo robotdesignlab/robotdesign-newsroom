@@ -278,3 +278,15 @@ h1, h2, h3, h4, h5, h6,
     font-size: 26px;            /* 풀쿼트 모바일 */
   }
 }
+
+/* ── About 다이어그램 액센트 (인라인 SVG, .rdn-diagram) ──
+   Gen2 토큰을 사이트 토글(.dark) 기준으로 전환. 라이트 기본 #3f7d1e / 다크 #c6f24e.
+   중립부(circle/box/text)는 SVG 내부 currentColor로 본문 색을 따라감.
+   accent-stroke에 fill:none 유지 — 디자인 섹션 rect 기본 채움(검정) 방지. */
+.rdn-diagram .accent-fill   { fill: #3f7d1e; }
+.rdn-diagram .accent-stroke { stroke: #3f7d1e; fill: none; }
+.rdn-diagram .accent-text   { fill: #3f7d1e; }
+
+.dark .rdn-diagram .accent-fill   { fill: #c6f24e; }
+.dark .rdn-diagram .accent-stroke { stroke: #c6f24e; }
+.dark .rdn-diagram .accent-text   { fill: #c6f24e; }
