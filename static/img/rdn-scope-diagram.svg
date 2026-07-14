@@ -1,0 +1,67 @@
+<svg viewBox="0 0 800 640" xmlns="http://www.w3.org/2000/svg" font-family="'IBM Plex Mono', monospace" role="img" aria-label="RDN lens diagram: engineering, morphology and aesthetics intersect, feeding four news desks and a design section">
+  <style>
+    .accent-fill   { fill: #c6f24e; }
+    .accent-stroke { stroke: #c6f24e; fill: none; }
+    .accent-text   { fill: #c6f24e; }
+    .neutral       { stroke: currentColor; fill: none; opacity: 0.4; }
+    .box           { stroke: currentColor; fill: none; opacity: 0.6; }
+    .t-main  { fill: currentColor; font-size: 15px; letter-spacing: 0.14em; }
+    .t-sub   { fill: currentColor; font-size: 11px; letter-spacing: 0.08em; opacity: 0.6; }
+    .t-desk  { fill: currentColor; font-size: 12px; letter-spacing: 0.16em; opacity: 0.85; }
+    .t-lens  { font-size: 12px; letter-spacing: 0.22em; font-weight: 600; }
+    @media (prefers-color-scheme: light) {
+      .accent-fill   { fill: #3f7d1e; }
+      .accent-stroke { stroke: #3f7d1e; }
+      .accent-text   { fill: #3f7d1e; }
+    }
+  </style>
+
+  <!-- ═══ The lens: three-circle intersection ═══ -->
+  <g stroke-width="1.25">
+    <circle cx="336" cy="180" r="104" class="neutral"/>
+    <circle cx="464" cy="180" r="104" class="neutral"/>
+    <circle cx="400" cy="284" r="104" class="neutral"/>
+  </g>
+
+  <!-- circle labels -->
+  <text x="248" y="72"  text-anchor="middle" class="t-main">ENGINEERING</text>
+  <text x="248" y="90"  text-anchor="middle" class="t-sub">how it works</text>
+
+  <text x="552" y="72"  text-anchor="middle" class="t-main">MORPHOLOGY</text>
+  <text x="552" y="90"  text-anchor="middle" class="t-sub">how it is built</text>
+
+  <text x="400" y="424" text-anchor="middle" class="t-main">AESTHETICS</text>
+  <text x="400" y="442" text-anchor="middle" class="t-sub">what it says</text>
+
+  <!-- center of intersection -->
+  <circle cx="400" cy="212" r="4.5" class="accent-fill"/>
+  <text x="400" y="240" text-anchor="middle" class="t-lens accent-text">THE RDN LENS</text>
+
+  <!-- ═══ Flow: lens → desks ═══ -->
+  <g class="accent-stroke" stroke-width="1.5">
+    <line x1="400" y1="452" x2="400" y2="500"/>
+    <!-- distribution rail -->
+    <line x1="148" y1="500" x2="652" y2="500"/>
+    <line x1="148" y1="500" x2="148" y2="516"/>
+    <line x1="316" y1="500" x2="316" y2="516"/>
+    <line x1="484" y1="500" x2="484" y2="516"/>
+    <line x1="652" y1="500" x2="652" y2="516"/>
+  </g>
+
+  <!-- ═══ Four desks ═══ -->
+  <g stroke-width="1.25">
+    <rect x="73"  y="516" width="150" height="50" class="box"/>
+    <rect x="241" y="516" width="150" height="50" class="box"/>
+    <rect x="409" y="516" width="150" height="50" class="box"/>
+    <rect x="577" y="516" width="150" height="50" class="box"/>
+  </g>
+  <text x="148" y="546" text-anchor="middle" class="t-desk">HUMANOID</text>
+  <text x="316" y="546" text-anchor="middle" class="t-desk">INDUSTRIAL</text>
+  <text x="484" y="546" text-anchor="middle" class="t-desk">RESEARCH</text>
+  <text x="652" y="546" text-anchor="middle" class="t-desk">MOBILITY</text>
+
+  <!-- ═══ Design section ═══ -->
+  <line x1="400" y1="566" x2="400" y2="586" class="accent-stroke" stroke-width="1.5"/>
+  <rect x="73" y="586" width="654" height="44" class="accent-stroke" stroke-width="1.25"/>
+  <text x="400" y="613" text-anchor="middle" class="t-desk accent-text" style="letter-spacing:0.22em">DESIGN · CRITIQUE &amp; ANALYSIS</text>
+</svg>
